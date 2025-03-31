@@ -1,0 +1,40 @@
+id	name	baseAbility	trainedOnly	acPenaltyApplies
+0	Acrobatics	Dexterity	0	1
+1	Appraise	Intelligence	0	0
+2	Bluff	Charisma	0	0
+3	Climb	Strength	0	1
+4	Craft	Intelligence	0	0
+5	Craft	Intelligence	0	0
+6	Craft	Intelligence	0	0
+7	Diplomacy	Charisma	0	0
+8	Disable Device	Dexterity	1	1
+9	Disguise	Charisma	0	0
+10	Escape Artist	Dexterity	0	1
+11	Fly	Dexterity	0	1
+12	Handle Animal	Charisma	1	0
+13	Heal	Wisdom	0	0
+14	Intimidate	Charisma	0	0
+15	Knowledge (Arcana)	Intelligence	1	0
+16	Knowledge (Dungeoneering)	Intelligence	1	0
+17	Knowledge (Engineering)	Intelligence	1	0
+18	Knowledge (Geography)	Intelligence	1	0
+19	Knowledge (History)	Intelligence	1	0
+20	Knowledge (Local)	Intelligence	1	0
+21	Knowledge (Nature)	Intelligence	1	0
+22	Knowledge (Nobility)	Intelligence	1	0
+23	Knowledge (Planes)	Intelligence	1	0
+24	Knowledge (Religion)	Intelligence	1	0
+25	Linguistics	Intelligence	1	0
+26	Perception	Wisdom	0	0
+27	Perform	Charisma	0	0
+28	Perform	Charisma	0	0
+29	Profession	Wisdom	1	0
+30	Profession	Wisdom	1	0
+31	Ride	Dexterity	0	1
+32	Sense Motive	Wisdom	0	0
+33	Sleight of Hand	Dexterity	1	1
+34	Spellcraft	Intelligence	1	0
+35	Stealth	Dexterity	0	1
+36	Survival	Wisdom	0	0
+37	Swim	Strength	0	1
+38	Use Magic Device	Charisma	1	0

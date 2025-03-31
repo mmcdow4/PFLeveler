@@ -1,0 +1,41 @@
+id	raceId	name	description
+1	0	Slow and Steady	Speed is never reduced by armor or encumbrance.
+2	0	Darkvision	Can see in the dark up to 60 feet.
+3	0	Defensive Training	+4 dodge bonus to AC against monsters of the giant subtype.
+4	0	Greed	+2 bonus on Appraise skill checks made to determine the price of nonmagical goods that contain precious metals or gemstones.
+5	0	Hatred	+1 bonus on attack rolls against humanoid creatures of the orc and goblinoid subtypes.
+6	0	Hardy	+2 bonus on saving throws against poison, spells, and spell-like abilities.
+7	0	Stability	+4 bonus to Combat Maneuver Defense when resisting a bull rush or trip attempt while standing on the ground.
+8	0	Stonecunning	+2 bonus on Perception checks to potentially notice unusual stonework, such as traps and hidden doors located in stone walls or floors. You recieve a check to notice these features whenever you pass within 10 feet of them, whether or not you are actively looking.
+9	0	Weapon Familiarity	Dwarves are proficient with the battleaxe, heavy pick, and warhammer, and treat any weapon with the word 'dwarven' in its name as a martial weapon.
+10	1	Low-Light Vision	Can see twice as far as a human in dim light.
+11	1	Elven Immunities	Immune to magic sleep effects and get a +2 saving throw bonus against enchantment spells and effects.
+12	1	Elven Magic	+2 bonus on caster level checks made to overcome spell resistance. +2 bonus on Spellcraft skill checks made to identify the properties of magic items.
+13	1	Keen Senses	+2 bonus on Perception skill checks.
+14	1	Weapon Familiarity	Elves are proficient with the longbow, composite longbow, longsword, rapier, shortbow, and composite shortbow, and treat any weapon with the word 'elven' in its name as a martial weapon.
+15	2	Low-Light Vision	Can see twice as far as a human in dim light.
+16	2	Defensive Training	+4 dodge bonus to AC against monsters of the giant subtype.
+17	2	Gnome Magic	Gnomes add +1 to the DC of any saving throws against illusion spells that they cast. Gnomes with charisma 11 or higher also gain the following spell-like abilities: 1/day-'dancing lights', 'ghost sound', 'prestidigitation', and 'speak with animals'. The caster level for these effects is equal to the gnome's level. The DC for these spells is equal to 10 + the spell's level + the gnome's charisma modifier.
+18	2	Hatred	+1 bonus on attack rolls against humanoid creatures of the orc and goblinoid subtypes.
+19	2	Illusion Resistance	+2 saving throw against illusion spells and effects.
+20	2	Keen Senses	+2 bonus on Perception skill checks.
+21	2	Obsessive	+2 bonus on a Craft or Profession skill of your choice.
+22	2	Weapon Familiarity	Gnomes treat any weapon with the word 'gnome' in its name as a martial weapon.
+23	3	Low-Light Vision	Can see twice as far as a human in dim light.
+24	3	Adaptability	Receive skill focus as a bonus feat at 1st level
+25	3	Elf Blood	Half-elves count as both elves and humans for any effect related to race.
+26	3	Elven Immunities	Immune to magic sleep effects and get a +2 saving throw bonus against enchantment spells and effects.
+27	3	Keen Senses	+2 bonus on Perception skill checks.
+28	3	Multitalented	Choose two favored classes at 1st level and gain +1 hit point or +1 skill point whenever you take a level in either of those classes.
+29	4	Darkvision	Can see in the dark up to 60 feet.
+30	4	Intimidating	+2 bonus on Intimidate skill checks.
+31	4	Orc Blood	Half-orcs count as both orcs and humans for any effect related to race.
+32	4	Orc Ferocity	Once per day, when brought below 0 hit points but not killed, you may fight on for one more round as if disabled. At the end of your next turn, unless brought above 0 hit points, you immediately fall unconscious and begin dying.
+33	4	Weapon Familiarity	Half-orcs are proficient with the greataxe and falchion and treat any weapon with the word 'orc' in its name as a martial weapon.
+34	5	Fearless	+2 bonus on all saving throws against fear. This bonus stacks with the bonus granted by Halfing Luck.
+35	5	Halfling Luck	+1 bonus on all saving throws.
+36	5	Keen Senses	+2 bonus on Perception skill checks.
+37	5	Sure-Footed	+2 bonus on Acrobatics and Climb skill checks.
+38	5	Weapon Familiarity	Halflings are proficient with the sling and treat any weapon with the word 'halfling' in its name as a martial weapon.
+39	6	Bonus Feat	Select one extra feat at 1st level.
+40	6	Skilled	Gain an additional skill rank at 1st level and one additional rank whenever you gain a level.

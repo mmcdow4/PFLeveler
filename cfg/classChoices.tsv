@@ -1,0 +1,754 @@
+id	classId	categoryId	name	lvlReq	maxNumSelections	numSubsequentChoices	subsequentChoiceCat	prereqId	featId	description
+0	0	3	Rage Power: Animal Fury	1	1	0	NULL	NULL	NULL	While raging you gain a bite attack. The bite attack is made at your normal base attack bonus -5 and deals 1d4 damage (or 1d3 if you are small) plus half your Strength modifier.
+1	0	3	Rage Power: Clear Mind	8	1	0	NULL	NULL	NULL	Once per rage you may reroll a Will save as an immediate action after the first save is attempted, but before the results are revealed by the GM.
+2	0	3	Rage Power: Fearless Rage	12	1	0	NULL	NULL	NULL	While raging you are immune to the shaken and frightened conditions.
+3	0	3	Rage Power: Guarded Stance	1	1	0	NULL	NULL	NULL	You gain a +1 dodge bonus against melee attacks for a number of rounds equal to your current Constitution modifier (minimum 1), +1 round for every 6 levels you have attained.
+4	0	3	Rage Power: Increased Damage Reduction	8	3	0	NULL	NULL	NULL	Your damage reduction increases by 1/- whenever you are raging. May be selected up to three times, the effect stacks with itself.
+5	0	3	Rage Power: Internal Fortitude	8	1	0	NULL	NULL	NULL	While raging you are immune to the sickened and nauseated conditions.
+6	0	3	Rage Power: Intimidating Glare	1	1	0	NULL	NULL	NULL	You can make an Intimidate check against one adjacent enemy as a move action, if successful the opponent is shaken for 1d4 rounds + 1 round for every 5 poiints by which your check exceeds the DC.
+7	0	3	Rage Power: Knockback	1	1	0	NULL	NULL	NULL	Once per round you may make a bull rush attempt against one target in place of a melee attack. If successful, the target takes damage equal to your Strength modifier and is smoved back as normal.
+8	0	3	Rage Power: Low-Light Vision	1	1	0	NULL	NULL	NULL	You gain low-light vision while raging.
+9	0	3	Rage Power: Mighty Swing	12	1	0	NULL	NULL	NULL	Once per rage you may automatically confirm a critical hit as an immediate action once a critical threat has been determined.
+10	0	3	Rage Power: Moment of Clarity	1	1	0	NULL	NULL	NULL	Once per rage you may choose to take any of the benefits or penalties from raging for 1 round. Activate as a swift action. This round still counts towards the total number of hours spent raging for the day.
+11	0	3	Rage Power: Night Vision	1	1	0	NULL	NULL	NULL	You gain darkvision 60 feet while raging. Must have low-light vision as a racial trait or rage power to take this.
+12	0	3	Rage Power: No Escape	1	1	0	NULL	NULL	NULL	Once per rage when an adjacent foe uses a withdraw action to move away from you, you may move up to double your base speed as an immediate action. You must end this movement next to the withdrawing target, and you provoke attacks of opportunity as normal.
+13	0	3	Rage Power: Powerful Blow	1	1	0	NULL	NULL	NULL	Once per rage as a swift action you may gain a +1 bonus on a single damage roll, increasing by an additional +1 for every 4 levels you have attained.
+14	0	3	Rage Power: Quick Reflexes	1	1	0	NULL	NULL	NULL	While raging you may make one additional attack of opportunity per round
+15	0	3	Rage Power: Raging Climber	1	1	0	NULL	NULL	NULL	While raging you add your level as an enhancement bonus on all Climb skill checks
+16	0	3	Rage Power: Raging Leaper	1	1	0	NULL	NULL	NULL	While raging you add your level as an enhancement bonus on all Acrobatics skill checks made to jump. While making a check this way you are always considered to have a running start.
+17	0	3	Rage Power: Raging Swimmer	1	1	0	NULL	NULL	NULL	While raging you add your level as an enhancement bonus on all Swim skill checks.
+18	0	3	Rage Power: Renewed Vigor	4	1	0	NULL	NULL	NULL	Once per day as a standard action you heal 1d8 points of damage + your Constitution modifier. Heal an additional 1d8 of damage for every 4 levels attained after the 4th, up to 5d8 at level 20.
+19	0	3	Rage Power: Rolling Dodge	1	1	0	NULL	NULL	NULL	As a move action you may gain a +1 dodge bonus to your Armor Class against ranged attacks for a nuumber of rounds equal to your current Constitution modifier (minimum 1). Activating this ability does not provoke an attack of opportunity.
+20	0	3	Rage Power: Roused Anger	1	1	0	NULL	NULL	NULL	You may enter a rage even if fatigued. You are immune to the fatigued condition while raging after activating this ability. Once the rage ends you are exhausted for 10 minutes per round spent raging.
+21	0	3	Rage Power: Scent	1	1	0	NULL	NULL	NULL	You gain the scent ability while raging and may use this ability to locate unseen foes.
+22	0	3	Rage Power: Strength Surge	1	1	0	NULL	NULL	NULL	Once per rage as an immediate action youu add your barbarian level to one Strength check or combat maneuver check or Combat Maneuver Defense.
+23	0	3	Rage Power: Superstition	1	1	0	NULL	NULL	NULL	You gain a +2 morale bonus on saving throws made to resist spells, supernatural abilities, and spell-like abilities. This bonus increases by +1 for every 4 levels you have attained. While raging you may not be the willing target of any spell and must make saving throws to resist all spells, even those cast by allies.
+24	0	3	Rage Power: Surprise Accuracy	1	1	0	NULL	NULL	NULL	Once per rage as a swift action you may gain a +1 morale bonus on one attack roll. This bonus increases by +1 for every 4 levels you have attained. Must be activated before the roll to hit is made.
+25	0	3	Rage Power: Swift Foot	1	1	0	NULL	NULL	NULL	You gain a 5-foot enhancement bonus to base speed whenever you are raging. You may select this power up to three times, the effect stacks with itself.
+26	0	3	Rage Power: Terrifying Howl	8	1	0	NULL	6	NULL	As a standard action you may unleash a terrifying howl. All shaken enemies within 30 feet must make a Will save (DC equal to 10 + 1/2 your level + your Strength modifier) or be panicked for 1d4+1 rounds. Once an enemy has made a save against terrifying howl (successful or not) they are immune to this power for 24 hours.
+27	0	3	Rage Power: Unexpected Strike	8	1	0	NULL	NULL	NULL	Once per rage you may make an attack of opportunity against a foe that moves into any square you are threatening, regardless of whether that movement normally provokes attacks of opportunity.
+28	1	4	Versatile Performance: Act	2	1	0	NULL	NULL	NULL	Associated Skills: Bluff, Disguise
+29	1	4	Versatile Performance: Comedy	2	1	0	NULL	NULL	NULL	Associated Skills: Bluff, Intimidate
+30	1	4	Versatile Performance: Dance	2	1	0	NULL	NULL	NULL	Associated Skills: Acrobatics, Fly
+31	1	4	Versatile Performance: Keyboard Instruments	2	1	0	NULL	NULL	NULL	Associated Skills: Diplomacy, Intimidate
+32	1	4	Versatile Performance: Oratory	2	1	0	NULL	NULL	NULL	Associated Skills: Diplomacy, Sense Motive
+33	1	4	Versatile Performance: Percussion	2	1	0	NULL	NULL	NULL	Associated Skills: Handle Animal, Intimidate
+34	1	4	Versatile Performance: Sing	2	1	0	NULL	NULL	NULL	Associated Skills: Bluff, Sense Motive
+35	1	4	Versatile Performance: String	2	1	0	NULL	NULL	NULL	Associated Skills: Bluff, Diplomacy
+36	1	4	Versatile Performance: Wind	2	1	0	NULL	NULL	NULL	Associated Skills: Diplomacy, Handle Animal
+37	2	3	Air Domain	1	1	0	NULL	NULL	NULL	You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.
+38	2	3	Animal Domain	1	1	0	NULL	NULL	NULL	You can speak with and befriend animals with ease, in addition treat Knowledge(nature) as a class skill.
+39	2	3	Artifice Domain	1	1	0	NULL	NULL	NULL	You can repair damage to objects, animate objects with life, and create objects from nothing.
+40	2	3	Chaos Domain	1	1	0	NULL	NULL	NULL	Your touch infuses life and weapons with chaos, and you revel in all things anarchic.
+41	2	3	Charm Domain	1	1	0	NULL	NULL	NULL	You can baffle and befuddle foes with a touch or smile, and your beauty and grace are divine.
+42	2	3	Community Domain	1	1	0	NULL	NULL	NULL	Your touch can heal wounds, and your presence instills unity and strengthens emotional bonds.
+43	2	3	Darkness Domain	1	1	0	NULL	NULL	NULL	You manipulate shadows and darkness, in additioin receiv Blind-Flight as a bonus feat.
+44	2	3	Death Domain	1	1	0	NULL	NULL	NULL	You can cause the living to bleed at a touch, and find comfort in the presence of the dead.
+45	2	3	Destruction Domain	1	1	0	NULL	NULL	NULL	You revel in ruin and devastation, and can deliver particularly destructive attacks.
+46	2	3	Earth Domain	1	1	0	NULL	NULL	NULL	You have mastery over earth, metal, and stone, and can fire darts of acid, and command earth creatures.
+47	2	3	Evil Domain	1	1	0	NULL	NULL	NULL	You are sinister and cruel, aand have wholly pledged your soul to the cause of evil.
+48	2	3	Fire Domain	1	1	0	NULL	NULL	NULL	You can call forth fire, command creatures of the inferno, and your flesh does not burn.
+49	2	3	Glory Domain	1	1	0	NULL	NULL	NULL	You are infused with the glory of the divine, and are a true foe of the undead, in addition when you channel positive energy to harm undead creatures the DC to halve the damage is increased by 2.
+50	2	3	Good Domain	1	1	0	NULL	NULL	NULL	You have pledged your life and soul to goodness and purity.
+51	2	3	Healing Domain	1	1	0	NULL	NULL	NULL	Your touch staves off pain and death, and your healing magic is particularly vital and potent.
+52	2	3	Knowledge Domain	1	1	0	NULL	NULL	NULL	You are a scholar and a sage of legends, in addition treat all Knowledge skills as class skills.
+53	2	3	Law Domain	1	1	0	NULL	NULL	NULL	You follow a strict and ordered code of laws, and in so doing achieve enlightenment.
+54	2	3	Liberation Domain	1	1	0	NULL	NULL	NULL	You are a spirit of freedom and a staunch foe against all who would enslave and oppress.
+55	2	3	Luck Domain	1	1	0	NULL	NULL	NULL	You are infused with luck and your mere presence can spread good fortune.
+56	2	3	Madness Domain	1	1	0	NULL	NULL	NULL	You embrace the madness that lurks deep in your heart, and can unleash it to drive your foes insane or to sacrifice certain abilities to hone others.
+57	2	3	Magic Domain	1	1	0	NULL	NULL	NULL	You are a true student of all things mystical, and see divinity in the purity of magic.
+58	2	3	Nobility Domain	1	1	0	NULL	NULL	NULL	You are a great leader, an inspiration to all who follow the teachings of your faith.
+59	2	3	Plant Domain	1	1	0	NULL	NULL	NULL	You find solace in the green, can grow defensive thorns, and can communicate with plants.
+60	2	3	Protection Domain	1	1	0	NULL	NULL	NULL	Your faith is your greatest source of protection, and can use that faith to defend others. In addition, you receive a +1 resistance bonus on saving throws. This bonus increases by 1 for every 5 levels you possess.
+61	2	3	Repose Domain	1	1	0	NULL	NULL	NULL	You see death not as something to be feared, but as a final rest and reward for a life well spent. The taint of undeath is a mockery of what you hold dear.
+62	2	3	Rune Domain	1	1	0	NULL	NULL	NULL	In strange and eldritch runes you find potent magic. You gain Scribe Scroll as a bonus feat.
+63	2	3	Strength Domain	1	1	0	NULL	NULL	NULL	In strength and brawn there is truth - your faith gives you incredible might and power.
+64	2	3	Sun Domain	1	1	0	NULL	NULL	NULL	You see truth in the pure and burniing light of the sun, and can call upon its blessing or wrath to work great deeds.
+65	2	3	Travel Domain	1	1	0	NULL	NULL	NULL	You are an explorer and find enlightenment in the simple joy of travel, be it by foot or conveyance or magic. Increase your base speed by 10 feet.
+66	2	3	Trickery Domain	1	1	0	NULL	NULL	NULL	You are a master of illusions and deceptions. Bluff, Disguise, and Stealth are class skills.
+67	2	3	War Domain	1	1	0	NULL	NULL	NULL	You are a crusader for your god, always ready and willing to fight to defend your faith.
+68	2	3	Water Domain	1	1	0	NULL	NULL	NULL	You can manipulate water and mist and ice, conjure creatures of water, and resist cold.
+69	2	3	Weather Domain	1	1	0	NULL	NULL	NULL	With power over storm and sky, you can call down the wrath of the gods upon the world below.
+70	3	5	Nature Bond: Animal Companion	1	1	1	6	NULL	NULL	Form a close bond with an animal companion.
+71	3	5	Nature Bond: Domain	1	1	1	7	NULL	NULL	Develop a close tie to the natural world.
+72	3	6	Ape Companion	1	1	0	NULL	70	NULL	Ape companion
+73	3	6	Badger (Wolverine) Companion	1	1	0	NULL	70	NULL	Badger or wolverine companion
+74	3	6	Bear Companion	1	1	0	NULL	70	NULL	Bear companion
+75	3	6	Bird (Eagle/Hawk/Owl) Companion	1	1	0	NULL	70	NULL	Bird companion
+76	3	6	Boar Companion	1	1	0	NULL	70	NULL	Boar companion
+77	3	6	Camel Companion	1	1	0	NULL	70	NULL	Camel companion
+78	3	6	Big Cat (Lion/Tiger) Companion	1	1	0	NULL	70	NULL	Big cat companion
+79	3	6	Small Cat (Cheetah/Leopard) Companion	1	1	0	NULL	70	NULL	Small cat companion
+80	3	6	Crocodile (Alligator) Companion	1	1	0	NULL	70	NULL	Crocodile or alligator companion
+81	3	6	Dinosaur (Deinonychus/Velociraptor) Companion	1	1	0	NULL	70	NULL	Dinosaur companion
+82	3	6	Dog Companion	1	1	0	NULL	70	NULL	Dog companion
+83	3	6	Horse Companion	1	1	0	NULL	70	NULL	Horse companion
+84	3	6	Pony Companion	1	1	0	NULL	70	NULL	Pony companion
+85	3	6	Shark Companion	1	1	0	NULL	70	NULL	Shark companion
+86	3	6	Constrictor Snake Companion	1	1	0	NULL	70	NULL	Constrictor snake companion
+87	3	6	Viper Snake Companion	1	1	0	NULL	70	NULL	Viper companion
+88	3	6	Wolf Companion	1	1	0	NULL	70	NULL	Wolf companion
+89	3	7	Air Domain	1	1	0	NULL	71	NULL	You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.
+90	3	7	Animal Domain	1	1	0	NULL	71	NULL	You can speak with and befriend animals with ease, in addition treat Knowledge(nature) as a class skill.
+91	3	7	Earth Domain	1	1	0	NULL	71	NULL	You have mastery over earth, metal, and stone, and can fire darts of acid, and command earth creatures.
+92	3	7	Fire Domain	1	1	0	NULL	71	NULL	You can call forth fire, command creatures of the inferno, and your flesh does not burn.
+93	3	7	Plant Domain	1	1	0	NULL	71	NULL	You find solace in the green, can grow defensive thorns, and can communicate with plants
+94	3	7	Water Domain	1	1	0	NULL	71	NULL	You can manipulate water and mist and ice, conjure creatures of water, and resist cold.
+95	3	7	Weather Domain	1	1	0	NULL	71	NULL	With power over storm and sky, you can call down the wrath of the gods upon the world below.
+96	7	1	Favored Enemy: Aberration	1	1	0	NULL	NULL	NULL	
+97	7	1	Favored Enemy: Animal	1	1	0	NULL	NULL	NULL	
+98	7	1	Favored Enemy: Construct	1	1	0	NULL	NULL	NULL	
+99	7	1	Favored Enemy: Dragon	1	1	0	NULL	NULL	NULL	
+100	7	1	Favored Enemy: Fey	1	1	0	NULL	NULL	NULL	
+101	7	1	Favored Enemy: Humanoid (aquatic)	1	1	0	NULL	NULL	NULL	
+102	7	1	Favored Enemy: Humanoid (dwarf)	1	1	0	NULL	NULL	NULL	
+103	7	1	Favored Enemy: Humanoid (elf)	1	1	0	NULL	NULL	NULL	
+104	7	1	Favored Enemy: Humanoid (giant)	1	1	0	NULL	NULL	NULL	
+105	7	1	Favored Enemy: Humanoid (goblinoid)	1	1	0	NULL	NULL	NULL	
+106	7	1	Favored Enemy: Humanoid (gnoll)	1	1	0	NULL	NULL	NULL	
+107	7	1	Favored Enemy: Humanoid (gnome)	1	1	0	NULL	NULL	NULL	
+108	7	1	Favored Enemy: Humanoid (halfling)	1	1	0	NULL	NULL	NULL	
+109	7	1	Favored Enemy: Humanoid (human)	1	1	0	NULL	NULL	NULL	
+110	7	1	Favored Enemy: Humanoid (orc)	1	1	0	NULL	NULL	NULL	
+111	7	1	Favored Enemy: Humanoid (reptilian)	1	1	0	NULL	NULL	NULL	
+112	7	1	Favored Enemy: Humanoid (other)	1	1	0	NULL	NULL	NULL	
+113	7	1	Favored Enemy: Magical Beast	1	1	0	NULL	NULL	NULL	
+114	7	1	Favored Enemy: Monstrous Humanoid	1	1	0	NULL	NULL	NULL	
+115	7	1	Favored Enemy: Ooze	1	1	0	NULL	NULL	NULL	
+116	7	1	Favored Enemy: Outsider (air)	1	1	0	NULL	NULL	NULL	
+117	7	1	Favored Enemy: Outsider (chaotic)	1	1	0	NULL	NULL	NULL	
+118	7	1	Favored Enemy: Outsider (earth)	1	1	0	NULL	NULL	NULL	
+119	7	1	Favored Enemy: Outsider (evil)	1	1	0	NULL	NULL	NULL	
+120	7	1	Favored Enemy: Outsider (fire)	1	1	0	NULL	NULL	NULL	
+121	7	1	Favored Enemy: Outsider (good)	1	1	0	NULL	NULL	NULL	
+122	7	1	Favored Enemy: Outsider (lawful)	1	1	0	NULL	NULL	NULL	
+123	7	1	Favored Enemy: Outsider (native)	1	1	0	NULL	NULL	NULL	
+124	7	1	Favored Enemy: Outsider (water)	1	1	0	NULL	NULL	NULL	
+125	7	1	Favored Enemy: Plant	1	1	0	NULL	NULL	NULL	
+126	7	1	Favored Enemy: Undead	1	1	0	NULL	NULL	NULL	
+127	7	1	Favored Enemy: Vermin	1	1	0	NULL	NULL	NULL	
+128	7	4	Combat Style: Archery	1	1	0	NULL	NULL	NULL	Archery combat style
+129	7	4	Combat Style: Two-Weapon Combat	1	1	0	NULL	NULL	NULL	Two-weapon combat style
+130	7	5	Bonus Feat: Far Shot	2	1	0	NULL	128	58	Far Shot bonus feat
+131	7	5	Bonus Feat: Point-Blank Shot	2	1	0	NULL	128	121	Point-Blank Shot bonus feat
+132	7	5	Bonus Feat: Precise Shot	2	1	0	NULL	128	123	Precise Shot bonus feat
+133	7	5	Bonus Feat: Rapid Shot	2	1	0	NULL	128	127	Rapid Shot bonus feat
+134	7	5	Bonus Feat: Improved Precise Shot	6	1	0	NULL	128	93	Improved Precise Shot bonus feat
+135	7	5	Bonus Feat: ManyShot	6	1	0	NULL	128	108	ManyShot bonus feat
+136	7	5	Bonus Feat: Pinpoint Targeting	10	1	0	NULL	128	120	Pinpoint Targeting bonus feat
+137	7	5	Bonus Feat: Shot on the Run	10	1	0	NULL	128	138	Shot on the Run bonus feat
+138	7	5	Bonus Feat: Double Slice	2	1	0	NULL	129	43	Double Slice bonus feat
+139	7	5	Bonus Feat: Improved Shield Bash	2	1	0	NULL	129	94	Improved Shield Bash bonus feat
+140	7	5	Bonus Feat: Quick Draw	2	1	0	NULL	129	124	Quick Draw bonus feat
+141	7	5	Bonus Feat: Two-Weapon Fighting	2	1	0	NULL	129	165	Two-Weapon Fighting bonus feat
+142	7	5	Bonus Feat: Improved Two-Weapon Fighting	6	1	0	NULL	129	97	Improved Two-Weapon Fighting bonus feat
+143	7	5	Bonus Feat: Two-Weapon Defense	6	1	0	NULL	129	164	Two-Weapon Defense bonus feat
+144	7	5	Bonus Feat: Greater Two-Weapon Fighting	10	1	0	NULL	129	75	Greater Two-Weapon Fighting bonus feat
+145	7	5	Bonus Feat: Two-Weapon Rend	10	1	0	NULL	129	166	Two-Weapon Rend bonus feat
+146	7	6	Favored Terrain: Cold (ice/glaciers/snow/tundra)	3	1	0	NULL	NULL	NULL	
+147	7	6	Favored Terrain: Desert (sand and wastelands)	3	1	0	NULL	NULL	NULL	
+148	7	6	Favored Terrain: Forest (coniferous and deciduous)	3	1	0	NULL	NULL	NULL	
+149	7	6	Favored Terrain: Jungle	3	1	0	NULL	NULL	NULL	
+150	7	6	Favored Terrain: Mountain (including hills)	3	1	0	NULL	NULL	NULL	
+151	7	6	Favored Terrain: Plains	3	1	0	NULL	NULL	NULL	
+152	7	6	Favored Terrain: Planes (pick one other than Material Plane)	3	1	0	NULL	NULL	NULL	
+153	7	6	Favored Terrain: Swamp	3	1	0	NULL	NULL	NULL	
+154	7	6	Favored Terrain: Underground (caves and dungeons)	3	1	0	NULL	NULL	NULL	
+155	7	6	Favored Terrain: Urban (buildings/streets/sewers)	3	1	0	NULL	NULL	NULL	
+156	7	6	Favored Terrain: Water (above and below the surface)	3	1	0	NULL	NULL	NULL	
+157	7	7	Hunter's Bond: Companions	4	1	0	NULL	NULL	NULL	You may spend a move action to grant half of your favored enemy bonus against a single target of the appropriate type to all allies within 30 feet. This bonus lasts a number of rounds equal to your Wisdom modifier (minimum 1)
+158	7	7	Hunter's Bond: Animal Companion	4	1	1	8	NULL	NULL	Select a loyal animal companion
+159	7	8	Animal Companion: Badger	4	1	0	NULL	NULL	NULL	
+160	7	8	Animal Companion: Bird	4	1	0	NULL	NULL	NULL	
+161	7	8	Animal Companion: Camel	4	1	0	NULL	NULL	NULL	
+162	7	8	Animal Companion: Cat (small)	4	1	0	NULL	NULL	NULL	
+163	7	8	Animal Companion: Dire Rat	4	1	0	NULL	NULL	NULL	
+164	7	8	Animal Companion: Dog	4	1	0	NULL	NULL	NULL	
+165	7	8	Animal Companion: Horse	4	1	0	NULL	NULL	NULL	
+166	7	8	Animal Companion: Pony	4	1	0	NULL	NULL	NULL	
+167	7	8	Animal Companion: Viper Snake	4	1	0	NULL	NULL	NULL	
+168	7	8	Animal Companion: Constrictor Snake	4	1	0	NULL	NULL	NULL	
+169	7	8	Animal Companion: Wolf	4	1	0	NULL	NULL	NULL	
+170	8	2	Rogue Talent: Bleeding Attack	2	1	0	NULL	NULL	NULL	You may cause a living opponent to bleed after being hit by a sneak attack. Bleeding creatures take 1 point of damage each round at the start of their turn for each die of the rogue's sneak attack. Bleeding can be stopped by a DC15 Heal check or the application of any affect that heals damage. Bleeding from this affect does not stack with itself. Bleeding bypasses all damage reduction. Only one talent may be used with each Sneak Attack.
+171	8	2	Rogue Talent: Combat Trick	2	1	1	3	NULL	NULL	Select a bonus combat Feat
+172	8	2	Rogue Talent: Fast Stealth	2	1	0	NULL	NULL	NULL	You may move at full speed while using the Stealth skill without penalty.
+173	8	2	Rogue Talent: Finesse Rogue	2	1	0	NULL	NULL	169	Gain the Weapon Finesse bonus feat
+174	8	2	Rogue Talent: Ledge Walker	2	1	0	NULL	NULL	NULL	You may move along narrow surfaces at full speed using the Acrobatics skill without penalty. You are not flat-footed when using Acrobatics to move along narrow surfaces.
+175	8	2	Rogue Talent: Major Magic	2	1	0	NULL	176	NULL	You may cast a 1st level spell from the Sorcerer/Wizard spell list two times per day as a spell-like ability. The caster level for this ability is your Rogue level. The save DC for this spell is 11 + your Intelligence modifier. You must have an Intelligence of at least 11 to select this talent and the Minor Magic talent.
+176	8	2	Rogue Talent: Minor Magic	2	1	0	NULL	NULL	NULL	You may cast a 0-level spell from the Sorcerer/Wizard spell list three times per day as a spell-like ability. The caster level for this ability is your Rogue level. The save DC for this spell is 10 + your Intelligence modifier. You must have an Intelligence of at least 10 to select this talent and the Minor Magic talent.
+177	8	2	Rogue Talent: Quick Disable	2	1	0	NULL	NULL	NULL	It takes you half as long to disable a trap using the Disable Device skill (minimum 1 round).
+178	8	2	Rogue Talent: Resiliency	2	1	0	NULL	NULL	NULL	Once per day you can gain a number of temporary hit points equal to your Rogue level to prevent yourself from dying. Activating this ability is an immediate action that can only be used when below 0 hit points. These hit points last for 1 minute. If your hit points drop below 0 due to the loss of these temporary hit points you fall unconscious and are dying as normal.
+179	8	2	Rogue Talent: Rogue Crawl	2	1	0	NULL	NULL	NULL	While prone you move at half speed. This movement provokes attacks of opportunity as normal. You may take a 5-foot step while crawling.
+180	8	2	Rogue Talent: Slow Reactions	2	1	0	NULL	NULL	NULL	Enemies damaged by your Sneak Attack can't make attacks of opportunity for 1 round. Only one talent may be used with each Sneak Attack.
+181	8	2	Rogue Talent: Stand Up	2	1	0	NULL	NULL	NULL	You may stand up from prone as a free action. This movement still provokes attacks of opportunity when threatened by an enemy.
+182	8	2	Rogue Talent: Surprise Attack	2	1	0	NULL	NULL	NULL	During the surprise round enemies are always considered flat-footed.
+183	8	2	Rogue Talent: Trap Spotter	2	1	0	NULL	NULL	NULL	Whenever you come within 10 feet of a trap you receive an immediate Perception skill check to notice the trap. The GM should make this check in secret.
+184	8	2	Rogue Talent: Weapon Training	2	1	0	NULL	NULL	170	You gain Weapon Focus as a bonus feat.
+185	8	2	Rogue Talent: Crippling Strike	10	1	0	NULL	NULL	NULL	Your Sneak Attack also deals 2 points of Strength damage. Only one talent may be used with each Sneak Attack.
+186	8	2	Rogue Talent: Defensive Roll	10	1	0	NULL	NULL	NULL	Once per day if you would be reduced to 0 or fewer hit points by combat damage (by a weapon attack or other blow) you may attempt to roll with the damage. To use this ability attempt a Reflex saving throw (DC = damage dealt). If the save succeeds you take only half damage; if it fails you take full damage. You must be aware of the attack and able to react to it and able to use your Dexterity bonus to AC.
+187	8	2	Rogue Talent: Dispelling Attack	10	1	0	NULL	175	NULL	Opponents dealt damage by your Sneak Attack are affected by a targeted dispel magic effect. This removes the lowest level spell effect on the target. The caster level for this ability is equal to your Rogue level. You must have the Major Magic talent to choose this talent. Only one talent may be used with each Sneak Attack.
+188	8	2	Rogue Talent: Improved Evasion	10	1	0	NULL	NULL	NULL	You take half damage on failed Reflex saves (only when not helpless).
+189	8	2	Rogue Talent: Opportunist	10	1	0	NULL	NULL	NULL	Once per round you may make an attack of opportunity against an opponent who has just been struck for damage in melee by another character. This attack counts as an attack of opportunity for that round. Even if you have the Combat Reflexes feat you may only use this once per round.
+190	8	2	Rogue Talent: Skill Mastery	10	6	0	NULL	NULL	NULL	Select a number of skills equal to 3+ your Intelligence modifier. When making aa skill check with one of these skills you may take a 10 even if stress and distractions would normally prevent you from doing so. You may select this talent multiple times and select additional skills each time.
+191	8	2	Rogue Talent: Slippery Mind	10	1	0	NULL	NULL	NULL	If you fail a saving throw against an Enchantment spell or effect you may attempt it again 1 round later with the same DC. You get only one extra chance.
+192	8	2	Rogue Talent: Feat	10	1	0	NULL	NULL	NULL	You may select a bonus feat.
+193	9	1	Bloodline: Aberrant	1	1	0	NULL	NULL	NULL	There is a taint in your blood, one that is alien and bizarre. You tend to think in odd ways, approaching problems from an angle most would not expect. Over time, this taint manifests in your physical form.
+194	9	1	Bloodline: Abyssal	1	1	0	NULL	NULL	NULL	Generations ago, a demon spread its filth into your heritage. While it does not manifest in all of your kin, for you it is particularly strong. You might sometimes have urges to chaos or evil, but your destiny (and alignment) is up to you
+195	9	1	Bloodline: Arcane	1	1	1	2	NULL	NULL	Your family has always been skilled in the eldritch art of magic. While many of your relatives were accomplished wizards, your powers developed without the need for study and practice.
+196	9	1	Bloodline: Celestial	1	1	0	NULL	NULL	NULL	Your bloodline is blessed by a celestial power, either from a celestial ancestor or through divine intervention. Although this power drives you along the path of good, your fate (and alignment) is your own to determine.
+197	9	1	Bloodline: Destined	1	1	0	NULL	NULL	NULL	Your family is destined for greatness iin some way. Your birth could have been foretold in prophecy, or perhaps it occured during an especially auspicious event, such as a solar eclipse. Regardless of your bloodline's origin, you have a great future ahead.
+198	9	1	Bloodline: Draconic	1	1	1	4	NULL	NULL	At some point in your family's history, a dragon interbred with your bloodline, and now its ancient power flows through your veins.
+199	9	1	Bloodline: Elemental	1	1	1	5	NULL	NULL	The power of the elements resides in you, and at times you can hardly control its fury. This influence comes from an elemental outsider in your famiily history or a time when you or your relatives were exposed to a powerful elemental force.
+200	9	1	Bloodline: Fey	1	1	0	NULL	NULL	NULL	The capricious nature of the fey runs in your family due to some intermingling of fey blood or magic. You are more emotional than most, prone to bouts of joy and rage.
+201	9	1	Bloodline: Infernal	1	1	0	NULL	NULL	NULL	Somewhere in your family's history, a relative made a deal with a devil, and that pact has influenced your family line every since. In you, it manifests in direct and obvious ways, granting you powers and abilities. While your fate is still your own, you can't help but wonder if your ultimate reward is bound to the Pit.
+202	9	1	Bloodline: Undead	1	1	0	NULL	NULL	NULL	The taint of the grave runs through your family. Perhaps one of your ancestors became a powerful lich or vampire, or maybe you were born dead before suddenly returning to life. Either way, the forces of death move through you and touch your every action.
+203	9	2	Class Skill: Knowledge (Dungeoneering)	1	1	0	NULL	NULL	NULL	Knowledge (Dungeoneering) as a class skill
+204	9	2	Class Skill: Knowledge (Engineering)	1	1	0	NULL	NULL	NULL	Knowledge (Engineering) as a class skill
+205	9	2	Class Skill: Knowledge (Geography)	1	1	0	NULL	NULL	NULL	Knowledge (Geography) as a class skill
+206	9	2	Class Skill: Knowledge (History)	1	1	0	NULL	NULL	NULL	Knowledge (History) as a class skill
+207	9	2	Class Skill: Knowledge (Local)	1	1	0	NULL	NULL	NULL	Knowledge (Local) as a class skill
+208	9	2	Class Skill: Knowledge (Nature)	1	1	0	NULL	NULL	NULL	Knowledge (Nature) as a class skill
+209	9	2	Class Skill: Knowledge (Nobility)	1	1	0	NULL	NULL	NULL	Knowledge (Nobility) as a class skill
+210	9	2	Class Skill: Knowledge (Planes)	1	1	0	NULL	NULL	NULL	Knowledge (Planes) as a class skill
+211	9	2	Class Skill: Knowledge (Religion)	1	1	0	NULL	NULL	NULL	Knowledge (Religion) as a class skill
+212	9	4	Draconic Bloodline: Black Dragon	1	1	0	NULL	NULL	NULL	Acid energy type
+213	9	4	Draconic Bloodline: Blue Dragon	1	1	0	NULL	NULL	NULL	Electricity energy type
+214	9	4	Draconic Bloodline: Green Dragon	1	1	0	NULL	NULL	NULL	Acid energy type
+215	9	4	Draconic Bloodline: Red Dragon	1	1	0	NULL	NULL	NULL	Fire energy type
+216	9	4	Draconic Bloodline: White Dragon	1	1	0	NULL	NULL	NULL	Cold energy type
+217	9	4	Draconic Bloodline: Brass Dragon	1	1	0	NULL	NULL	NULL	Fire energy type
+218	9	4	Draconic Bloodline: Bronze Dragon	1	1	0	NULL	NULL	NULL	Electricity energy type
+219	9	4	Draconic Bloodline: Copper Dragon	1	1	0	NULL	NULL	NULL	Acid energy type
+220	9	4	Draconic Bloodline: Gold Dragon	1	1	0	NULL	NULL	NULL	Fire energy type
+221	9	4	Draconic Bloodline: Silver Dragon	1	1	0	NULL	NULL	NULL	Acid energy type
+222	9	5	Elemental Bloodline: Air Element	1	1	0	NULL	NULL	NULL	Electricity energy type
+223	9	5	Elemental Bloodline: Earth Element	1	1	0	NULL	NULL	NULL	Acid energy type
+224	9	5	Elemental Bloodline: Fire Element	1	1	0	NULL	NULL	NULL	Fire energy type
+225	9	5	Elemental Bloodline: Water Element	1	1	0	NULL	NULL	NULL	Cold energy type
+226	9	3	Bloodline Feat: Combat Casting	1	1	0	0	193	21	Combat Casting as a bonus feat
+227	9	3	Bloodline Feat: Improved Disarm	1	1	0	0	193	84	Improved Disarm as a bonus feat
+228	9	3	Bloodline Feat: Improved Grapple	1	1	0	0	193	87	Improved Grapple as a bonus feat
+229	9	3	Bloodline Feat: Improved Initiative	1	1	0	0	193	89	Improved Initiative as a bonus feat
+230	9	3	Bloodline Feat: Improved Unarmed Strike	1	1	0	0	193	98	Improved Unarmed Strike as a bonus feat
+231	9	3	Bloodline Feat: Iron Will	1	1	0	0	193	102	Iron Will as a bonus feat
+232	9	3	Bloodline Feat: Silent Spell	1	1	0	0	193	140	Silent Spell as a bonus feat
+233	9	3	Bloodline Feat: Skill Focus (Knowledge[Dungeoneering])	1	1	0	0	193	142	Skill Focus (Knowledge[Dungeoneering]) as a bonus feat
+234	9	3	Bloodline Feat: Augment Summoning	1	1	0	0	194	13	Augment Summoning as a bonus feat
+235	9	3	Bloodline Feat: Cleave	1	1	0	0	194	20	Cleave as a bonus feat
+236	9	3	Bloodline Feat: Empower Spell	1	1	0	0	194	45	Empower Spell as a bonus feat
+237	9	3	Bloodline Feat: Great Fortitude	1	1	0	0	194	63	Great Fortitude as a bonus feat
+238	9	3	Bloodline Feat: Improved Bull Rush	1	1	0	0	194	80	Improved Bull Rush as a bonus feat
+239	9	3	Bloodline Feat: Improved Sunder	1	1	0	0	194	95	Improved Sunder as a bonus feat
+240	9	3	Bloodline Feat: Power Attack	1	1	0	0	194	122	Power Attack as a bonus feat
+241	9	3	Bloodline Feat: Skill Focus (Knowledge[Planes])	1	1	0	0	194	142	Skill Focus (Knowledge[Planes]) as a bonus feat
+242	9	3	Bloodline Feat: Combat Casting	1	1	0	0	195	21	Combat Casting as a bonus feat
+243	9	3	Bloodline Feat: Improved Counterspell	1	1	0	0	195	82	Improved Counterspell as a bonus feat
+244	9	3	Bloodline Feat: Improved Initiative	1	1	0	0	195	89	Improved Initiative as a bonus feat
+245	9	3	Bloodline Feat: Iron Will	1	1	0	0	195	102	Iron Will as a bonus feat
+246	9	3	Bloodline Feat: Scribe Scroll	1	1	0	0	195	131	Scribe Scroll as a bonus feat
+247	9	3	Bloodline Feat: Skill Focus (Knowledge[Arcana])	1	1	0	0	195	142	Skill Focus (Knowledge[Arcana]) as a bonus feat
+248	9	3	Bloodline Feat: Spell Focus	1	1	0	0	195	144	Spell Focus as a bonus feat
+249	9	3	Bloodline Feat: Still Spell	1	1	0	0	195	154	Still Spell as a bonus feat
+250	9	3	Bloodline Feat: Dodge	1	1	0	0	196	42	Dodge as a bonus feat
+251	9	3	Bloodline Feat: Extend Spell	1	1	0	0	196	51	Extend Spell as a bonus feat
+252	9	3	Bloodline Feat: Iron Will	1	1	0	0	196	102	Iron Will as a bonus feat
+253	9	3	Bloodline Feat: Mobility	1	1	0	0	196	113	Mobility as a bonus feat
+254	9	3	Bloodline Feat: Mounted Combat	1	1	0	0	196	115	Mounted Combat as a bonus feat
+255	9	3	Bloodline Feat: Ride-By Attack	1	1	0	0	196	128	Ride-By Attack as a bonus feat
+256	9	3	Bloodline Feat: Skill Focus (Knowledge[Religion])	1	1	0	0	196	142	Skill Focus (Knowledge[Religion]) as a bonus feat
+257	9	3	Bloodline Feat: Weapon Finesse	1	1	0	0	196	169	Weapon Finesse as a bonus feat
+258	9	3	Bloodline Feat: Arcane Strike	1	1	0	0	197	8	Arcane Strike as a bonus feat
+259	9	3	Bloodline Feat: Diehard	1	1	0	0	197	40	Diehard as a bonus feat
+260	9	3	Bloodline Feat: Endurance	1	1	0	0	197	46	Endurance as a bonus feat
+261	9	3	Bloodline Feat: Lightning Reflexes	1	1	0	0	197	104	Lightning Reflexes as a bonus feat
+262	9	3	Bloodline Feat: Leadership	1	1	0	0	197	103	Leadership as a bonus feat
+263	9	3	Bloodline Feat: Maximize Spell	1	1	0	0	197	111	Maximize Spell as a bonus feat
+264	9	3	Bloodline Feat: Skill Focus (Knowledge[History])	1	1	0	0	197	142	Skill Focus (Knowledge[History]) as a bonus feat
+265	9	3	Bloodline Feat: Weapon Focus	1	1	0	0	197	170	Weapon Focus as a bonus feat
+266	9	3	Bloodline Feat: Blind-Flight	1	1	0	0	198	15	Blind-Flight as a bonus feat
+267	9	3	Bloodline Feat: Great Fortitude	1	1	0	0	198	63	Great Fortitude as a bonus feat
+268	9	3	Bloodline Feat: Improved Initiative	1	1	0	0	198	89	Improved Initiative as a bonus feat
+269	9	3	Bloodline Feat: Power Attack	1	1	0	0	198	122	Power Attack as a bonus feat
+270	9	3	Bloodline Feat: Quicken Spell	1	1	0	0	198	125	Quicken Spell as a bonus feat
+271	9	3	Bloodline Feat: Skill Focus (Fly)	1	1	0	0	198	142	Skill Focus (Fly) as a bonus feat
+272	9	3	Bloodline Feat: Skill Focus (Knowledge[Arcana])	1	1	0	0	198	142	Skill Focus (Knowledge[Arcana]) as a bonus feat
+273	9	3	Bloodline Feat: Toughness	1	1	0	0	198	160	Toughness as a bonus feat
+274	9	3	Bloodline Feat: Dodge	1	1	0	0	199	42	Dodge as a bonus feat
+275	9	3	Bloodline Feat: Empower Spell	1	1	0	0	199	45	Empower Spell as a bonus feat
+276	9	3	Bloodline Feat: Great Fortitude	1	1	0	0	199	63	Great Fortitude as a bonus feat
+277	9	3	Bloodline Feat: Improved Initiative	1	1	0	0	199	89	Improved Initiative as a bonus feat
+278	9	3	Bloodline Feat: Lightning Reflexes	1	1	0	0	199	104	Lightning Reflexes as a bonus feat
+279	9	3	Bloodline Feat: Power Attack	1	1	0	0	199	122	Power Attack as a bonus feat
+280	9	3	Bloodline Feat: Skill Focus (Knowledge[Planes])	1	1	0	0	199	142	Skill Focus (Knowledge[Planes]) as a bonus feat
+281	9	3	Bloodline Feat: Weapon Finesse	1	1	0	0	199	169	Weapon Finesse as a bonus feat
+282	9	3	Bloodline Feat: Dodge	1	1	0	0	200	42	Dodge as a bonus feat
+283	9	3	Bloodline Feat: Improved Initiative	1	1	0	0	200	89	Improved Initiative as a bonus feat
+284	9	3	Bloodline Feat: Lightning Reflexes	1	1	0	0	200	104	Lightning Reflexes as a bonus feat
+285	9	3	Bloodline Feat: Mobility	1	1	0	0	200	113	Mobility as a bonus feat
+286	9	3	Bloodline Feat: Point-Blank Shot	1	1	0	0	200	121	Point-Blank Shot as a bonus feat
+287	9	3	Bloodline Feat: Precise Shot	1	1	0	0	200	123	Precise Shot as a bonus feat
+288	9	3	Bloodline Feat: Quicken Spell	1	1	0	0	200	125	Quicken Spell as a bonus feat
+289	9	3	Bloodline Feat: Skill Focus (Knowledge[Nature])	1	1	0	0	200	142	Skill Focus (Knowledge[Nature]) as a bonus feat
+290	9	3	Bloodline Feat: Blind-Flight	1	1	0	0	201	15	Blind-Flight as a bonus feat
+291	9	3	Bloodline Feat: Combat Expertise	1	1	0	0	201	22	Combat Expertise as a bonus feat
+292	9	3	Bloodline Feat: Deceitful	1	1	0	0	201	36	Deceitful as a bonus feat
+293	9	3	Bloodline Feat: Extend Spell	1	1	0	0	201	51	Extend Spell as a bonus feat
+294	9	3	Bloodline Feat: Improved Disarm	1	1	0	0	201	84	Improved Disarm as a bonus feat
+295	9	3	Bloodline Feat: Iron Will	1	1	0	0	201	102	Iron Will as a bonus feat
+296	9	3	Bloodline Feat: Skill Focus (Knowledge[Planes])	1	1	0	0	201	142	Skill Focus (Knowledge[Planes]) as a bonus feat
+297	9	3	Bloodline Feat: Spell Penetration	1	1	0	0	201	146	Spell Penetration as a bonus feat
+298	9	3	Bloodline Feat: Combat Casting	1	1	0	0	202	21	Combat Casting as a bonus feat
+299	9	3	Bloodline Feat: Diehard	1	1	0	0	202	40	Diehard as a bonus feat
+300	9	3	Bloodline Feat: Endurance	1	1	0	0	202	46	Endurance as a bonus feat
+301	9	3	Bloodline Feat: Iron Will	1	1	0	0	202	102	Iron Will as a bonus feat
+302	9	3	Bloodline Feat: Skill Focus (Knowledge[Religion])	1	1	0	0	202	142	Skill Focus (Knowledge[Religion]) as a bonus feat
+303	9	3	Bloodline Feat: Spell Focus	1	1	0	0	202	144	Spell Focus as a bonus feat
+304	9	3	Bloodline Feat: Still Spell	1	1	0	0	202	154	Still Spell as a bonus feat
+305	9	3	Bloodline Feat: Toughness	1	1	0	0	202	160	Toughness as a bonus feat
+306	10	3	Arcane Bond: Familiar	1	1	1	4	NULL	NULL	A magical pet that enhances your wizard skills and aids you in magic
+307	10	3	Arcane Bond: Bonded Object	1	1	1	5	NULL	NULL	An item you can use to cast additional spells or to serve as a magical item. Must be held or worn to have its affect.
+308	10	4	Familiar: Bat	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Fly checks
+309	10	4	Familiar: Cat	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Stealth checks
+310	10	4	Familiar: Hawk	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on sight-based and opposed Perception checks in bright light
+311	10	4	Familiar: Lizard	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Climb checks
+312	10	4	Familiar: Monkey	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Acrobatics checks
+313	10	4	Familiar: Owl	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on sight-based and opposed Perception checks in shadows or darknesss
+314	10	4	Familiar: Rat	1	1	0	NULL	NULL	NULL	Master gains +2 bonus on Fortitude saves
+315	10	4	Familiar: Raven	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Appraise checks. May speak one language of it's master's choice as a supernatural ability
+316	10	4	Familiar: Viper	1	1	0	NULL	NULL	NULL	Master gains +3 bonus on Bluff checks
+317	10	4	Familiar: Toad	1	1	0	NULL	NULL	NULL	Master gains +3 hit points
+318	10	4	Familiar: Weasel	1	1	0	NULL	NULL	NULL	Master gains +2 bonus on Reflex saves
+319	10	5	Bonded Object: Amulet	1	1	0	NULL	NULL	NULL	
+320	10	5	Bonded Object: Ring	1	1	0	NULL	NULL	NULL	
+321	10	5	Bonded Object: Staff	1	1	0	NULL	NULL	NULL	
+322	10	5	Bonded Object: Wand	1	1	0	NULL	NULL	NULL	
+323	10	5	Bonded Object: Weapon	1	1	0	NULL	NULL	NULL	
+324	10	6	Bonus Feat: Brew Potion feat	3	1	0	NULL	NULL	17	Gain the Brew Potion feat
+325	10	6	Bonus Feat: Craft Magic Arms and Armor feat	5	1	0	NULL	NULL	25	Gain the Craft Magic Arms and Armor feat
+326	10	6	Bonus Feat: Craft Rod feat	9	1	0	NULL	NULL	26	Gain the Craft Rod feat
+327	10	6	Bonus Feat: Craft Wand feat	5	1	0	NULL	NULL	27	Gain the Craft Wand feat
+328	10	6	Bonus Feat: Craft Staff feat	11	1	0	NULL	NULL	28	Gain the Craft Staff feat
+329	10	6	Bonus Feat: Craft Wondrous Item feat	3	1	0	NULL	NULL	29	Gain the Craft Wondrous Item feat
+330	10	6	Bonus Feat: Empower Spell feat	1	1	0	NULL	NULL	45	Gain the Empower Spell feat
+331	10	6	Bonus Feat: Enlarge Spell feat	1	1	0	NULL	NULL	47	Gain the Enlarge Spell feat
+332	10	6	Bonus Feat: Extend Spell feat	1	1	0	NULL	NULL	51	Gain the Extend Spell feat
+333	10	6	Bonus Feat: Forge Ring feat	7	1	0	NULL	NULL	60	Gain the Forge Ring feat
+334	10	6	Bonus Feat: Heighten Spell feat	1	1	0	NULL	NULL	79	Gain the Heighten Spell feat
+335	10	6	Bonus Feat: Maximize Spell feat	1	1	0	NULL	NULL	111	Gain the Maximize Spell feat
+336	10	6	Bonus Feat: Quicken Spell feat	1	1	0	NULL	NULL	125	Gain the Quicken Spell feat
+337	10	6	Bonus Feat: Silent Spell feat	1	1	0	NULL	NULL	140	Gain the Silent Spell feat
+338	10	6	Bonus Feat: Still Spell feat	1	1	0	NULL	NULL	154	Gain the Still Spell feat
+339	10	6	Bonus Feat: Widen Spell feat	1	1	0	NULL	NULL	173	Gain the Widen Spell feat
+340	10	6	Bonus Feat: Spell Mastery feat	1	1	0	NULL	NULL	145	Gain the Spell Mastery feat
+341	10	7	Arcane School: Abjuration	1	1	2	8	NULL	NULL	The art of using magic against itself
+342	10	7	Arcane School: Conjuration	1	1	2	9	NULL	NULL	The study of summoning monsters and magic
+343	10	7	Arcane School: Divination	1	1	2	10	NULL	NULL	Mastery of remote viewing, prophecies, and using magic to explore the world
+344	10	7	Arcane School: Enchantment	1	1	2	11	NULL	NULL	The use of magic to control and manipulate minds
+345	10	7	Arcane School: Evocation	1	1	2	12	NULL	NULL	The raw power of magic to create and destroy
+346	10	7	Arcane School: Illusion	1	1	2	13	NULL	NULL	The use of magic to weaave confounding images, figments, and phantoms
+347	10	7	Arcane School: Necromancy	1	1	2	14	NULL	NULL	The commanding of the undead and use of the foul power of unlife
+348	10	7	Arcane School: Transmutation	1	1	2	15	NULL	NULL	The use of magic to change the world around you
+349	10	7	Arcane School: Universalist	1	1	0	NULL	NULL	NULL	The choice to not specialize. You will also have no opposition schools
+350	10	8	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+351	10	8	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+352	10	8	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+353	10	8	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+354	10	8	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+355	10	8	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+356	10	8	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+357	10	9	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+358	10	9	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+359	10	9	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+360	10	9	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+361	10	9	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+362	10	9	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+363	10	9	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+364	10	10	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+365	10	10	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+366	10	10	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+367	10	10	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+368	10	10	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+369	10	10	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+370	10	10	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+371	10	11	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+372	10	11	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+373	10	11	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+374	10	11	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+375	10	11	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+376	10	11	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+377	10	11	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+378	10	12	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+379	10	12	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+380	10	12	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+381	10	12	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+382	10	12	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+383	10	12	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+384	10	12	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+385	10	13	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+386	10	13	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+387	10	13	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+388	10	13	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+389	10	13	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+390	10	13	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+391	10	13	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+392	10	14	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+393	10	14	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+394	10	14	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+395	10	14	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+396	10	14	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+397	10	14	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+398	10	14	Opposition School: Transmutation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+399	10	15	Opposition School: Abjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+400	10	15	Opposition School: Conjuration	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+401	10	15	Opposition School: Divination	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+402	10	15	Opposition School: Enchantment	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+403	10	15	Opposition School: Evocation	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+404	10	15	Opposition School: Illusion	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+405	10	15	Opposition School: Necromancy	1	1	0	NULL	NULL	NULL	Preparing spells from an opposition school take two spell slots, and you receive a -4 penalty when crafting a magic item that has a spell from an opposition school
+406	6	5	Mercy: Fatigued	3	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer fatigued
+407	6	5	Mercy: Shaken	3	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer shaken
+408	6	5	Mercy: Sickened	3	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer sickened
+409	6	5	Mercy: Dazed	6	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Dazed
+410	6	5	Mercy: Diseased	6	1	0	NULL	NULL	NULL	Lay on hands also acts as the Remove Disease spell, using your paladin level as the caster level
+411	6	5	Mercy: Staggered	6	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Staggered, unless they are at exactly 0 hit points
+412	6	5	Mercy: Cursed	9	1	0	NULL	NULL	NULL	Lay on hands also acts as the Remove Curse spell, using your paladin level as the caster level
+413	6	5	Mercy: Exhausted	9	1	0	NULL	407	NULL	The target of your Lay on Hands is no longer Exhausted
+414	6	5	Mercy: Frightened	9	1	0	NULL	408	NULL	The target of your Lay on Hands is no longer Frightened
+415	6	5	Mercy: Nauseated	9	1	0	NULL	409	NULL	The target of your Lay on Hands is no longer Nauseated
+416	6	5	Mercy: Poisoned	9	1	0	NULL	NULL	NULL	Lay on hands also acts as the Neutralize Poison spell, using your paladin level as the caster level
+417	6	5	Mercy: Blinded	12	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Blinded
+418	6	5	Mercy: Deafened	12	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Deafened
+419	6	5	Mercy: Paralyzed	12	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Paralyzed
+420	6	5	Mercy: Stunned	12	1	0	NULL	NULL	NULL	The target of your Lay on Hands is no longer Stunned
+421	4	4	Weapon Training: Axes	1	1	0	NULL	NULL	NULL	Battleaxe, dwarven waraxe, greataxe, handaxe, heavy pick, light pick, orc double axe, and throwing axe
+422	4	4	Weapon Training: Heavy Blades	1	1	0	NULL	NULL	NULL	Bastard sword, elven curve blade, falchion, greatsword, longsword, scimitar, scythe, and two-bladed sword
+423	4	4	Weapon Training: Light Blades	1	1	0	NULL	NULL	NULL	Dagger, kama, kukri, rapier, short sword, sickle, and starknife
+424	4	4	Weapon Training: Bows	1	1	0	NULL	NULL	NULL	Composite longbow, composite shortbow, longbow, and shortbow
+425	4	4	Weapon Training: Close	1	1	0	NULL	NULL	NULL	Gauntlet, heavy shield, light shield, punching dagger, sap, spiked armor, spiked gauntlet, spiked shield, and unarmed strike
+426	4	4	Weapon Training: Crossbows	1	1	0	NULL	NULL	NULL	Hand crossbow, heavy crossbow, light crossbow, heavy repeating crossbow, and light repeating crossbow
+427	4	4	Weapon Training: Double	1	1	0	NULL	NULL	NULL	Dire flail, dwarven urgrosh, gnome hooked hammer, orc double axe, quarterstaff, and two-bladed sword
+428	4	4	Weapon Training: Flails	1	1	0	NULL	NULL	NULL	Dire flail, flail, heavy flail, morningstar, nunchaku, spiked chain, and whip
+429	4	4	Weapon Training: Hammers	1	1	0	NULL	NULL	NULL	Club, great club, heavy mace, light hammer, light mace, and warhammer
+430	4	4	Weapon Training: Monk	1	1	0	NULL	NULL	NULL	Kama, nunchaku, quarterstaff, sai, shuriken, siangham, and unarmed strike
+431	4	4	Weapon Training: Natural	1	1	0	NULL	NULL	NULL	Unarmed strike and all natural weapons such as bite, claw, gore, tail, and wing
+432	4	4	Weapon Training: Polearms	1	1	0	NULL	NULL	NULL	Glaive, guisarme, halberd, and ranseur
+433	4	4	Weapon Training: Spears	1	1	0	NULL	NULL	NULL	Javelin, lance, longspear, shortspear, spear, and trident
+434	4	4	Weapon Training: Thrown	1	1	0	NULL	NULL	NULL	Blowgun, bola, club, dagger, dart, halfling sling staff, javelin, light hammer, net, shortspear, shuriken, sling, spear, starknife, throwing axe, and trident
+435	4	9	Weapon Mastery: Bastard Sword	1	1	0	NULL	NULL	NULL	All attacks made with a Bastard Sword automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Bastard Sword 
+436	4	9	Weapon Mastery: Battleaxe	1	1	0	NULL	NULL	NULL	All attacks made with a Battleaxe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Battleaxe
+437	4	9	Weapon Mastery: Bite	1	1	0	NULL	NULL	NULL	All attacks made with a Bite automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+438	4	9	Weapon Mastery: Blowgun	1	1	0	NULL	NULL	NULL	All attacks made with a Blowgun automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Blowgun
+439	4	9	Weapon Mastery: Bola	1	1	0	NULL	NULL	NULL	All attacks made with a Bola automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Bola
+440	4	9	Weapon Mastery: Claw	1	1	0	NULL	NULL	NULL	All attacks made with a Claw automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+441	4	9	Weapon Mastery: Club	1	1	0	NULL	NULL	NULL	All attacks made with a Club automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Club
+442	4	9	Weapon Mastery: Composite Longbow	1	1	0	NULL	NULL	NULL	All attacks made with a Composite Longbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Composite Longbow
+443	4	9	Weapon Mastery: Composite Shortbow	1	1	0	NULL	NULL	NULL	All attacks made with a Composite Shortbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Composite Shortbow
+444	4	9	Weapon Mastery: Dagger	1	1	0	NULL	NULL	NULL	All attacks made with a Dagger automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Dagger
+445	4	9	Weapon Mastery: Dart	1	1	0	NULL	NULL	NULL	All attacks made with a Dart automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Dart
+446	4	9	Weapon Mastery: Dire flail	1	1	0	NULL	NULL	NULL	All attacks made with a Dire Flail automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Dire flail
+447	4	9	Weapon Mastery: Double Axe	1	1	0	NULL	NULL	NULL	All attacks made with a Double Axe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Double Axe
+448	4	9	Weapon Mastery: Dwarven Urgrosh	1	1	0	NULL	NULL	NULL	All attacks made with a Dwarven Urgrosh automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Dwarven Urgrosh
+449	4	9	Weapon Mastery: Dwarven Waraxe	1	1	0	NULL	NULL	NULL	All attacks made with a Dwarven Waraxe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Dwarven Waraxe
+450	4	9	Weapon Mastery: Elven Curve Blade	1	1	0	NULL	NULL	NULL	All attacks made with a Elven Curve Blade automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Elven Curve Blade
+451	4	9	Weapon Mastery: Falchion	1	1	0	NULL	NULL	NULL	All attacks made with a Falchion automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Falchion
+452	4	9	Weapon Mastery: Flail	1	1	0	NULL	NULL	NULL	All attacks made with a Flail automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Flail
+453	4	9	Weapon Mastery: Gauntlet	1	1	0	NULL	NULL	NULL	All attacks made with a Gauntlet automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Gauntlet
+454	4	9	Weapon Mastery: Glaive	1	1	0	NULL	NULL	NULL	All attacks made with a Glaive automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Glaive
+455	4	9	Weapon Mastery: Gnome Hooked Hammer	1	1	0	NULL	NULL	NULL	All attacks made with a Gnome Hooked Hammer automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Gnome Hooked Hammer
+456	4	9	Weapon Mastery: Gore	1	1	0	NULL	NULL	NULL	All attacks made with a Gore automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+457	4	9	Weapon Mastery: Great Club	1	1	0	NULL	NULL	NULL	All attacks made with a Great Club automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Great Club
+458	4	9	Weapon Mastery: Greataxe	1	1	0	NULL	NULL	NULL	All attacks made with a Greataxe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Greataxe
+459	4	9	Weapon Mastery: Greatsword	1	1	0	NULL	NULL	NULL	All attacks made with a Greatsword automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Greatsword
+460	4	9	Weapon Mastery: Guisarme	1	1	0	NULL	NULL	NULL	All attacks made with a Guisarme automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Guisarme
+461	4	9	Weapon Mastery: Halberd	1	1	0	NULL	NULL	NULL	All attacks made with a Halberd automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Halberd
+462	4	9	Weapon Mastery: Halfling Sling Staff	1	1	0	NULL	NULL	NULL	All attacks made with a Halfling Sling Staff automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Halfling Sling Staff
+463	4	9	Weapon Mastery: Handaxe	1	1	0	NULL	NULL	NULL	All attacks made with a Handaxe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Handaxe
+464	4	9	Weapon Mastery: Heavy Crossbow	1	1	0	NULL	NULL	NULL	All attacks made with a Heavy Crossbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Heavy Crossbow
+465	4	9	Weapon Mastery: Heavy Flail	1	1	0	NULL	NULL	NULL	All attacks made with a Heavy Flail automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Heavy Flail
+466	4	9	Weapon Mastery: Heavy Mace	1	1	0	NULL	NULL	NULL	All attacks made with a Heavy Mace automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Heavy Mace
+467	4	9	Weapon Mastery: Heavy Pick	1	1	0	NULL	NULL	NULL	All attacks made with a Heavy Pick automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Heavy Pick
+468	4	9	Weapon Mastery: Heavy Shield	1	1	0	NULL	NULL	NULL	All attacks made with a Heavy Shield automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Heavy Shield
+469	4	9	Weapon Mastery: Javelin	1	1	0	NULL	NULL	NULL	All attacks made with a Javelin automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Javelin
+470	4	9	Weapon Mastery: Kama	1	1	0	NULL	NULL	NULL	All attacks made with a Kama automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Kama
+471	4	9	Weapon Mastery: Kukri	1	1	0	NULL	NULL	NULL	All attacks made with a Kukri automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Kukri
+472	4	9	Weapon Mastery: Lance	1	1	0	NULL	NULL	NULL	All attacks made with a Lance automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Lance
+473	4	9	Weapon Mastery: Light Crossbow	1	1	0	NULL	NULL	NULL	All attacks made with a Light Crossbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Light Crossbow
+474	4	9	Weapon Mastery: Light Hammer	1	1	0	NULL	NULL	NULL	All attacks made with a Light Hammer automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Light Hammer
+475	4	9	Weapon Mastery: Light Mace	1	1	0	NULL	NULL	NULL	All attacks made with a Light Mace automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Light Mace
+476	4	9	Weapon Mastery: Light Pick	1	1	0	NULL	NULL	NULL	All attacks made with a Light Pick automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Light Pick
+477	4	9	Weapon Mastery: Light Repeating Crossbow	1	1	0	NULL	NULL	NULL	All attacks made with a Light Repeating Crossbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Light Repeating Crossbow 
+478	4	9	Weapon Mastery: Longbow	1	1	0	NULL	NULL	NULL	All attacks made with a Lonbgow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Longbow
+479	4	9	Weapon Mastery: Longspear	1	1	0	NULL	NULL	NULL	All attacks made with a Longspear automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Longspear
+480	4	9	Weapon Mastery: Longsword	1	1	0	NULL	NULL	NULL	All attacks made with a Longsword automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Longsword
+481	4	9	Weapon Mastery: Morningstar	1	1	0	NULL	NULL	NULL	All attacks made with a Morningstar automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Morningstar
+482	4	9	Weapon Mastery: Net	1	1	0	NULL	NULL	NULL	All attacks made with a Net automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Net
+483	4	9	Weapon Mastery: Nunchaku	1	1	0	NULL	NULL	NULL	All attacks made with a Nunchaku automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Nunchaku
+484	4	9	Weapon Mastery: Orc Double Axe	1	1	0	NULL	NULL	NULL	All attacks made with a Orc Double Axe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Orc Double Axe
+485	4	9	Weapon Mastery: Punching Dagger	1	1	0	NULL	NULL	NULL	All attacks made with a Punching Dagger automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Punching Dagger
+486	4	9	Weapon Mastery: Quarterstaff	1	1	0	NULL	NULL	NULL	All attacks made with a Quarterstaff automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Quarterstaff
+487	4	9	Weapon Mastery: Ranseur	1	1	0	NULL	NULL	NULL	All attacks made with a Ranseur automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Ranseur
+488	4	9	Weapon Mastery: Rapier	1	1	0	NULL	NULL	NULL	All attacks made with a Rapier automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Rapier
+489	4	9	Weapon Mastery: Repeating Crossbow	1	1	0	NULL	NULL	NULL	All attacks made with a Repeating Crossbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Repeating Crossbow
+490	4	9	Weapon Mastery: Sai	1	1	0	NULL	NULL	NULL	All attacks made with a Sai automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Sai
+491	4	9	Weapon Mastery: Sap	1	1	0	NULL	NULL	NULL	All attacks made with a Sap automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Sap
+492	4	9	Weapon Mastery: Scimitar	1	1	0	NULL	NULL	NULL	All attacks made with a Scimitar automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Scimitar
+493	4	9	Weapon Mastery: Scythe	1	1	0	NULL	NULL	NULL	All attacks made with a Scythe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Scythe
+494	4	9	Weapon Mastery: Shield	1	1	0	NULL	NULL	NULL	All attacks made with a Shield automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Shield
+495	4	9	Weapon Mastery: Short sword	1	1	0	NULL	NULL	NULL	All attacks made with a Short Sword automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Short Sword
+496	4	9	Weapon Mastery: Shortbow	1	1	0	NULL	NULL	NULL	All attacks made with a Shortbow automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Shortbow
+497	4	9	Weapon Mastery: Shortspear	1	1	0	NULL	NULL	NULL	All attacks made with a Shortspear automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Shortspear
+498	4	9	Weapon Mastery: Shuriken	1	1	0	NULL	NULL	NULL	All attacks made with a Shuriken automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Shuriken
+499	4	9	Weapon Mastery: Siangham	1	1	0	NULL	NULL	NULL	All attacks made with a Siangham automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Siangham
+500	4	9	Weapon Mastery: Sickle	1	1	0	NULL	NULL	NULL	All attacks made with a Sickle automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Sickle
+501	4	9	Weapon Mastery: Sling	1	1	0	NULL	NULL	NULL	All attacks made with a Sling automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Sling
+502	4	9	Weapon Mastery: Spear	1	1	0	NULL	NULL	NULL	All attacks made with a Spear automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Spear
+503	4	9	Weapon Mastery: Spiked Armor	1	1	0	NULL	NULL	NULL	All attacks made with a Spiked Armor automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Spiked Armor
+504	4	9	Weapon Mastery: Spiked Chain	1	1	0	NULL	NULL	NULL	All attacks made with a Spiked Chain automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Spiked Chain
+505	4	9	Weapon Mastery: Spiked Gauntlet	1	1	0	NULL	NULL	NULL	All attacks made with a Spiked Gauntlet automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Spiked Gauntlet
+506	4	9	Weapon Mastery: Spiked Shield	1	1	0	NULL	NULL	NULL	All attacks made with a Spiked Shield automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Spiked Shield
+507	4	9	Weapon Mastery: Starknife	1	1	0	NULL	NULL	NULL	All attacks made with a Starknife automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Starknife
+508	4	9	Weapon Mastery: Tail	1	1	0	NULL	NULL	NULL	All attacks made with a Tail automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+509	4	9	Weapon Mastery: Throwing axe	1	1	0	NULL	NULL	NULL	All attacks made with a Throwing Axe automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Throwing Axe
+510	4	9	Weapon Mastery: Trident	1	1	0	NULL	NULL	NULL	All attacks made with a Trident automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Trident
+511	4	9	Weapon Mastery: Two-Bladed Sword	1	1	0	NULL	NULL	NULL	All attacks made with a Two-Bladed Sword automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Two-Bladed Sword
+512	4	9	Weapon Mastery: Unarmed Strike	1	1	0	NULL	NULL	NULL	All attacks made with a Unarmed Strike automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+513	4	9	Weapon Mastery: Warhammer	1	1	0	NULL	NULL	NULL	All attacks made with a Warhammer automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Warhammer
+514	4	9	Weapon Mastery: Whip	1	1	0	NULL	NULL	NULL	All attacks made with a Whip automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). You can also not be disarmed while weilding a Whip
+515	4	9	Weapon Mastery: Wing	1	1	0	NULL	NULL	NULL	All attacks made with a Wing automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3).
+516	5	2	Bonus Feat: Catch Off-Guard	1	1	0	NULL	NULL	18	Gain the Catch Off-Guard feat
+517	5	2	Bonus Feat: Combat Reflexes	1	1	0	NULL	NULL	23	Gain the Combat Reflexes feat
+518	5	2	Bonus Feat: Deflect Arrows	1	1	0	NULL	NULL	38	Gain the Deflect Arrows feat
+519	5	2	Bonus Feat: Dodge	1	1	0	NULL	NULL	42	Gain the Dodge feat
+520	5	2	Bonus Feat: Improved Grapple	1	1	0	NULL	NULL	87	Gain the Improved Grapple feat
+521	5	2	Bonus Feat: Scorpion Style	1	1	0	NULL	NULL	130	Gain the Scorpion Style feat
+522	5	2	Bonus Feat: Throw Anything	1	1	0	NULL	NULL	158	Gain the Throw Anything feat
+523	5	2	Bonus Feat: Gorgon's Fist	6	1	0	NULL	NULL	61	Gain the Gorgon's Fist feat
+524	5	2	Bonus Feat: Improved Bull Rush	6	1	0	NULL	NULL	80	Gain the Improved Bull Rush feat
+525	5	2	Bonus Feat: Improved Disarm	6	1	0	NULL	NULL	84	Gain the Improved Disarm feat
+526	5	2	Bonus Feat: Improved Feint	6	1	0	NULL	NULL	86	Gain the Improved Feint feat
+527	5	2	Bonus Feat: Improved Trip	6	1	0	NULL	NULL	96	Gain the Improved Trip feat
+528	5	2	Bonus Feat: Mobility	6	1	0	NULL	NULL	113	Gain the Mobility feat
+529	5	2	Bonus Feat: Improved Critical	10	1	0	NULL	NULL	83	Gain the Improved Critical feat
+530	5	2	Bonus Feat: Medusa's Wrath	10	1	0	NULL	NULL	112	Gain the Medusa's Wrath feat
+531	5	2	Bonus Feat: Snatch Arrows	10	1	0	NULL	NULL	143	Gain the Snatch Arrows feat
+532	5	2	Bonus Feat: Spring Attack	10	1	0	NULL	NULL	149	Gain the Spring Attack feat
+533	6	7	Divine Bond: Bonded Weapon	5	1	0	NULL	NULL	NULL	Gain the ability to call upon a celestial spirit to enhance your weapon as a standard action for 1 minute per paladin level. The spirit causes the weapon to shed light like a torch. At 5th level the spirit grants the weapon a +1 enchantment bonus (for every 3 levels beyond 5th the weapon gains an additional +1 bonus). These bonuses stack with exiting bonuses to a maximum of +5 or may be used to add any of the following properties: axiomatic, brilliant energy, defending; disruption, flaming, flaming burst, holy, keen, merciful, and speed. Adding these bonuses conusme an amount of bonuses equal to their cost (Table 15-9) and are added to any properties the weapon already has (duplicate abilities do not stack). The bonus and properties granted are determined when the spirit is called and cannot be changed until the spirit is called again. These bonuses are only in effect while held by the paladin. This ability may be used once per day at 5th level and an additional time per day for every 4 levels beyond 5th. If a weapon bonded with the celestial spirit is destroyed the paladin loses use of this ability for 30 days or until they gain a level. During this 30 days the paladin takes a -1 penalty on attack and weapon damage rolls.
+534	6	7	Divine Bond: Bonded Mount	5	1	0	NULL	NULL	NULL	Gain the service of an unusually intelligent, strong, and loyal steed. This mount functions as a druid's animal companion using the paladin's level as the effective druid level and has an intelligence of at least 6. Once per day as a full round action you may magically call the mount to your side. This ability is the equivalent of a spell of a level equal to one-third the paladin's level. The mount immediately appears adjacent to the paladin. This ability can be used once per day at 5th level and one additional time per day for every 4 levels above 5th. At 11th level the mount gains the celestial template (see Beastiary) and becomes a magical beast for the purpose of determining which spells affect it. At 15th level the mount gains spell resistance equal to the paladin's level +11. Should the mount die the paladin may not summon another mount for 30 days or until they gain a paladin level. During this 30 day period the paladin takes a -1 penalty on attack and weapon damage rolls.
+535	8	3	Combat Trick: Agile Maneuvers	1	1	0	NULL	NULL	2	You add your Dexterity bonus to your base attack bonus and size bonus when determining your Combat Maneuver Bonus (see Chapter 8) instead of your Strength bonus.
+536	8	3	Combat Trick: Arcane Armor Mastery	1	1	0	NULL	NULL	6	As a swift action, reduce the arcane spell failure chance due to the armor you are wearing by 20% for any spells you cast this round. This bonus replaces, and does not stack with, the bonus granted by Arcane Armor Training.
+537	8	3	Combat Trick: Arcane Armor Training	1	1	0	NULL	NULL	7	As a swift action, reduce the arcane spell failure chance due to the armor you are wearing by 10% for any spells you cast this round.
+538	8	3	Combat Trick: Arcane Strike	1	1	0	NULL	NULL	8	As a swift action, you can imbue your weapons with a fraction of your power. For 1 round, your weapons deal +1 damage and are treated as magic for the purpose of overcoming damage reduction. For every five caster levels you possess, this bonus increases by +1, to a maximum of +5 at 20th level.
+539	8	3	Combat Trick: Heavy Armor Proficiency	1	1	0	NULL	NULL	9	See Armor Proficiency, Light.
+540	8	3	Combat Trick: Light Armor Proficiency	1	1	0	NULL	NULL	10	When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.
+541	8	3	Combat Trick: Medium Armor Proficiency	1	1	0	NULL	NULL	11	See Armor Proficiency, Light.
+542	8	3	Combat Trick: Bleeding Critical	1	1	0	NULL	NULL	14	Whenever you score a critical hit with a slashing or piercing weapon, your opponent takes 2d6 points of bleed damage (see Appendix 2) each round on his turn, in addition to the damage dealt by the critical hit. Bleed damage can be stopped by a DC 15 Heal skill check or through any magical healing. The effects of this feat stack.
+543	8	3	Combat Trick: Blind-Fight	1	1	0	NULL	NULL	15	In melee, every time you miss because of concealment (see Chapter 8), you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don't lose your Dexterity bonus to Armor Class, and the attacker doesn't get the usual +2 bonus for being invisible. The invisible attacker's bonuses do still apply for ranged attacks, however. You do not need to make Acrobatics skill checks to move at full speed while blinded.
+544	8	3	Combat Trick: Blinding Critical	1	1	0	NULL	NULL	16	Whenever you score a critical hit, your opponent is permanently blinded. A successful Fortitude save reduces this to dazzled for 1d4 rounds. The DC of this Fortitude save is equal to 10 + your base attack bonus. This feat has no effect on creatures that do not rely on eyes for sight or creatures with more than two eyes (although multiple critical hits might cause blindness, at the GM's discretion). Blindness can be cured by heal, regeneration, remove blindness, or similar abilities.
+545	8	3	Combat Trick: Catch Off-Guard	1	1	0	NULL	NULL	18	You do not suffer any penalties for using an improvised melee weapon. Unarmed opponents are flat-footed against any attacks you make with an improvised melee weapon.
+546	8	3	Combat Trick: Channel Smite	1	1	0	NULL	NULL	19	Before you make a melee attack roll, you can choose to spend one use of your channel energy ability as a swift action. If you channel positive energy and you hit an undead creature, that creature takes an amount of additional damage equal to the damage dealt by your channel positive energy ability. If you channel negative energy and you hit a living creature, that creature takes an amount of additional damage equal to the damage dealt by your channel negative energy ability. Your target can make a Will save, as normal, to halve this additional damage. If your attack misses, the channel energy ability is still expended with no effect.
+547	8	3	Combat Trick: Cleave	1	1	0	NULL	NULL	20	As a standard action, you can make a single attack at your full base attack bonus against a foe within reach. If you hit, you deal damage normally and can make an additional attack (using your full base attack bonus) against a foe that is adjacent to the first and also within reach. You can only make one additional attack per round with this feat. When you use this feat, you take a -2 penalty to your Armor Class until your next turn.
+548	8	3	Combat Trick: Combat Expertise	1	1	0	NULL	NULL	22	You can choose to take a -1 penalty on melee attack rolls and combat maneuver checks to gain a +1 dodge bonus to your Armor Class. When your base attack bonus reaches +4, and every +4 thereafter, the penalty increases by -1 and the dodge bonus increases by +1. You can only choose to use this feat when you declare that you are making an attack or a full-attack action with a melee weapon. The effects of this feat last until your next turn.
+549	8	3	Combat Trick: Combat Reflexes	1	1	0	NULL	NULL	23	You may make a number of additional attacks of opportunity per round equal to your Dexterity bonus. With this feat, you may also make attacks of opportunity while flat-footed.
+550	8	3	Combat Trick: Critical Focus	1	1	0	NULL	NULL	30	You receive a +4 circumstance bonus on attack rolls made to confirm critical hits.
+551	8	3	Combat Trick: Critical Mastery	1	1	0	NULL	NULL	31	When you score a critical hit, you can apply the effects of two critical feats in addition to the damage dealt.
+552	8	3	Combat Trick: Dazzling Display	1	1	0	NULL	NULL	32	While wielding the weapon in which you have Weapon Focus, you can perform a bewildering show of prowess as a full-round action. Make an Intimidate check to demoralize all foes within 30 feet who can see your display.
+553	8	3	Combat Trick: Deadly Aim	1	1	0	NULL	NULL	33	You can choose to take a -1 penalty on all ranged attack rolls to gain a +2 bonus on all ranged damage rolls. When your base attack bonus reaches +4, and every +4 thereafter, the penalty increases by -1 and the bonus to damage increases by +2. You must choose to use this feat before making an attack roll and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.
+554	8	3	Combat Trick: Deadly Stroke	1	1	0	NULL	NULL	34	As a standard action, make a single attack with the weapon for which you have Greater Weapon Focus against a stunned or flat-footed opponent. If you hit, you deal double the normal damage and the target takes 1 point of Constitution bleed (see Appendix 2). The additional damage and bleed is not multiplied on a critical hit.
+555	8	3	Combat Trick: Deafening Critical	1	1	0	NULL	NULL	35	Whenever you score a critical hit against an opponent, the victim is permanently deafened. A successful Fortitude save reduces the deafness to 1 round. The DC of this Fortitude save is equal to 10 + your base attack bonus. This feat has no effect on deaf creatures. This deafness can be cured by heal, regeneration, remove deafness, or a similar ability.
+556	8	3	Combat Trick: Defensive Combat Training	1	1	0	NULL	NULL	37	You treat your total Hit Dice as your base attack bonus when calculating your Combat Maneuver Defense (see Chapter 8).
+557	8	3	Combat Trick: Deflect Arrows	1	1	0	NULL	NULL	38	You must have at least one hand free (holding nothing) to use this feat. Once per round when you would normally be hit with an attack from a ranged weapon, you may def lect it so that you take no damage from it. You must be aware of the attack and not flat-footed. Attempting to def lect a ranged attack doesn't count as an action. Unusually massive ranged weapons (such as boulders or ballista bolts) and ranged attacks generated by natural attacks or spell effects can't be def lected.
+558	8	3	Combat Trick: Disruptive	1	1	0	NULL	NULL	41	The DC to cast spells defensively increases by +4 for all enemies that are within your threatened area. This increase to casting spells defensively only applies if you are aware of the enemy's location and are capable of taking an attack of opportunity. If you can only take one attack of opportunity per round and have already used that attack, this increase does not apply.
+559	8	3	Combat Trick: Dodge	1	1	0	NULL	NULL	42	You gain a +1 dodge bonus to your AC. A condition that makes you lose your Dex bonus to AC also makes you lose the benefits of this feat.
+560	8	3	Combat Trick: Double Slice	1	1	0	NULL	NULL	43	Add your Strength bonus to damage rolls made with your off-hand weapon.
+561	8	3	Combat Trick: Exhausting Critical	1	1	0	NULL	NULL	49	When you score a critical hit on a foe, your target immediately becomes exhausted. This feat has no effect on exhausted creatures.
+562	8	3	Combat Trick: Exotic Weapon Proficiency	1	1	0	NULL	NULL	50	You make attack rolls with the weapon normally.
+563	8	3	Combat Trick: Far Shot	1	1	0	NULL	NULL	58	You only suffer a -1 penalty per full range increment between you and your target when using a ranged weapon.
+564	8	3	Combat Trick: Gorgon's Fist	1	1	0	NULL	NULL	61	As a standard action, make a single unarmed melee attack against a foe whose speed is reduced (such as from Scorpion Style). If the attack hits, you deal damage normally and the target is staggered until the end of your next turn unless it makes a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier). This feat has no effect on targets that are staggered.
+565	8	3	Combat Trick: Great Cleave	1	1	0	NULL	NULL	62	As a standard action, you can make a single attack at your full base attack bonus against a foe within reach. If you hit, you deal damage normally and can make an additional attack (using your full base attack bonus) against a foe that is adjacent to the previous foe and also within reach. If you hit, you can continue to make attacks against foes adjacent to the previous foe, so long as they are within your reach. You cannot attack an individual foe more than once during this attack action. When you use this feat, you take a -2 penalty to your Armor Class until your next turn.
+566	8	3	Combat Trick: Greater Bull Rush	1	1	0	NULL	NULL	64	You receive a +2 bonus on checks made to bull rush a foe. This bonus stacks with the bonus granted by Improved Bull Rush. Whenever you bull rush an opponent, his movement provokes attacks of opportunity from all of your allies (but not you).
+567	8	3	Combat Trick: Greater Disarm	1	1	0	NULL	NULL	65	You receive a +2 bonus on checks made to disarm a foe. This bonus stacks with the bonus granted by Improved Disarm. Whenever you successfully disarm an opponent, the weapon lands 15 feet away from its previous wielder, in a random direction.
+568	8	3	Combat Trick: Greater Feint	1	1	0	NULL	NULL	66	Whenever you use feint to cause an opponent to lose his Dexterity bonus, he loses that bonus until the beginning of your next turn, in addition to losing his Dexterity bonus against your next attack.
+569	8	3	Combat Trick: Greater Grapple	1	1	0	NULL	NULL	67	You receive a +2 bonus on checks made to grapple a foe. This bonus stacks with the bonus granted by Improved Grapple. Once you have grappled a creature, maintaining the grapple is a move action. This feat allows you to make two grapple checks each round (to move, harm, or pin your opponent), but you are not required to make two checks. You only need to succeed at one of these checks to maintain the grapple.
+570	8	3	Combat Trick: Greater Overrun	1	1	0	NULL	NULL	68	You receive a +2 bonus on checks made to overrun a foe. This bonus stacks with the bonus granted by Improved Overrun. Whenever you overrun opponents, they provoke attacks of opportunity if they are knocked prone by your overrun.
+571	8	3	Combat Trick: Greater Penetrating Strike	1	1	0	NULL	NULL	69	Your attacks made with weapons selected with Weapon Focus ignore up to 10 points of damage reduction. This amount is reduced to 5 points for damage reduction without a type (such as DR 10/-).
+572	8	3	Combat Trick: Greater Shield Focus	1	1	0	NULL	NULL	70	Increase the AC bonus granted by any shield you are using by 1. This bonus stacks with the bonus granted by Shield Focus.
+573	8	3	Combat Trick: Greater Sunder	1	1	0	NULL	NULL	73	You receive a +2 bonus on checks made to sunder an item. This bonus stacks with the bonus granted by Improved Sunder. Whenever you sunder to destroy a weapon, shield, or suit of armor, any excess damage is applied to the item's wielder. No damage is transferred if you decide to leave the item with 1 hit point.
+574	8	3	Combat Trick: Greater Trip	1	1	0	NULL	NULL	74	You receive a +2 bonus on checks made to trip a foe. This bonus stacks with the bonus granted by Improved Trip. Whenever you successfully trip an opponent, that opponent provokes attacks of opportunity.
+575	8	3	Combat Trick: Greater Two-Weapon Fighting	1	1	0	NULL	NULL	75	You get a third attack with your off-hand weapon, albeit at a -10 penalty.
+576	8	3	Combat Trick: Greater Vital Strike	1	1	0	NULL	NULL	76	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack four times and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage (such as sneak attack), and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+577	8	3	Combat Trick: Greater Weapon Focus	1	1	0	NULL	NULL	77	You gain a +1 bonus on attack rolls you make using the selected weapon. This bonus stacks with other bonuses on attack rolls, including those from Weapon Focus.
+578	8	3	Combat Trick: Greater Weapon Specialization	1	1	0	NULL	NULL	78	You gain a +2 bonus on all damage rolls you make using the selected weapon. This bonus to damage stacks with other damage roll bonuses, including any you gain from Weapon Specialization.
+579	8	3	Combat Trick: Improved Bull Rush	1	1	0	NULL	NULL	80	You do not provoke an attack of opportunity when performing a bull rush combat maneuver. In addition, you receive a +2 bonus on checks made to bull rush a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to bull rush you.
+580	8	3	Combat Trick: Improved Critical	1	1	0	NULL	NULL	83	When using the weapon you selected, your threat range is doubled.
+581	8	3	Combat Trick: Improved Disarm	1	1	0	NULL	NULL	84	You do not provoke an attack of opportunity when performing a disarm combat maneuver. In addition, you receive a +2 bonus on checks made to disarm a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to disarm you.
+582	8	3	Combat Trick: Improved Feint	1	1	0	NULL	NULL	86	You can make a Bluff check to feint in combat as a move action.
+583	8	3	Combat Trick: Improved Grapple	1	1	0	NULL	NULL	87	You do not provoke an attack of opportunity when performing a grapple combat maneuver. In addition, you receive a +2 bonus on checks made to grapple a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to grapple you.
+584	8	3	Combat Trick: Improved Initiative	1	1	0	NULL	NULL	89	You get a +4 bonus on initiative checks.
+585	8	3	Combat Trick: Improved Overrun	1	1	0	NULL	NULL	92	You do not provoke an attack of opportunity when performing an overrun combat maneuver. In addition, you receive a +2 bonus on checks made to overrrun a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to overrun you. Targets of your overrun attempt may not choose to avoid you.
+586	8	3	Combat Trick: Improved Precise Shot	1	1	0	NULL	NULL	93	Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment. Total cover and total concealment provide their normal benefits against your ranged attacks.
+587	8	3	Combat Trick: Improved Shield Bash	1	1	0	NULL	NULL	94	When you perform a shield bash, you may still apply the shield's shield bonus to your AC.
+588	8	3	Combat Trick: Improved Sunder	1	1	0	NULL	NULL	95	You do not provoke an attack of opportunity when performing a sunder combat maneuver. In addition, you receive a +2 bonus on checks made to sunder an item. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to sunder your gear.
+589	8	3	Combat Trick: Improved Trip	1	1	0	NULL	NULL	96	You do not provoke an attack of opportunity when performing a trip combat maneuver. In addition, you receive a +2 bonus on checks made to trip a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to trip you.
+590	8	3	Combat Trick: Improved Two-Weapon Fighting	1	1	0	NULL	NULL	97	In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a -5 penalty.
+591	8	3	Combat Trick: Improved Unarmed Strike	1	1	0	NULL	NULL	98	You are considered to be armed even when unarmed-you do not provoke attacks of opportunity when you attack foes while unarmed. Your unarmed strikes can deal lethal or nonlethal damage, at your choice.
+592	8	3	Combat Trick: Improved Vital Strike	1	1	0	NULL	NULL	99	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack three times and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage, and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+593	8	3	Combat Trick: Improvised Weapon Mastery	1	1	0	NULL	NULL	100	You do not suffer any penalties for using an improvised weapon. Increase the amount of damage dealt by the improvised weapon by one step (for example, 1d4 becomes 1d6) to a maximum of 1d8 (2d6 if the improvised weapon is two-handed). The improvised weapon has a critical threat range of 19-20, with a critical multiplier of ×2.
+594	8	3	Combat Trick: Intimidating Prowess	1	1	0	NULL	NULL	101	Add your Strength modifier to Intimidate skill checks in addition to your Charisma modifier.
+595	8	3	Combat Trick: Lightning Stance	1	1	0	NULL	NULL	105	If you take two actions to move or a withdraw action in a turn, you gain 50% concealment for 1 round.
+596	8	3	Combat Trick: Lunge	1	1	0	NULL	NULL	106	You can increase the reach of your melee attacks by 5 feet until the end of your turn by taking a -2 penalty to your AC until your next turn. You must decide to use this ability before any attacks are made.
+597	8	3	Combat Trick: Manyshot	1	1	0	NULL	NULL	108	When making a full-attack action with a bow, your first attack fires two arrows. If the attack hits, both arrows hit. Apply precision-based damage (such as sneak attack) and critical hit damage only once for this attack. Damage bonuses from using a composite bow with a high Strength bonus apply to each arrow, as do other damage bonuses, such as a ranger's favored enemy bonus. Damage reduction and resistances apply separately to each arrow.
+598	8	3	Combat Trick: Martial Weapon Proficiency	1	1	0	NULL	NULL	109	You make attack rolls with the selected weapon normally (without the non-proficient penalty).
+599	8	3	Combat Trick: Medusa's Wrath	1	1	0	NULL	NULL	112	Whenever you use the full-attack action and make at least one unarmed strike, you can make two additional unarmed strikes at your highest base attack bonus. These bonus attacks must be made against a dazed, flat-footed, paralyzed, staggered, stunned, or unconscious foe.
+600	8	3	Combat Trick: Mobility	1	1	0	NULL	NULL	113	You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.
+601	8	3	Combat Trick: Mounted Archery	1	1	0	NULL	NULL	114	The penalty you take when using a ranged weapon while mounted is halved: -2 instead of -4 if your mount is taking a double move, and -4 instead of -8 if your mount is running.
+602	8	3	Combat Trick: Mounted Combat	1	1	0	NULL	NULL	115	Once per round when your mount is hit in combat, you may attempt a Ride check (as an immediate action) to negate the hit. The hit is negated if your Ride check result is greater than the opponent's attack roll.
+603	8	3	Combat Trick: Penetrating Strike	1	1	0	NULL	NULL	118	Your attacks made with weapons selected with Weapon Focus ignore up to 5 points of damage reduction. This feat does not apply to damage reduction without a type (such as DR 10/-).
+604	8	3	Combat Trick: Pinpoint Targeting	1	1	0	NULL	NULL	120	As a standard action, make a single ranged attack. The target does not gain any armor, natural armor, or shield bonuses to its Armor Class. You do not gain the benefit of this feat if you move this round.
+605	8	3	Combat Trick: Point-Blank Shot	1	1	0	NULL	NULL	121	You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet.
+606	8	3	Combat Trick: Power Attack	1	1	0	NULL	NULL	122	You can choose to take a -1 penalty on all melee attack rolls and combat maneuver checks to gain a +2 bonus on all melee damage rolls. This bonus to damage is increased by half (+50%) if you are making an attack with a two-handed weapon, a one handed weapon using two hands, or a primary natural weapon that adds 1-1/2 times your Strength modif ier on damage rolls. This bonus to damage is halved (-50%) if you are making an attack with an off-hand weapon or secondary natural weapon. When your base attack bonus reaches +4, and every 4 points thereafter, the penalty increases by -1 and the bonus to damage increases by +2. You must choose to use this feat before making an attack roll, and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.
+607	8	3	Combat Trick: Precise Shot	1	1	0	NULL	NULL	123	You can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll.
+608	8	3	Combat Trick: Quick Draw	1	1	0	NULL	NULL	124	You can draw a weapon as a free action instead of as a move action. You can draw a hidden weapon (see the Sleight of Hand skill) as a move action. A character who has selected this feat may throw weapons at his full normal rate of attacks (much like a character with a bow). Alchemical items, potions, scrolls, and wands cannot be drawn quickly using this feat.
+609	8	3	Combat Trick: Shield Master	1	1	0	NULL	NULL	126	You do not suffer any penalties on attack rolls made with a shield while you are wielding another weapon. Add your shield's enhancement bonus to attacks and damage rolls made with the shield as if it was a weapon enhancement bonus.
+610	8	3	Combat Trick: Rapid Shot	1	1	0	NULL	NULL	127	When making a full-attack action with a ranged weapon, you can fire one additional time this round at your highest bonus. All of your attack rolls take a -2 penalty when using Rapid Shot.
+611	8	3	Combat Trick: Ride-By Attack	1	1	0	NULL	NULL	128	When you are mounted and use the charge action, you may move and attack as if with a standard charge and then move again (continuing the straight line of the charge). Your total movement for the round can't exceed double your mounted speed. You and your mount do not provoke an attack of opportunity from the opponent that you attack.
+612	8	3	Combat Trick: Scorpion Style	1	1	0	NULL	NULL	130	To use this feat, you must make a single unarmed attack as a standard action. If this unarmed attack hits, you deal damage normally, and the target's base land speed is reduced to 5 feet for a number of rounds equal to your Wisdom modifier unless it makes a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier).
+613	8	3	Combat Trick: Shatter Defenses	1	1	0	NULL	NULL	134	Any shaken, frightened, or panicked opponent hit by you this round is flat-footed to your attacks until the end of your next turn. This includes any additional attacks you make this round.
+614	8	3	Combat Trick: Shield Focus	1	1	0	NULL	NULL	135	Increase the AC bonus granted by any shield you are using by 1.
+615	8	3	Combat Trick: Shield Proficiency	1	1	0	NULL	NULL	136	When you use a shield (except a tower shield), the shield's armor check penalty only applies to Strength- and Dexterity-based skills.
+616	8	3	Combat Trick: Shield Slam	1	1	0	NULL	NULL	137	Any opponents hit by your shield bash are also hit with a free bull rush attack, substituting your attack roll for the combat maneuver check (see Chapter 8). This bull rush does not provoke an attack of opportunity. Opponents who cannot move back due to a wall or other surface are knocked prone after moving the maximum possible distance. You may choose to move with your target if you are able to take a 5-foot step or to spend an action to move this turn.
+617	8	3	Combat Trick: Shot on the Run	1	1	0	NULL	NULL	138	As a full-round action, you can move up to your speed and make a single ranged attack at any point during your movement.
+618	8	3	Combat Trick: Sickening Critical	1	1	0	NULL	NULL	139	Whenever you score a critical hit, your opponent becomes sickened for 1 minute. The effects of this feat do not stack. Additional hits instead add to the effect's duration.
+619	8	3	Combat Trick: Simple Weapon Proficiency	1	1	0	NULL	NULL	141	You make attack rolls with simple weapons without penalty.
+620	8	3	Combat Trick: Snatch Arrows	1	1	0	NULL	NULL	143	When using the Def lect Arrows feat you may choose to catch the weapon instead of just def lecting it. Thrown weapons can immediately be thrown back as an attack against the original attacker (even though it isn't your turn) or kept for later use. You must have at least one hand free (holding nothing) to use this feat.
+621	8	3	Combat Trick: Spellbreaker	1	1	0	NULL	NULL	147	Enemies in your threatened area that fail their checks to cast spells defensively provoke attacks of opportunity from you.
+622	8	3	Combat Trick: Spirited Charge	1	1	0	NULL	NULL	148	When mounted and using the charge action, you deal double damage with a melee weapon (or triple damage with a lance).
+623	8	3	Combat Trick: Spring Attack	1	1	0	NULL	NULL	149	As a full-round action, you can move up to your speed and make a single melee attack without provoking any attacks of opportunity from the target of your attack. You can move both before and after the attack, but you must move at least 10 feet before the attack and the total distance that you move cannot be greater than your speed. You cannot use this ability to attack a foe that is adjacent to you at the start of your turn.
+624	8	3	Combat Trick: Staggering Critical	1	1	0	NULL	NULL	150	Whenever you score a critical hit, your opponent becomes staggered for 1d4+1 rounds. A successful Fortitude save reduces the duration to 1 round. The DC of this Fortitude save is equal to 10 + your base attack bonus. The effects of this feat do not stack. Additional hits instead add to the duration.
+625	8	3	Combat Trick: Stand Still	1	1	0	NULL	NULL	151	When a foe provokes an attack of opportunity due to moving through your adjacent squares, you can make a combat maneuver check as your attack of opportunity. If successful, the enemy cannot move for the rest of his turn. An enemy can still take the rest of his action, but cannot move. This feat also applies to any creature that attempts to move from a square that is adjacent to you if such movement provokes an attack of opportunity.
+626	8	3	Combat Trick: Step Up	1	1	0	NULL	NULL	153	Whenever an adjacent foe attempts to take a 5-foot step away from you, you may also make a 5-foot step as an immediate action so long as you end up adjacent to the foe that triggered this ability. If you take this step, you cannot take a 5-foot step during your next turn. If you take an action to move during your next turn, subtract 5 feet from your total movement.
+627	8	3	Combat Trick: Strike Back	1	1	0	NULL	NULL	155	You can ready an action to make a melee attack against any foe that attacks you in melee, even if the foe is outside of your reach.
+628	8	3	Combat Trick: Stunning Critical	1	1	0	NULL	NULL	156	Whenever you score a critical hit, your opponent becomes stunned for 1d4 rounds. A successful Fortitude save reduces this to staggered for 1d4 rounds. The DC of this Fortitude save is equal to 10 + your base attack bonus. The effects of this feat do not stack. Additional hits instead add to the duration.
+629	8	3	Combat Trick: Stunning Fist	1	1	0	NULL	NULL	157	You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt). Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier), in addition to dealing damage normally. A defender who fails this saving throw is stunned for 1 round (until just before your next turn). A stunned character drops everything held, can't take actions, loses any Dexterity bonus to AC, and takes a -2 penalty to AC. You may attempt a stunning attack once per day for every four levels you have attained (but see Special), and no more than once per round. Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.
+630	8	3	Combat Trick: Throw Anything	1	1	0	NULL	NULL	158	You do not suffer any penalties for using an improvised ranged weapon. You receive a +1 circumstance bonus on attack rolls made with thrown splash weapons.
+631	8	3	Combat Trick: Tiring Critical	1	1	0	NULL	NULL	159	Whenever you score a critical hit, your opponent becomes fatigued. This feat has no additional effect on a fatigued or exhausted creature.
+632	8	3	Combat Trick: Tower Shield Proficiency	1	1	0	NULL	NULL	161	When you use a tower shield, the shield's armor check penalty only applies to Strength and Dexterity-based skills.
+633	8	3	Combat Trick: Trample	1	1	0	NULL	NULL	162	When you attempt to overrun an opponent while mounted, your target may not choose to avoid you. Your mount may make one hoof attack against any target you knock down, gaining the standard +4 bonus on attack rolls against prone targets.
+634	8	3	Combat Trick: Two-Weapon Defense	1	1	0	NULL	NULL	164	When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC. When you are fighting defensively or using the total defense action, this shield bonus increases to +2.
+635	8	3	Combat Trick: Two-Weapon Fighting	1	1	0	NULL	NULL	165	Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6. See Two-Weapon Fighting in Chapter 8.
+636	8	3	Combat Trick: Two-Weapon Rend	1	1	0	NULL	NULL	166	If you hit an opponent with both your primary hand and your off-hand weapon, you deal an additional 1d10 points of damage plus 1-1/2 times your Strength modifier. You can only deal this additional damage once each round.
+637	8	3	Combat Trick: Unseat	1	1	0	NULL	NULL	167	When charging an opponent while mounted and wielding a lance, resolve the attack as normal. If it hits, you may immediately make a free bull rush attempt in addition to the normal damage. If successful, the target is knocked off his horse and lands prone in a space adjacent to his mount that is directly away from you.
+638	8	3	Combat Trick: Vital Strike	1	1	0	NULL	NULL	168	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack twice and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage, and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+639	8	3	Combat Trick: Weapon Finesse	1	1	0	NULL	NULL	169	With a light weapon, elven curve blade, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.
+640	8	3	Combat Trick: Weapon Focus	1	1	0	NULL	NULL	170	You gain a +1 bonus on all attack rolls you make using the selected weapon.
+641	8	3	Combat Trick: Weapon Specialization	1	1	0	NULL	NULL	171	You gain a +2 bonus on all damage rolls you make using the selected weapon.
+642	8	3	Combat Trick: Whirlwind Attack	1	1	0	NULL	NULL	172	When you use the full-attack action, you can give up your regular attacks and instead make one melee attack at your highest base attack bonus against each opponent within reach. You must make a separate attack roll against each opponent. When you use the Whirlwind Attack feat, you also forfeit any bonus or extra attacks granted by other feats, spells, or abilities.
+643	8	3	Combat Trick: Wind Stance	1	1	0	NULL	NULL	174	If you move more than 5 feet this turn, you gain 20% concealment for 1 round against ranged attacks.
+644	4	1	Bonus Feat: Agile Maneuvers	1	1	0	NULL	NULL	2	You add your Dexterity bonus to your base attack bonus and size bonus when determining your Combat Maneuver Bonus (see Chapter 8) instead of your Strength bonus.
+645	4	1	Bonus Feat: Arcane Armor Mastery	1	1	0	NULL	NULL	6	As a swift action, reduce the arcane spell failure chance due to the armor you are wearing by 20% for any spells you cast this round. This bonus replaces, and does not stack with, the bonus granted by Arcane Armor Training.
+646	4	1	Bonus Feat: Arcane Armor Training	1	1	0	NULL	NULL	7	As a swift action, reduce the arcane spell failure chance due to the armor you are wearing by 10% for any spells you cast this round.
+647	4	1	Bonus Feat: Arcane Strike	1	1	0	NULL	NULL	8	As a swift action, you can imbue your weapons with a fraction of your power. For 1 round, your weapons deal +1 damage and are treated as magic for the purpose of overcoming damage reduction. For every five caster levels you possess, this bonus increases by +1, to a maximum of +5 at 20th level.
+648	4	1	Bonus Feat: Heavy Armor Proficiency	1	1	0	NULL	NULL	9	See Armor Proficiency, Light.
+649	4	1	Bonus Feat: Light Armor Proficiency	1	1	0	NULL	NULL	10	When you wear a type of armor with which you are proficient, the armor check penalty for that armor applies only to Dexterity- and Strength-based skill checks.
+650	4	1	Bonus Feat: Medium Armor Proficiency	1	1	0	NULL	NULL	11	See Armor Proficiency, Light.
+651	4	1	Bonus Feat: Bleeding Critical	1	1	0	NULL	NULL	14	Whenever you score a critical hit with a slashing or piercing weapon, your opponent takes 2d6 points of bleed damage (see Appendix 2) each round on his turn, in addition to the damage dealt by the critical hit. Bleed damage can be stopped by a DC 15 Heal skill check or through any magical healing. The effects of this feat stack.
+652	4	1	Bonus Feat: Blind-Fight	1	1	0	NULL	NULL	15	In melee, every time you miss because of concealment (see Chapter 8), you can reroll your miss chance percentile roll one time to see if you actually hit. An invisible attacker gets no advantages related to hitting you in melee. That is, you don't lose your Dexterity bonus to Armor Class, and the attacker doesn't get the usual +2 bonus for being invisible. The invisible attacker's bonuses do still apply for ranged attacks, however. You do not need to make Acrobatics skill checks to move at full speed while blinded.
+653	4	1	Bonus Feat: Blinding Critical	1	1	0	NULL	NULL	16	Whenever you score a critical hit, your opponent is permanently blinded. A successful Fortitude save reduces this to dazzled for 1d4 rounds. The DC of this Fortitude save is equal to 10 + your base attack bonus. This feat has no effect on creatures that do not rely on eyes for sight or creatures with more than two eyes (although multiple critical hits might cause blindness, at the GM's discretion). Blindness can be cured by heal, regeneration, remove blindness, or similar abilities.
+654	4	1	Bonus Feat: Catch Off-Guard	1	1	0	NULL	NULL	18	You do not suffer any penalties for using an improvised melee weapon. Unarmed opponents are flat-footed against any attacks you make with an improvised melee weapon.
+655	4	1	Bonus Feat: Channel Smite	1	1	0	NULL	NULL	19	Before you make a melee attack roll, you can choose to spend one use of your channel energy ability as a swift action. If you channel positive energy and you hit an undead creature, that creature takes an amount of additional damage equal to the damage dealt by your channel positive energy ability. If you channel negative energy and you hit a living creature, that creature takes an amount of additional damage equal to the damage dealt by your channel negative energy ability. Your target can make a Will save, as normal, to halve this additional damage. If your attack misses, the channel energy ability is still expended with no effect.
+656	4	1	Bonus Feat: Cleave	1	1	0	NULL	NULL	20	As a standard action, you can make a single attack at your full base attack bonus against a foe within reach. If you hit, you deal damage normally and can make an additional attack (using your full base attack bonus) against a foe that is adjacent to the first and also within reach. You can only make one additional attack per round with this feat. When you use this feat, you take a -2 penalty to your Armor Class until your next turn.
+657	4	1	Bonus Feat: Combat Expertise	1	1	0	NULL	NULL	22	You can choose to take a -1 penalty on melee attack rolls and combat maneuver checks to gain a +1 dodge bonus to your Armor Class. When your base attack bonus reaches +4, and every +4 thereafter, the penalty increases by -1 and the dodge bonus increases by +1. You can only choose to use this feat when you declare that you are making an attack or a full-attack action with a melee weapon. The effects of this feat last until your next turn.
+658	4	1	Bonus Feat: Combat Reflexes	1	1	0	NULL	NULL	23	You may make a number of additional attacks of opportunity per round equal to your Dexterity bonus. With this feat, you may also make attacks of opportunity while flat-footed.
+659	4	1	Bonus Feat: Critical Focus	1	1	0	NULL	NULL	30	You receive a +4 circumstance bonus on attack rolls made to confirm critical hits.
+660	4	1	Bonus Feat: Critical Mastery	1	1	0	NULL	NULL	31	When you score a critical hit, you can apply the effects of two critical feats in addition to the damage dealt.
+661	4	1	Bonus Feat: Dazzling Display	1	1	0	NULL	NULL	32	While wielding the weapon in which you have Weapon Focus, you can perform a bewildering show of prowess as a full-round action. Make an Intimidate check to demoralize all foes within 30 feet who can see your display.
+662	4	1	Bonus Feat: Deadly Aim	1	1	0	NULL	NULL	33	You can choose to take a -1 penalty on all ranged attack rolls to gain a +2 bonus on all ranged damage rolls. When your base attack bonus reaches +4, and every +4 thereafter, the penalty increases by -1 and the bonus to damage increases by +2. You must choose to use this feat before making an attack roll and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.
+663	4	1	Bonus Feat: Deadly Stroke	1	1	0	NULL	NULL	34	As a standard action, make a single attack with the weapon for which you have Greater Weapon Focus against a stunned or flat-footed opponent. If you hit, you deal double the normal damage and the target takes 1 point of Constitution bleed (see Appendix 2). The additional damage and bleed is not multiplied on a critical hit.
+664	4	1	Bonus Feat: Deafening Critical	1	1	0	NULL	NULL	35	Whenever you score a critical hit against an opponent, the victim is permanently deafened. A successful Fortitude save reduces the deafness to 1 round. The DC of this Fortitude save is equal to 10 + your base attack bonus. This feat has no effect on deaf creatures. This deafness can be cured by heal, regeneration, remove deafness, or a similar ability.
+665	4	1	Bonus Feat: Defensive Combat Training	1	1	0	NULL	NULL	37	You treat your total Hit Dice as your base attack bonus when calculating your Combat Maneuver Defense (see Chapter 8).
+666	4	1	Bonus Feat: Deflect Arrows	1	1	0	NULL	NULL	38	You must have at least one hand free (holding nothing) to use this feat. Once per round when you would normally be hit with an attack from a ranged weapon, you may def lect it so that you take no damage from it. You must be aware of the attack and not flat-footed. Attempting to def lect a ranged attack doesn't count as an action. Unusually massive ranged weapons (such as boulders or ballista bolts) and ranged attacks generated by natural attacks or spell effects can't be def lected.
+667	4	1	Bonus Feat: Disruptive	1	1	0	NULL	NULL	41	The DC to cast spells defensively increases by +4 for all enemies that are within your threatened area. This increase to casting spells defensively only applies if you are aware of the enemy's location and are capable of taking an attack of opportunity. If you can only take one attack of opportunity per round and have already used that attack, this increase does not apply.
+668	4	1	Bonus Feat: Dodge	1	1	0	NULL	NULL	42	You gain a +1 dodge bonus to your AC. A condition that makes you lose your Dex bonus to AC also makes you lose the benefits of this feat.
+669	4	1	Bonus Feat: Double Slice	1	1	0	NULL	NULL	43	Add your Strength bonus to damage rolls made with your off-hand weapon.
+670	4	1	Bonus Feat: Exhausting Critical	1	1	0	NULL	NULL	49	When you score a critical hit on a foe, your target immediately becomes exhausted. This feat has no effect on exhausted creatures.
+671	4	1	Bonus Feat: Exotic Weapon Proficiency	1	10	0	NULL	NULL	50	You make attack rolls with the weapon normally.
+672	4	1	Bonus Feat: Far Shot	1	1	0	NULL	NULL	58	You only suffer a -1 penalty per full range increment between you and your target when using a ranged weapon.
+673	4	1	Bonus Feat: Gorgon's Fist	1	1	0	NULL	NULL	61	As a standard action, make a single unarmed melee attack against a foe whose speed is reduced (such as from Scorpion Style). If the attack hits, you deal damage normally and the target is staggered until the end of your next turn unless it makes a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier). This feat has no effect on targets that are staggered.
+674	4	1	Bonus Feat: Great Cleave	1	1	0	NULL	NULL	62	As a standard action, you can make a single attack at your full base attack bonus against a foe within reach. If you hit, you deal damage normally and can make an additional attack (using your full base attack bonus) against a foe that is adjacent to the previous foe and also within reach. If you hit, you can continue to make attacks against foes adjacent to the previous foe, so long as they are within your reach. You cannot attack an individual foe more than once during this attack action. When you use this feat, you take a -2 penalty to your Armor Class until your next turn.
+675	4	1	Bonus Feat: Greater Bull Rush	1	1	0	NULL	NULL	64	You receive a +2 bonus on checks made to bull rush a foe. This bonus stacks with the bonus granted by Improved Bull Rush. Whenever you bull rush an opponent, his movement provokes attacks of opportunity from all of your allies (but not you).
+676	4	1	Bonus Feat: Greater Disarm	1	1	0	NULL	NULL	65	You receive a +2 bonus on checks made to disarm a foe. This bonus stacks with the bonus granted by Improved Disarm. Whenever you successfully disarm an opponent, the weapon lands 15 feet away from its previous wielder, in a random direction.
+677	4	1	Bonus Feat: Greater Feint	1	1	0	NULL	NULL	66	Whenever you use feint to cause an opponent to lose his Dexterity bonus, he loses that bonus until the beginning of your next turn, in addition to losing his Dexterity bonus against your next attack.
+678	4	1	Bonus Feat: Greater Grapple	1	1	0	NULL	NULL	67	You receive a +2 bonus on checks made to grapple a foe. This bonus stacks with the bonus granted by Improved Grapple. Once you have grappled a creature, maintaining the grapple is a move action. This feat allows you to make two grapple checks each round (to move, harm, or pin your opponent), but you are not required to make two checks. You only need to succeed at one of these checks to maintain the grapple.
+679	4	1	Bonus Feat: Greater Overrun	1	1	0	NULL	NULL	68	You receive a +2 bonus on checks made to overrun a foe. This bonus stacks with the bonus granted by Improved Overrun. Whenever you overrun opponents, they provoke attacks of opportunity if they are knocked prone by your overrun.
+680	4	1	Bonus Feat: Greater Penetrating Strike	1	1	0	NULL	NULL	69	Your attacks made with weapons selected with Weapon Focus ignore up to 10 points of damage reduction. This amount is reduced to 5 points for damage reduction without a type (such as DR 10/-).
+681	4	1	Bonus Feat: Greater Shield Focus	1	1	0	NULL	NULL	70	Increase the AC bonus granted by any shield you are using by 1. This bonus stacks with the bonus granted by Shield Focus.
+682	4	1	Bonus Feat: Greater Sunder	1	1	0	NULL	NULL	73	You receive a +2 bonus on checks made to sunder an item. This bonus stacks with the bonus granted by Improved Sunder. Whenever you sunder to destroy a weapon, shield, or suit of armor, any excess damage is applied to the item's wielder. No damage is transferred if you decide to leave the item with 1 hit point.
+683	4	1	Bonus Feat: Greater Trip	1	1	0	NULL	NULL	74	You receive a +2 bonus on checks made to trip a foe. This bonus stacks with the bonus granted by Improved Trip. Whenever you successfully trip an opponent, that opponent provokes attacks of opportunity.
+684	4	1	Bonus Feat: Greater Two-Weapon Fighting	1	1	0	NULL	NULL	75	You get a third attack with your off-hand weapon, albeit at a -10 penalty.
+685	4	1	Bonus Feat: Greater Vital Strike	1	1	0	NULL	NULL	76	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack four times and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage (such as sneak attack), and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+686	4	1	Bonus Feat: Greater Weapon Focus	1	10	0	NULL	NULL	77	You gain a +1 bonus on attack rolls you make using the selected weapon. This bonus stacks with other bonuses on attack rolls, including those from Weapon Focus.
+687	4	1	Bonus Feat: Greater Weapon Specialization	1	10	0	NULL	NULL	78	You gain a +2 bonus on all damage rolls you make using the selected weapon. This bonus to damage stacks with other damage roll bonuses, including any you gain from Weapon Specialization.
+688	4	1	Bonus Feat: Improved Bull Rush	1	1	0	NULL	NULL	80	You do not provoke an attack of opportunity when performing a bull rush combat maneuver. In addition, you receive a +2 bonus on checks made to bull rush a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to bull rush you.
+689	4	1	Bonus Feat: Improved Critical	1	1	0	NULL	NULL	83	When using the weapon you selected, your threat range is doubled.
+690	4	1	Bonus Feat: Improved Disarm	1	1	0	NULL	NULL	84	You do not provoke an attack of opportunity when performing a disarm combat maneuver. In addition, you receive a +2 bonus on checks made to disarm a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to disarm you.
+691	4	1	Bonus Feat: Improved Feint	1	1	0	NULL	NULL	86	You can make a Bluff check to feint in combat as a move action.
+692	4	1	Bonus Feat: Improved Grapple	1	1	0	NULL	NULL	87	You do not provoke an attack of opportunity when performing a grapple combat maneuver. In addition, you receive a +2 bonus on checks made to grapple a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to grapple you.
+693	4	1	Bonus Feat: Improved Initiative	1	1	0	NULL	NULL	89	You get a +4 bonus on initiative checks.
+694	4	1	Bonus Feat: Improved Overrun	1	1	0	NULL	NULL	92	You do not provoke an attack of opportunity when performing an overrun combat maneuver. In addition, you receive a +2 bonus on checks made to overrrun a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to overrun you. Targets of your overrun attempt may not choose to avoid you.
+695	4	1	Bonus Feat: Improved Precise Shot	1	1	0	NULL	NULL	93	Your ranged attacks ignore the AC bonus granted to targets by anything less than total cover, and the miss chance granted to targets by anything less than total concealment. Total cover and total concealment provide their normal benefits against your ranged attacks.
+696	4	1	Bonus Feat: Improved Shield Bash	1	1	0	NULL	NULL	94	When you perform a shield bash, you may still apply the shield's shield bonus to your AC.
+697	4	1	Bonus Feat: Improved Sunder	1	1	0	NULL	NULL	95	You do not provoke an attack of opportunity when performing a sunder combat maneuver. In addition, you receive a +2 bonus on checks made to sunder an item. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to sunder your gear.
+698	4	1	Bonus Feat: Improved Trip	1	1	0	NULL	NULL	96	You do not provoke an attack of opportunity when performing a trip combat maneuver. In addition, you receive a +2 bonus on checks made to trip a foe. You also receive a +2 bonus to your Combat Maneuver Defense whenever an opponent tries to trip you.
+699	4	1	Bonus Feat: Improved Two-Weapon Fighting	1	1	0	NULL	NULL	97	In addition to the standard single extra attack you get with an off-hand weapon, you get a second attack with it, albeit at a -5 penalty.
+700	4	1	Bonus Feat: Improved Unarmed Strike	1	1	0	NULL	NULL	98	You are considered to be armed even when unarmed-you do not provoke attacks of opportunity when you attack foes while unarmed. Your unarmed strikes can deal lethal or nonlethal damage, at your choice.
+701	4	1	Bonus Feat: Improved Vital Strike	1	1	0	NULL	NULL	99	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack three times and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage, and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+702	4	1	Bonus Feat: Improvised Weapon Mastery	1	1	0	NULL	NULL	100	You do not suffer any penalties for using an improvised weapon. Increase the amount of damage dealt by the improvised weapon by one step (for example, 1d4 becomes 1d6) to a maximum of 1d8 (2d6 if the improvised weapon is two-handed). The improvised weapon has a critical threat range of 19-20, with a critical multiplier of ×2.
+703	4	1	Bonus Feat: Intimidating Prowess	1	1	0	NULL	NULL	101	Add your Strength modifier to Intimidate skill checks in addition to your Charisma modifier.
+704	4	1	Bonus Feat: Lightning Stance	1	1	0	NULL	NULL	105	If you take two actions to move or a withdraw action in a turn, you gain 50% concealment for 1 round.
+705	4	1	Bonus Feat: Lunge	1	1	0	NULL	NULL	106	You can increase the reach of your melee attacks by 5 feet until the end of your turn by taking a -2 penalty to your AC until your next turn. You must decide to use this ability before any attacks are made.
+706	4	1	Bonus Feat: Manyshot	1	1	0	NULL	NULL	108	When making a full-attack action with a bow, your first attack fires two arrows. If the attack hits, both arrows hit. Apply precision-based damage (such as sneak attack) and critical hit damage only once for this attack. Damage bonuses from using a composite bow with a high Strength bonus apply to each arrow, as do other damage bonuses, such as a ranger's favored enemy bonus. Damage reduction and resistances apply separately to each arrow.
+707	4	1	Bonus Feat: Martial Weapon Proficiency	1	10	0	NULL	NULL	109	You make attack rolls with the selected weapon normally (without the non-proficient penalty).
+708	4	1	Bonus Feat: Medusa's Wrath	1	1	0	NULL	NULL	112	Whenever you use the full-attack action and make at least one unarmed strike, you can make two additional unarmed strikes at your highest base attack bonus. These bonus attacks must be made against a dazed, flat-footed, paralyzed, staggered, stunned, or unconscious foe.
+709	4	1	Bonus Feat: Mobility	1	1	0	NULL	NULL	113	You get a +4 dodge bonus to Armor Class against attacks of opportunity caused when you move out of or within a threatened area. A condition that makes you lose your Dexterity bonus to Armor Class (if any) also makes you lose dodge bonuses. Dodge bonuses stack with each other, unlike most types of bonuses.
+710	4	1	Bonus Feat: Mounted Archery	1	1	0	NULL	NULL	114	The penalty you take when using a ranged weapon while mounted is halved: -2 instead of -4 if your mount is taking a double move, and -4 instead of -8 if your mount is running.
+711	4	1	Bonus Feat: Mounted Combat	1	1	0	NULL	NULL	115	Once per round when your mount is hit in combat, you may attempt a Ride check (as an immediate action) to negate the hit. The hit is negated if your Ride check result is greater than the opponent's attack roll.
+712	4	1	Bonus Feat: Penetrating Strike	1	1	0	NULL	NULL	118	Your attacks made with weapons selected with Weapon Focus ignore up to 5 points of damage reduction. This feat does not apply to damage reduction without a type (such as DR 10/-).
+713	4	1	Bonus Feat: Pinpoint Targeting	1	1	0	NULL	NULL	120	As a standard action, make a single ranged attack. The target does not gain any armor, natural armor, or shield bonuses to its Armor Class. You do not gain the benefit of this feat if you move this round.
+714	4	1	Bonus Feat: Point-Blank Shot	1	1	0	NULL	NULL	121	You get a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet.
+715	4	1	Bonus Feat: Power Attack	1	1	0	NULL	NULL	122	You can choose to take a -1 penalty on all melee attack rolls and combat maneuver checks to gain a +2 bonus on all melee damage rolls. This bonus to damage is increased by half (+50%) if you are making an attack with a two-handed weapon, a one handed weapon using two hands, or a primary natural weapon that adds 1-1/2 times your Strength modif ier on damage rolls. This bonus to damage is halved (-50%) if you are making an attack with an off-hand weapon or secondary natural weapon. When your base attack bonus reaches +4, and every 4 points thereafter, the penalty increases by -1 and the bonus to damage increases by +2. You must choose to use this feat before making an attack roll, and its effects last until your next turn. The bonus damage does not apply to touch attacks or effects that do not deal hit point damage.
+716	4	1	Bonus Feat: Precise Shot	1	1	0	NULL	NULL	123	You can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll.
+717	4	1	Bonus Feat: Quick Draw	1	1	0	NULL	NULL	124	You can draw a weapon as a free action instead of as a move action. You can draw a hidden weapon (see the Sleight of Hand skill) as a move action. A character who has selected this feat may throw weapons at his full normal rate of attacks (much like a character with a bow). Alchemical items, potions, scrolls, and wands cannot be drawn quickly using this feat.
+718	4	1	Bonus Feat: Shield Master	1	1	0	NULL	NULL	126	You do not suffer any penalties on attack rolls made with a shield while you are wielding another weapon. Add your shield's enhancement bonus to attacks and damage rolls made with the shield as if it was a weapon enhancement bonus.
+719	4	1	Bonus Feat: Rapid Shot	1	1	0	NULL	NULL	127	When making a full-attack action with a ranged weapon, you can fire one additional time this round at your highest bonus. All of your attack rolls take a -2 penalty when using Rapid Shot.
+720	4	1	Bonus Feat: Ride-By Attack	1	1	0	NULL	NULL	128	When you are mounted and use the charge action, you may move and attack as if with a standard charge and then move again (continuing the straight line of the charge). Your total movement for the round can't exceed double your mounted speed. You and your mount do not provoke an attack of opportunity from the opponent that you attack.
+721	4	1	Bonus Feat: Scorpion Style	1	1	0	NULL	NULL	130	To use this feat, you must make a single unarmed attack as a standard action. If this unarmed attack hits, you deal damage normally, and the target's base land speed is reduced to 5 feet for a number of rounds equal to your Wisdom modifier unless it makes a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier).
+722	4	1	Bonus Feat: Shatter Defenses	1	1	0	NULL	NULL	134	Any shaken, frightened, or panicked opponent hit by you this round is flat-footed to your attacks until the end of your next turn. This includes any additional attacks you make this round.
+723	4	1	Bonus Feat: Shield Focus	1	1	0	NULL	NULL	135	Increase the AC bonus granted by any shield you are using by 1.
+724	4	1	Bonus Feat: Shield Proficiency	1	1	0	NULL	NULL	136	When you use a shield (except a tower shield), the shield's armor check penalty only applies to Strength- and Dexterity-based skills.
+725	4	1	Bonus Feat: Shield Slam	1	1	0	NULL	NULL	137	Any opponents hit by your shield bash are also hit with a free bull rush attack, substituting your attack roll for the combat maneuver check (see Chapter 8). This bull rush does not provoke an attack of opportunity. Opponents who cannot move back due to a wall or other surface are knocked prone after moving the maximum possible distance. You may choose to move with your target if you are able to take a 5-foot step or to spend an action to move this turn.
+726	4	1	Bonus Feat: Shot on the Run	1	1	0	NULL	NULL	138	As a full-round action, you can move up to your speed and make a single ranged attack at any point during your movement.
+727	4	1	Bonus Feat: Sickening Critical	1	1	0	NULL	NULL	139	Whenever you score a critical hit, your opponent becomes sickened for 1 minute. The effects of this feat do not stack. Additional hits instead add to the effect's duration.
+728	4	1	Bonus Feat: Simple Weapon Proficiency	1	1	0	NULL	NULL	141	You make attack rolls with simple weapons without penalty.
+729	4	1	Bonus Feat: Snatch Arrows	1	1	0	NULL	NULL	143	When using the Def lect Arrows feat you may choose to catch the weapon instead of just def lecting it. Thrown weapons can immediately be thrown back as an attack against the original attacker (even though it isn't your turn) or kept for later use. You must have at least one hand free (holding nothing) to use this feat.
+730	4	1	Bonus Feat: Spellbreaker	1	1	0	NULL	NULL	147	Enemies in your threatened area that fail their checks to cast spells defensively provoke attacks of opportunity from you.
+731	4	1	Bonus Feat: Spirited Charge	1	1	0	NULL	NULL	148	When mounted and using the charge action, you deal double damage with a melee weapon (or triple damage with a lance).
+732	4	1	Bonus Feat: Spring Attack	1	1	0	NULL	NULL	149	As a full-round action, you can move up to your speed and make a single melee attack without provoking any attacks of opportunity from the target of your attack. You can move both before and after the attack, but you must move at least 10 feet before the attack and the total distance that you move cannot be greater than your speed. You cannot use this ability to attack a foe that is adjacent to you at the start of your turn.
+733	4	1	Bonus Feat: Staggering Critical	1	1	0	NULL	NULL	150	Whenever you score a critical hit, your opponent becomes staggered for 1d4+1 rounds. A successful Fortitude save reduces the duration to 1 round. The DC of this Fortitude save is equal to 10 + your base attack bonus. The effects of this feat do not stack. Additional hits instead add to the duration.
+734	4	1	Bonus Feat: Stand Still	1	1	0	NULL	NULL	151	When a foe provokes an attack of opportunity due to moving through your adjacent squares, you can make a combat maneuver check as your attack of opportunity. If successful, the enemy cannot move for the rest of his turn. An enemy can still take the rest of his action, but cannot move. This feat also applies to any creature that attempts to move from a square that is adjacent to you if such movement provokes an attack of opportunity.
+735	4	1	Bonus Feat: Step Up	1	1	0	NULL	NULL	153	Whenever an adjacent foe attempts to take a 5-foot step away from you, you may also make a 5-foot step as an immediate action so long as you end up adjacent to the foe that triggered this ability. If you take this step, you cannot take a 5-foot step during your next turn. If you take an action to move during your next turn, subtract 5 feet from your total movement.
+736	4	1	Bonus Feat: Strike Back	1	1	0	NULL	NULL	155	You can ready an action to make a melee attack against any foe that attacks you in melee, even if the foe is outside of your reach.
+737	4	1	Bonus Feat: Stunning Critical	1	1	0	NULL	NULL	156	Whenever you score a critical hit, your opponent becomes stunned for 1d4 rounds. A successful Fortitude save reduces this to staggered for 1d4 rounds. The DC of this Fortitude save is equal to 10 + your base attack bonus. The effects of this feat do not stack. Additional hits instead add to the duration.
+738	4	1	Bonus Feat: Stunning Fist	1	1	0	NULL	NULL	157	You must declare that you are using this feat before you make your attack roll (thus, a failed attack roll ruins the attempt). Stunning Fist forces a foe damaged by your unarmed attack to make a Fortitude saving throw (DC 10 + 1/2 your character level + your Wis modifier), in addition to dealing damage normally. A defender who fails this saving throw is stunned for 1 round (until just before your next turn). A stunned character drops everything held, can't take actions, loses any Dexterity bonus to AC, and takes a -2 penalty to AC. You may attempt a stunning attack once per day for every four levels you have attained (but see Special), and no more than once per round. Constructs, oozes, plants, undead, incorporeal creatures, and creatures immune to critical hits cannot be stunned.
+739	4	1	Bonus Feat: Throw Anything	1	1	0	NULL	NULL	158	You do not suffer any penalties for using an improvised ranged weapon. You receive a +1 circumstance bonus on attack rolls made with thrown splash weapons.
+740	4	1	Bonus Feat: Tiring Critical	1	1	0	NULL	NULL	159	Whenever you score a critical hit, your opponent becomes fatigued. This feat has no additional effect on a fatigued or exhausted creature.
+741	4	1	Bonus Feat: Tower Shield Proficiency	1	1	0	NULL	NULL	161	When you use a tower shield, the shield's armor check penalty only applies to Strength and Dexterity-based skills.
+742	4	1	Bonus Feat: Trample	1	1	0	NULL	NULL	162	When you attempt to overrun an opponent while mounted, your target may not choose to avoid you. Your mount may make one hoof attack against any target you knock down, gaining the standard +4 bonus on attack rolls against prone targets.
+743	4	1	Bonus Feat: Two-Weapon Defense	1	1	0	NULL	NULL	164	When wielding a double weapon or two weapons (not including natural weapons or unarmed strikes), you gain a +1 shield bonus to your AC. When you are fighting defensively or using the total defense action, this shield bonus increases to +2.
+744	4	1	Bonus Feat: Two-Weapon Fighting	1	1	0	NULL	NULL	165	Your penalties on attack rolls for fighting with two weapons are reduced. The penalty for your primary hand lessens by 2 and the one for your off hand lessens by 6. See Two-Weapon Fighting in Chapter 8.
+745	4	1	Bonus Feat: Two-Weapon Rend	1	1	0	NULL	NULL	166	If you hit an opponent with both your primary hand and your off-hand weapon, you deal an additional 1d10 points of damage plus 1-1/2 times your Strength modifier. You can only deal this additional damage once each round.
+746	4	1	Bonus Feat: Unseat	1	1	0	NULL	NULL	167	When charging an opponent while mounted and wielding a lance, resolve the attack as normal. If it hits, you may immediately make a free bull rush attempt in addition to the normal damage. If successful, the target is knocked off his horse and lands prone in a space adjacent to his mount that is directly away from you.
+747	4	1	Bonus Feat: Vital Strike	1	1	0	NULL	NULL	168	When you use the attack action, you can make one attack at your highest base attack bonus that deals additional damage. Roll the weapon's damage dice for the attack twice and add the results together before adding bonuses from Strength, weapon abilities (such as flaming), precision-based damage, and other damage bonuses. These extra weapon damage dice are not multiplied on a critical hit, but are added to the total.
+748	4	1	Bonus Feat: Weapon Finesse	1	1	0	NULL	NULL	169	With a light weapon, elven curve blade, rapier, whip, or spiked chain made for a creature of your size category, you may use your Dexterity modifier instead of your Strength modifier on attack rolls. If you carry a shield, its armor check penalty applies to your attack rolls.
+749	4	1	Bonus Feat: Weapon Focus	1	10	0	NULL	NULL	170	You gain a +1 bonus on all attack rolls you make using the selected weapon.
+750	4	1	Bonus Feat: Weapon Specialization	1	10	0	NULL	NULL	171	You gain a +2 bonus on all damage rolls you make using the selected weapon.
+751	4	1	Bonus Feat: Whirlwind Attack	1	1	0	NULL	NULL	172	When you use the full-attack action, you can give up your regular attacks and instead make one melee attack at your highest base attack bonus against each opponent within reach. You must make a separate attack roll against each opponent. When you use the Whirlwind Attack feat, you also forfeit any bonus or extra attacks granted by other feats, spells, or abilities.
+752	4	1	Bonus Feat: Wind Stance	1	1	0	NULL	NULL	174	If you move more than 5 feet this turn, you gain 20% concealment for 1 round against ranged attacks.

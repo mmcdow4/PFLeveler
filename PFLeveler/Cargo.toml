@@ -1,0 +1,7 @@
+[package]
+name = "PFLeveler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+PathFinder = { path = "../PathFinder" }

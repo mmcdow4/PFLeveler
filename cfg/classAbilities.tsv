@@ -1,0 +1,652 @@
+id	classId	choicePrereqId	name	lvlReq	spellId	featId	description
+0	0	NULL	Rage	1	NULL	NULL	As a free action enter a rage for a number of rounds equal to 4 + Constitution modifier + 2 per barbarian level after first level. While raging gain +4 morale bonus to Strength and Constitution (granting 2 hit points per Hit Dice which disappear without being lost at the end of the rage), +2 morale bonus to Will saves, and a -2 penalty to AC. While raging cannot use Charisma, Dexterity, or Intelligence based skills except Acrobatics, Fly, Indimidate, and Ride. Rage can be ended as a free action. After a rage ends the barbarian is fatigued for a number of rounds equal to 2 times the number of rounds spent in a rage. Rage ends immediately upon going unconscious.
+1	1	NULL	Bardic Performance	1	NULL	NULL	Use the perform skill to create magical effects on those around you, and yourself if desired. Can be used for a number of rounds per day equal to 4 + your Charisma modifier, and for each level after first you may perform for an additional 2 rounds per day. Starting a bardic performance is a standard action and maintaining a performance is a free action.
+2	2	NULL	Channel Energy	1	NULL	NULL	Channel power through a holy (or unholy) symbol to release a wave of energy. Good clerics channel positive energy which heals all living creatures and damages all undead creatures within 30 feet. Evil clerics channel negative energy which heals undead creatures and damages living creatures. Neutral clerics must permanently choose at first level whether they will channel positive or negative energy. The magnitude of this effect is 1d6 points of damage plus 1d6 for every two cleric levels beyond the first. A Will save of 10 + 1/2 your cleric level + your Charisma modifier can be made to halve the damage dealt by channeled energy. May be used a number of times per day equal to 3 + your Charisma modifier., depending on good/evil alignment. Affects all creatures within a 30 foot radius; the magnitude of the effect is Nd6, where N is (cleric level + 1)/2, rounded down.
+3	5	NULL	Flurry of Blows	1	NULL	NULL	Make a flurry of blows as a full attack action: the monk may make one additional attack with a -2 penalty on all attack roles, or two additional attacks at 8th level or above, or three additional attacks at 15th level and above.
+4	5	NULL	Unarmed Strike	1	NULL	98	Monk gains Improved Unarmed Strike feat. Attacks may be with fist, elbows, knees, and feet.
+5	5	NULL	Stunning Fist	1	NULL	157	Monk gains the Stunning Fist feat. Monk may replace the stun effect with the following effects at the following levels: fatigued at 4th level, sickened at 8th level, staggered at 12th level, permanently blind at 16th level, paralyzed at 20th level.
+6	5	NULL	Ki Strike	4	NULL	NULL	Monk can spend one ki point to make a ki strike: at 4th level unarmed attacks are treated as magic weapons, at 7th level unarmed attacks are also treated as cold iron and silver, at 10th level unarmed attacks are also treated as lawful weaons, at 16th level unarmed attacks are also treated as adamantine weapons.
+7	5	NULL	Wholeness of Body	7	NULL	NULL	Monk can spend two ki points to heal themselves a number of hitpoints equal to half their monk level as a standard action.
+8	5	NULL	Abundant Step	12	NULL	NULL	Monk can spend two ki points to slip magically between spaces as if using the spell Dimension Door.
+9	5	NULL	Quivering Palm	15	NULL	NULL	Once per day the monk can cause fatal vibrations in another creature. The monk must announce their intent before the attack, and if the attack deals damage then the attempt is successful, after which the monk can choose to kill the creature at any time using a free action. Can not affect creatures immune to critical hits.
+10	5	NULL	Empty Body	19	NULL	NULL	The monk can spend three ki points to assume an ethereal state for 1 minute as if using the spell Etherealness.
+11	6	NULL	Detect Evil	1	NULL	NULL	At will the paladin can use Detect Evil as the spell.
+12	6	NULL	Smite Evil	1	NULL	NULL	As a swift action, once per day (and an additonal time per day per three levels after first level) the paladin may smite an enemy. If that enemy is evil, the paladin ads their Charisma bonus to attack rolls and adds their paladin level to all damage rolls made against the target. If the target is an outsider, dragon, or undead the damage bonus increases to 2 points per paladin level for the first successful attack. The paladin gains a deflection bonus equal to their Charisma modifier against attacks made by the target of the smite.
+13	6	NULL	Lay on Hands	2	NULL	NULL	The paladin can heal wounds by touch. As a standard action on others or a swift action on self heal 1d6 per 2 paladin levels, or deal that much damage as a melee touch attack to an undead target. May be used a number of times per day equal to 1/2 of the caster's paladin level plus their Charisma modifier.
+14	6	NULL	Channel Positive Energy	4	NULL	NULL	At the cost of two uses of Lay on Hands the paladin may channel positive energy like a cleric. This is a Charisma based ability.
+15	6	NULL	Aura of Justice	11	NULL	NULL	At the cost of two uses of Smite Evil the paladin may grant the ability to Smite Evil to all allies within 10 feet. Allies must use this smite before the start of the paladin's next turn and the bonuses last for 1 minute. Evil allies gain no benefit from this ability.
+16	7	NULL	Endurance	3	NULL	46	Gain Endurance as a bonus feat
+17	7	NULL	Quarry	9	NULL	NULL	As a standard action you may denote one target in line of sight as your quarry. You may take 10 on Survival checks when following your quarry at normal speed, and you receive a +2 insight bonus on attack rolls against your quarry, and all critical threats are automatically confirmed. You may have only one quarry at a time and your quarry must correspond to one of your favored enemy types. You may dismiss this effect as a free action, but may not designate a new quarry within 24 hours. If you see proof that your quarry is dead you may select a new quarry after 1 hour.
+18	7	NULL	Improved Quarry	19	NULL	NULL	You may now select a quarry as a free action and can take a 20 while using Survival to track your quarry. Your insight bonus increases to +4. If your quarry is killed or dismissed, you may select a new quarry after 10 minutes.
+19	8	NULL	Sneak Attack	1	NULL	NULL	Any time your target would be denied a Dexterity bonus to AC you may strike a vital spot for extra damage. Extra damage is 1d6 at first level and an additional 1d6 ever two rogue levels after first, extra damage is not affected by critical multipliers. You may choose to deal lethal or non-lethal damaage when using a weapon which deals non-lethal damage, but weapons which deal lethal damage always deal lethal bonus damage.
+20	9	NULL	Eschew Materials	1	NULL	48	Gain the Eschew Materials feat as a bonus feat at 1st level.
+21	9	193	Class Skill: Knowledge (Dungeoneering)	1	NULL	NULL	Gain Knowledge (Dungeoneering) as a class skill
+22	9	193	Enlarge Person spell	3	182	NULL	Your bloodline has granted the Enlarge Person spell
+23	9	193	See Invisiblity spell	5	900	NULL	Your bloodline has granted the See Invisibility spell
+24	9	193	Tongues spell	7	1537	NULL	Your bloodline has granted the Tongues spell
+25	9	193	Black Tentacles spell	9	1632	NULL	Your bloodline has granted the Black Tentacles spell
+26	9	193	Feeblemind spell	11	2136	NULL	Your bloodline has granted the Feeblemind spell
+27	9	193	Veil spell	13	2613	NULL	Your bloodline has granted the Veil spell
+28	9	193	Plane Shift spell	15	2736	NULL	Your bloodline has granted the Plane Shift spell
+29	9	193	Mind Blank spell	17	4843	NULL	Your bloodline has granted the Mind Blank spell
+30	9	193	Shapechange spell	19	4966	NULL	Your bloodline has granted the Shapechange spell
+31	9	193	Acidic Ray (sp)	1	NULL	NULL	Fire an acidic ray as a standard action targeting an enemy within 30 feet as a ranged touch attack. Deals 1d6 points of acid damage +1 for every two Sorcerer levels. May be used a number of times per day equal to 3+ your Charisma modifier.
+32	9	193	Long Limbs (ex)	3	NULL	NULL	Your reach increases by 5 feet when making a melee touch attack. At 11th level increases to 10 feet and at 17th level increases to 15 feet.
+33	9	193	Unusual Anatomy (ex)	9	NULL	NULL	Your anatomy has changed, giving you a 25% chance to ignore any critical hit or sneak attack scored against you, treating it as a normal hit instead. Increases to 50% at 13th level
+34	9	193	Alien Resistance (su)	15	NULL	NULL	You gain spell resistance equal to your Sorcerer level +10
+35	9	193	Aberrant Form (ex)	20	NULL	NULL	Your body has become truly unnatural. You are immune to critical hits and sneak attacks, and you gaint a blindsight with a range of 60 feet and damage reduction 5/-
+36	9	194	Class Skill: Knowledge (Planes)	1	NULL	NULL	Gain Knowledge (Planes) as a class skill
+37	9	194	Cause Fear spell	3	111	NULL	Your bloodline has granted the Cause Fear spell
+38	9	194	Bull's Strength spell	5	542	NULL	Your bloodline has granted the Bull's Strength spell
+39	9	194	Rage spell	7	1406	NULL	Your bloodline has granted the Rage spell
+40	9	194	Stoneskin spell	9	1959	NULL	Your bloodline has granted the Stoneskin spell
+41	9	194	Dismissal spell	11	2100	NULL	Your bloodline has granted the Dismissal spell
+42	9	194	Transformation spell	13	2590	NULL	Your bloodline has granted thespell
+43	9	194	Greater Teleport spell	15	2688	NULL	Your bloodline has granted the Greater Teleport spell
+44	9	194	Unholy Aura spell	17	4891	NULL	Your bloodline has granted the Unholy Aura spell
+45	9	194	Summon Monster IX spell	19	4975	NULL	Your bloodline has granted the Summon Monster IX spell
+46	9	194	Claws (su)	1	NULL	NULL	You can grow claws as a free action, which are treated as natural weapons, allowing you to make two claw attacks as a full attack action using your full attack bonus. These deal 1d4 points of damage each (1d3 if you are small) plus your Strength modifier. At 5th level these become magic weapons, at 7th level damage increases to 1d6 (1d4 if small), at 11th level they become flaming weapons and deal an additional 1d6 points of fire damage on a successful hit. You may use your claws for a number of rounds equal to 3+ your Charisma modifier, and don't need to be consecutive.
+47	9	194	Demon Resistances (ex)	3	NULL	NULL	You gain resist electricity 5 and a +2 bonus on saving throws made against poison. At 9th level your resistance to electricity increases to 10 and bonus to poison saving throws increases to +4.
+48	9	194	Strength of the Abyss (ex)	9	NULL	NULL	You gain a +2 inherent bonus to Strength. Increses to +4 at 13th level, and +6 at 17th level.
+49	9	194	Added Summonings (ex)	15	NULL	NULL	Whenever you summon a creature with the demon subtype or fiendish template using a summon monster spell you summon one additional creature of the same kind.
+50	9	194	Demonic Might (su)	20	NULL	NULL	You gain immunity to electricity and poison, resistance to acid 10, cold 10, and fire 10, and gain telepathy with range 60 feet (allowing you to communicate with any creature that can speak a language).
+51	9	195	Identify spell	3	242	NULL	Your bloodline has granted the Identify spell
+52	9	195	Invisibility spell	5	759	NULL	Your bloodline has granted the Invisibility spell
+53	9	195	Dispel Magic spell	7	1181	NULL	Your bloodline has granted the Dispel Magic spell
+54	9	195	Dimension Door spell	9	1702	NULL	Your bloodline has granted the Dimension Door spell
+55	9	195	Overland Flight spell	11	2237	NULL	Your bloodline has granted the Overland Flight spell
+56	9	195	True Seeing spell	13	2599	NULL	Your bloodline has granted the True Seeing spell
+57	9	195	Greater Teleport spell	15	2688	NULL	Your bloodline has granted the Greater Teleport spell
+58	9	195	Power Word Stun spell	17	4850	NULL	Your bloodline has granted the Power Word Stun spell
+59	9	195	Wish spell	19	4993	NULL	Your bloodline has granted the Wish spell
+60	9	195	Arcane Bond (su)	1	NULL	NULL	Gain an arcane bond as a wizard equal to your Sorcerer level. Any wizard levels you possess stack with your Sorcerer levels when determining the powers of your familiar or bonded object, but this does not allow you to have both a familiar and bonded item.
+61	9	195	Metamagic Adept (ex)	3	NULL	NULL	You may apply any one metamagic feat you know to a spell you are about to cast without increasing the casting time. You must still expend a higher-level spell slot to cast this spell. You can use this ability once per day at 3rd level, and one additional time for every four Sorcerer levels beyond 3rd.
+62	9	195	New Arcana (ex)	9	NULL	NULL	You can add any one spell from the Sorcerer/wizard spell list to your list of spells known. Gain another spell at 13th and 17th level
+63	9	195	School Power (ex)	15	NULL	NULL	Pick one school of magic. The DC for any spells you cast from that school increases by +2, stacking with the bonus granted by the Spell Focus feat
+64	9	195	Arcane Apotheosis (ex)	20	NULL	NULL	You can add any metamagic feats that you nkow to your spells without increasing their casting tiimie, but you still expend higher-level spell slots. Whenever you use magic items that require charges, you can instead expend spell slots to power the item - for every three levels of spell slots that you expend, you consume one less charge.
+65	9	196	Class Skill: Heal	1	NULL	NULL	Gain Heal as a class skill
+66	9	196	Bless spell	3	86	NULL	Your bloodline has granted the Bless spell
+67	9	196	Resist Energy spell	5	868	NULL	Your bloodline has granted the Resist Energy spell
+68	9	196	Magic Circle Against Evil spell	7	1333	NULL	Your bloodline has granted the Magic Circle Against Evil spell
+69	9	196	Remove Curse spell	9	1901	NULL	Your bloodline has granted the Remove Curse spell
+70	9	196	Flame Strike spell	11	2139	NULL	Your bloodline has granted the Flame Strike spell
+71	9	196	Greater Dispel Magic spell	13	2465	NULL	Your bloodline has granted the Greater Dispel Magic spell
+72	9	196	Banishment spell	15	2632	NULL	Your bloodline has granted the Banishment spell
+73	9	196	Sunburst spell	17	4876	NULL	Your bloodline has granted the Sunburst spell
+74	9	196	Gate spell	19	4919	NULL	Your bloodline has granted the Gate spell
+75	9	196	Heavenly Fire (sp)	1	NULL	NULL	You can unleash a ray of heavenly fire as a standard action, targeting an enemy within 30 feet as a ranged touch attack. Against evil creatures this deals 1d4 points of damage +1 for every two Sorcerer levels you possess. This damage is divine and not subject to energy resistance or immuninity. This ray heals good creatures for 1d4 points of damage +1 for every two Sorcerer levels you possess. A good creature cannot benefit from your heavenly fire more than once per day. Neutral creatures are neither healed nor harmed. You can use this ability a number of times equal to 3 + your Charisma modifier
+76	9	196	Celestial Resistances (ex)	3	NULL	NULL	You gain resist acid 5 and resist cold 5. At 9th level these increase to 10.
+77	9	196	Wings of Heaven (su)	9	NULL	NULL	You can sprout heavenly wings and fly for a number of minutes per day equal to your Sorcerer level, with a speed of 60 feet and good maneuverability. Duration does not need to be consecutive, but must be used in 1 minute increments.
+78	9	196	Conviction (su)	15	NULL	NULL	Once per day you can reroll any ability check, attack roll, skill check, or saving throw you just made. You must decide to use this ability after the die is rolled, but before the results are revealed by the GM, and you must take the second result.
+79	9	196	Ascension (su)	20	NULL	NULL	You gain immunity to acid, cold, and petrification. You also gain resist electricity 10, resist fire 10, and a +4 racial bonus on saves against poison. You also gain unlimited use of the Wings of Heaven ability, and the ability to speak with any creature that has a language (as per the Tongues spell).
+80	9	197	Class Skill: Knowledge (History)	1	NULL	NULL	Gain Knowledge (History) as a class skill
+81	9	197	Alarm spell	3	60	NULL	Your bloodline has granted the Alarm spell
+82	9	197	Blur spell	5	92	NULL	Your bloodline has granted the Blur spell
+83	9	197	Protection From Energy spell	7	1397	NULL	Your bloodline has granted the Protection From Energy spell
+84	9	197	Freedom of Movement spell	9	341	NULL	Your bloodline has granted the Freedom of Movement spell
+85	9	197	Break Enchantment spell	11	2047	NULL	Your bloodline has granted the Break Enchantment spell
+86	9	197	Mislead spell	13	2521	NULL	Your bloodline has granted the Mislead spell
+87	9	197	Spell Turning spell	15	2762	NULL	Your bloodline has granted the Spell Turning spell
+88	9	197	Moment of Prescience spell	17	4844	NULL	Your bloodline has granted the Moment of Prescience spell
+89	9	197	Foresight spell	19	4917	NULL	Your bloodline has granted the Foresight spell
+90	9	197	Touch of Destiny (sp)	1	NULL	NULL	You can touch a creature as a standard action, giving it an insight bonus on attack rolls, skill checks, ability checks, and saving throws equal to 1/2 your Sorcerer level (minimum 1) for 1 round. You can use this ability a number of times per day equal to 3 + your Charisma modifier
+91	9	197	Fated (su)	3	NULL	NULL	You gain a +1 luck bonus on all of your saving throws and to your AC during surprise rounds and when you are otherwise unaware of the attack. At 7th level and ever four levels thereafter this bonus increases by +1.
+92	9	197	It Was Meant To Be (su)	9	NULL	NULL	You may reroll any one attack roll, critical hiit confirmation roll, or level check made to overcome spell resistance. You must decide to use this ability after the first roll is made but before the results are revealed by the GM, and you must take the second result. You may use this ability once per day, increasing to twice per day at 17th level.
+93	9	197	Within Reach (su)	15	NULL	NULL	Once per day when an attack or spell that causes damage would result in your death, you may attempt a DC 20 Will save. If successful you are instead reduced to -1 hit points and are automatically stabilized. The bonus from your Fated ability applies to this save.
+94	9	197	Destiny Realized (su)	20	NULL	NULL	Any critical threats made against you only confirm if the second roll results in a natural 20. Any critical threats you score with a spell are automatically confirmed. Once per day you can automatically succeed at one caster level check made to overcome spell resistance. You must use this abililty before making the roll.
+95	9	198	Class Skill: Perception	1	NULL	NULL	Gain Perception as a class skill
+96	9	198	Mage Armor spell	3	290	NULL	Your bloodline has granted the Mage Armor spell
+97	9	198	Resist Energy spell	5	868	NULL	Your bloodline has granted the Resist Energy spell
+98	9	198	Fly spell	7	1235	NULL	Your bloodline has granted the Fly spell
+99	9	198	Fear spell	9	1726	NULL	Your bloodline has granted the Fear spell
+100	9	198	Spell Resistance spell	11	2305	NULL	Your bloodline has granted the Spell Resistance spell
+101	9	198	Form of the Dragon I spell	13	2451	NULL	Your bloodline has granted the Form of the Dragon I spell
+102	9	198	Form of the Dragon II spell	15	2669	NULL	Your bloodline has granted the Form of the Dragon II spell
+103	9	198	Form of the Dragon III spell	17	4807	NULL	Your bloodline has granted the Form of the Dragon III spell
+104	9	198	Wish spell	19	4993	NULL	Your bloodline has granted the Wish spell
+105	9	198	Claws (su)	1	NULL	NULL	You can grow claws as a free action, which are treated as natural weapons, allowing you to make two claw attacks as a full attack action using your full attack bonus. These deal 1d4 points of damage each (1d3 if you are small) plus your Strength modifier. At 5th level these become magic weapons, at 7th level damage increases to 1d6 (1d4 if small), at 11th level deal an additional 1d6 points of damage of your energy type on a successful hit. You may use your claws for a number of rounds equal to 3+ your Charisma modifier, and don't need to be consecutive.
+106	9	198	Dragon Resistances (ex)	3	NULL	NULL	You gain resist 5 against your energy type and aa +1 natural armor bonus. At 9th level this increases to resist 10 and +2 armor bonus, and at 15th level the natural armor bonus increases to +4
+107	9	198	Breath Weapon (su)	9	NULL	NULL	You gain a breath weapon which deals 1d6 points of damage of your energy type per Sorcerer level. Those caught in the area of teh breath receive a Reflex save for half damage. The DC of this save is equal to 10 + 1/2 your Sorcerer level + your Charisma modifier. The shape of the breat weapon depends on your dragon type (chart on page 75). You may use this ability once per day, increasing to twice per day at 17th level, and three times per day at 20th level.
+108	9	198	Wings (su)	15	NULL	NULL	Leathery dragon wings grow from your back as a standard action, giving you a fly speed of 60 feet with average maneuverability. You can dismiss the wings as a free action.
+109	9	198	Power of Wyrms (su)	20	NULL	NULL	You gain immunity to paralysis, sleep, and damage of your energy type. You also gain blindsense 60 feet.
+110	9	199	Class Skill: Knowledge (Planes)	1	NULL	NULL	Gain Knowledge (Planes) as a class skill
+111	9	199	Burning Hands spell	3	103	NULL	Your bloodline has granted the Burning Hands spell (always deals damage of the type determined by your element)
+112	9	199	Scorching Ray spell	5	892	NULL	Your bloodline has granted the Scorching Ray spell (always deals damage of the type determined by your element)
+113	9	199	Protection From Energy spell	7	1397	NULL	Your bloodline has granted the Protection From Energy spell
+114	9	199	Elemental Body I spell	9	1715	NULL	Your bloodline has granted the Elemental Body I spell
+115	9	199	Elemental Body II spell	11	2116	NULL	Your bloodline has granted the Elemental Body II spell
+116	9	199	Elemental Body III spell	13	2433	NULL	Your bloodline has granted the Elemental Body III spell
+117	9	199	Elemental Body IV spell	15	2655	NULL	Your bloodline has granted the Elemental Body IV spell
+118	9	199	Summon Monster VIII spell	17	4874	NULL	Your bloodline has granted the Summon Monster VIII spell (may summon elementals only)
+119	9	199	Elemental Swarm spell	19	4912	NULL	Your bloodline has granted the Elemental Swarm spell
+120	9	199	Elemental Ray (sp)	1	NULL	NULL	You can unleash an elemental ray as a standard action targeting any foe within 30 feet as a ranged touch attack. This ray deals 1d6 points of damage of your energy type + 1 for every two Sorcerer levels you possess. You can use this ability a number of times per day equal to 3 + your Charisma modifier.
+121	9	199	Elemental Resistance (ex)	3	NULL	NULL	You gain energy resist 10 against your energy type. Increases to resist 20 at 9th level
+122	9	199	Elemental Blast (sp)	9	NULL	NULL	Once per day you can unleash a blast of elemental power. This 20-foot-radius burst does 1d6 points of damage of your energy type per Sorcerer level. Those caught in the area receive a Reflex save for half damage. Creatures that fail their saves gain vulnerability to your energy type until the end of your next turn. The DC of this save is equal to 10 + 1/2 your Sorcerer level + your Charisma modifier. At 17th level you can use this ability twice per day, and three times per day at 20th level. 
+123	9	199	Elemental Movement (su)	15	NULL	NULL	You gain a special movement type or bonus based on your chosen element (chart on page 76)
+124	9	199	Elemental Body (su)	20	NULL	NULL	You gain immunity to sneak attacks, critical hits, and damage from your energy type
+125	9	200	Class Skill: Knowledge (Nature)	1	NULL	NULL	Gain Knowledge (Nature) as a class skill
+126	9	200	Entangle spell	3	184	NULL	Your bloodline has granted the Entangle spell
+127	9	200	Hideous Laughter spell	5	732	NULL	Your bloodline has granted the Hideous Laughter spell
+128	9	200	Deep Slumber spell	7	1167	NULL	Your bloodline has granted the Deep Slumber spell
+129	9	200	Poison spell	9	1885	NULL	Your bloodline has granted the Poison spell
+130	9	200	Tree Stride spell	11	2348	NULL	Your bloodline has granted the Tree Stride spell
+131	9	200	Mislead spell	13	2521	NULL	Your bloodline has granted the Mislead spell
+132	9	200	Phase Door spell	15	2732	NULL	Your bloodline has granted the Phase Door spell
+133	9	200	Irresistible Dance spell	17	4833	NULL	Your bloodline has granted the Irresistible Dance spell
+134	9	200	Shapechange spell	19	4966	NULL	Your bloodline has granted the Shapechange spell
+135	9	200	Laughing Touch (sp)	1	NULL	NULL	You can cause a creature to burst out laughing for 1 round as a melee touch attaack. A laughing creature can only take a move action but can defend itself normally. Once a creature has been affected by laughing touch it is immune to its effects for 24 hours. You can use this ability a number of times equal to 3 + your Charisma modifier. This is a mind-affecting effect.
+136	9	200	Woodland Stride (ex)	3	NULL	NULL	You can move through any sort of undergrowth (natural thorns, briars, overgrown areas, etc.) at your normal speed and without taking damage or suffering any other impairment. Thorns, briars, and overgrown areas that have been maggically manipulated to impede motion still affect you.
+137	9	200	Fleeting Glance (sp)	9	NULL	NULL	You can turn invisible for a number of rounds per day equal to your Sorcerer level. This functions as the spell Greater Invisibility. These rounds need not be consecutive.
+138	9	200	Fey Magic (su)	15	NULL	NULL	You may reroll any caster level check made to overcome spell resistance. You must decide to use this ability before the results are revealed by the GM, and you must take the second result.
+139	9	200	Soul of the Fey (su)	20	NULL	NULL	You gain immunity to poison and DR 10/cold iron. Creatures of the animal type do not attack you unless compelled to do so through magic. Once per day, you can cast Shadow Walk aas a spell-like ability using your Sorcerer level as your caster level.
+140	9	201	Class Skill: Diplomacy	1	NULL	NULL	Gain Diplomacy as a class skill
+141	9	201	Protection From Good spell	3	342	NULL	Your bloodline has granted the Protection From Good spell
+142	9	201	Scorching Ray spell	5	892	NULL	Your bloodline has granted the Scorching Ray spell
+143	9	201	Suggestion spell	7	1507	NULL	Your bloodline has granted the Suggestion spell
+144	9	201	Charm Monster spell	9	1652	NULL	Your bloodline has granted the Charm Monster spell
+145	9	201	Dominate Person spell	11	2109	NULL	Your bloodline has granted the Dominate Person spell
+146	9	201	Planar Binding spell	13	2537	NULL	Your bloodline has granted the Planar Binding spell (devils and creatures with fiendish template only)
+147	9	201	Greater Teleport spell	15	2688	NULL	Your bloodline has granted the Greater Teleport spell
+148	9	201	Power Word Stun spell	17	4850	NULL	Your bloodline has granted the Power Word Stun spell
+149	9	201	Meteor Swarm spell	19	4946	NULL	Your bloodline has granted the Meteor Swarm spell
+150	9	201	Corrupting Touch (sp)	1	NULL	NULL	You can cause a creature to become shaken for a number of rounds equal to 1/2 your Sorcerer level (minimum 1) as a melee touch attack. Creatures shaken by this ability radiate an aura of evil, as if they were an evil outsider. Multiple touches do not stack, but they do add to the duration. You can use this ability a number of times equal to 3 + your Charisma modifier.
+151	9	201	Infernal Resistances (ex)	3	NULL	NULL	You gain resist fire 5 and +2 bonus on saving throws made against poison. At 9th level this increases to resist fire 10 and a +4 bonus on saving throws against poison.
+152	9	201	Hellfire (sp)	9	NULL	NULL	You can call down a 10-foot-radius column of hellfire which deals 1d6 points of fire damage per Sorcerer level. Those caught in the area receive a Reflex save for half damage. Good creatures that fail their saves are shaken for a number of rounds equal to your Sorcerer level. The DC of this save is equal to 10 + 1/2 your Sorcerer level + your Charisma modifier. You may use this ability once per day at 9th level, twice per day at 17th level, and three times per day at 20th level.
+153	9	201	On Dark Wings (su)	15	NULL	NULL	You can grow fearsom bat wings as a standard action, giving you a fly speed of 60 feet with average maneuverability. The wings can be dismissed as a free action.
+154	9	201	Power of the Pit (su)	20	NULL	NULL	You gain immunity to fire and poison and resist acid 10 and resist cold 10, and the ability to see perfectly in darkness of any kind to a range of 60 feet.
+155	9	202	Class Skill: Knowledge (Religion)	1	NULL	NULL	Gain Knowledge (Religion) as a class skill
+156	9	202	Chill Touch spell	3	121	NULL	Your bloodline has granted the Chill Touch spell
+157	9	202	False Life spell	5	666	NULL	Your bloodline has granted the False Life spell
+158	9	202	Vampiric Touch spell	7	1556	NULL	Your bloodline has granted the Vampiric Touch spell
+159	9	202	Animate Dead spell	9	1593	NULL	Your bloodline has granted the Animate Dead spell
+160	9	202	Waves of Fatigue spell	11	2370	NULL	Your bloodline has granted the Waves of Fatigue spell
+161	9	202	Undeath to Death spell	13	2603	NULL	Your bloodline has granted the Undeath to Death spell
+162	9	202	Finger of Death spell	15	2665	NULL	Your bloodline has granted the Finger of Death spell
+163	9	202	Horrid Wilting spell	17	4830	NULL	Your bloodline has granted the Horrid Wilting spell
+164	9	202	Energy Drain spell	19	4913	NULL	Your bloodline has granted the Energy Drain spell
+165	9	202	Grave Touch (sp)	1	NULL	NULL	You can cause a creature to become shaken for a number of rounds equal to 1/2 your Sorcerer level (minimum 1) as a melee touch attack. If you touch a shaken creature with this, it becomes frightened for 1 round if it has fewer Hit Dice than your Sorcerer level. You can use this ability a number of times per day equal to 3 + your Charisma modifier.
+166	9	202	Death's Gift (su)	3	NULL	NULL	You gain resist cold 5 and DR 5/- against nonlethal damage. At 9th level this increases to resist cold 10 and DR 10/- against nonlethal damage.
+167	9	202	Grasp of the Dead (sp)	9	NULL	NULL	You can cause a swarm of skeletal arms to brust from the ground to rip and tear at your foes. The skeletal arms erupt from the ground in a 20-foot-radius burst. Anyone in this area takes 1d6 points of slashing damage per Sorcerer level. Those caught in the area receive a Reflex save for half damage. Those who fail the save are unable to move for 1 round. The DC for this save is equal to 10 + 1/2 your Sorcerer level + your Charisma modifier. The skeletal arms disappear after 1 round. The arms must burst up from a solid surface. You can use this ability once per day at 9th level, twice per day at 17th level, and three times per day at 20th level. This power has a range of 60 feet.
+168	9	202	Incorporeal Form (sp)	15	NULL	NULL	Once per day you can become incorporeal for 1 round per Sorcerer level. While in this form, you gain the incorporeal subtype. You only take half damage from corporeal sources as long as they are magic (you take no damage from non-magic weapons and objects). Likewise, your spells deal only half damage to corporeal creatures. Spells and other effects that do not deal damage function normally.
+169	9	202	One of Us (ex)	20	NULL	NULL	Your form begins to rot (the appearance is up to you) and undead see you as one of them. You gain immunity to cold, nonlethal damage, paralysis, and sleep. You also gain DR 5/-. Unintelligent undead do not notice you unless you attack them. You receive a +4 morale bonus on saving throws made against spells and spell-like abilities cast by undead.
+170	10	NULL	Scribe Scroll	1	NULL	131	Gain Scribe Scroll as a bonus feat
+171	10	342	Resistance (ex)	1	NULL	NULL	You gain resistance 5 to an energy type of your choice, chosen when you prepare your spells each day. Increases to resistance 10 at 11th level, and becomes immunity at 20th level.
+172	10	342	Protective Ward (sp)	1	NULL	NULL	As a standard action create a 10-foot-radius field of protective magic centered on you that lasts for a number of rounds equal to your Intelligence modifier. All allies in this area (including you) receive a +1 deflection bonus to their AC, increasing by +1 for every five wizard levels you possess. You may use thiss ability a number of times per day equal to 3 + your Intelligence modifier.
+173	10	342	Energy Absorption (su)	6	NULL	NULL	You have an amount of energy absorption equal to 3 times your wizard level per day. Whenever you take energy damage, apply immunity, vulnerability, and resistance first and apply the remainder to this absorption, reducing your daily total by that amount. Any damage in excess of your absorption is applied to you normally.
+174	10	343	Summoner's Charm (su)	1	NULL	NULL	Whenever you case a Conjuration spell increase teh durration by a number of rounds equal to 1/2 your wizard level (minimum 1). This is not doubled by Extend Spell. At 20th level, you can change the duration of all summon monster spells to be permanent, but can have no more than one summon spell permanent at a time.
+175	10	343	Acid Dart (sp)	1	NULL	NULL	As a standard action you can unleash an acid dart targeting any foe within 30 feet as a ranged touch attack. This deals 1d6 points of acid damage +1 for every two wizard levels you possess. You may use this ability a number of times per day equal to 3 + your Intelligence modifier. This attack ignores spell resistance.
+176	10	343	Dimensional Steps (sp)	8	NULL	NULL	You may teleport up to 30 feet per wizard level per day as a standard action. This musts be used in 5-foot increments and does not provoke an attack of opportunity. You may bring other willing creatures with you, but must expend an equal amount of distance for each additional creature.
+177	10	344	Forewarned (su)	1	NULL	NULL	You can always act in a surprise round even if you fail to make a Perception roll to notice a foe, but you are still considered flat-footed until you take an action. You also receive a bonus on initiative checks equal to 1/2 your wizard level (minimum +1). At 20th level you may assume a natural 20 on all initiative rolls.
+178	10	344	Diviner's Fortune (sp)	1	NULL	NULL	You may touch any creature as a standard action to give it an insight bonus on all of its attack rolls, skill checks, and saving throws equal to 1/2 your Wizard level (minimum +1) for 1 round. You can use this ability a number of times per day equal to 3 + your Intelligence modifier.
+179	10	344	Scrying Adept (sp)	8	NULL	NULL	You are always aware when you are being observed via magic. In addition, whenever you scry on a subject, treat the subject as one step more familiar to you. Very familiar subjects gget a -10 penalty on their save to avoid your scrying attempts.
+180	10	345	Enchanting Smile (su)	1	NULL	NULL	You gain a +2 enhancement bonus on Bluff, Diplomacy, and Intimidate skill checks, increasing by an additional +1 for every five Wizard levels you possess. At 20th level, whenever you succeed at a savingg throww against a spell of the enchantment school, that spell is reflected back at its caster, as per spell turning.
+181	10	345	Dazing Touch (sp)	1	NULL	NULL	You can cause a living creature to become dazed for 1 round as a melee touch attack. Creatures with more Hit Dice than your wizard level are unaffected.You can use this ability a number of times per day equal to 3+ your Intelligence modifier.
+182	10	345	Aura of Despair (su)	8	NULL	NULL	You can emit a 30-foot aura of despaiir for a number of rounds per day equal to your wizard level. Enemies within this aura take a -2 penalty on ability checks, attack rolls, damage rolls, savingg throws, and skill checks. These rounds do not need to be consecutive. This is a mind-altering affect.
+183	10	346	Intense Spells (su)	1	NULL	NULL	Whenever you cast an evocation spell that deals damage, add 1/2 your wizard level to the damage (minimum +1). This bonus damage is not increased by Empower Spell or similar effects. This only applies once per spell, not once per missile or ray, and cannot be split between multiple missiles or rays. This damage is of the same type as the spell. At 20th level, whenever you cast an evocation spell you can roll twice to penetrate a creature's spell resistance and take the better result.
+184	10	346	Force Missile (sp)	1	NULL	NULL	As a standard action you can unleash a force missile that automattically strikes a foe, as magic missile. The force missile deals 1d4 points of damage plus the damage from your intense spells evocation power. You can use this ability a number of times per day equal to 3+ your Intelligence modifier.
+185	10	346	Elemental Wall (sp)	8	NULL	NULL	You can create a wall of energy that lasts for a number of rounds per day equal to your wizard level. These rounds do not need to be consecutive. This wall deals acid, cold, electricity, or fire damage, determined when you create it. The elemental wall otherwise functions like wall of fire.
+186	10	347	Extended Illusions (su)	1	NULL	NULL	Any illusion spell you cast with a duration of 'concentration' lasts a number of additional rounds equal to 1/2 your wizard level after you stop maintaining concentration (minimum +1 round). At 20th level, you can make one illusion spell with a duration of 'concentration' become permanent. Only one spell can be permanent at a time.
+187	10	347	Blinding Ray (sp)	1	NULL	NULL	As a standard action you can fire a shimmering ray at any foe within 30 feet as a ranged touch attack. The ray causes creatures to be blinded for 1 round. Creatures with more Hit Dice than your Wizard level are dazzled for 1 round instead. You can use this ability a number of times equal to 3+ your Intelligence modifier.
+188	10	347	Invisibility Field (sp)	8	NULL	NULL	You can make yourself invisible as a swift action for a number of rounds equal to your wizard level. These rounds do not need to be consecutive. Otherise functions as greater invisiblity.
+189	10	348	Power over Undead (su)	1	NULL	NULL	Take Command Undead or Turn Undead as a bonus feat. You can channel energy a number of times per day equal to 3+ your Intelligence modifier, but only to use this bonus feat. You may take other feats to add to this ability, like Extra Channel or Improved Channel, but not feats that alter this ability. For the DC of these saves, use your wizard level instead of your cleric level. At 20th level, undead cannot add their channel resist to the save against this ability.
+190	10	348	Grave Touch (sp)	1	NULL	NULL	As a standard action, you can make a melee touch attack that causes a living creature to become shaken for a number of rounds equal to 1/2 your wizard level (minimum 1). If you touch a shaken creature they become frightened for 1 round, if they have fewer Hit Dice than your wizard level. You can use this ability a number of times equal to 3 + your Intelligence modifier.
+191	10	348	Life Sight (su)	8	NULL	NULL	You gain blindsight to a range of 10 feet for a number of rounds per day equal to your wizard level. This ability only allows you to detect living creatures and undead creatures. This sight also tells whether a creature is living or undead. The range increases by 10 feet at 12th level, and an additional 10 feet for every four levels beyond 12th. These rounds do not need to be consecutive.
+192	10	349	Physical Enhancement (su)	1	NULL	NULL	You gain a +1 enhancement bonus to one phisical ability score (Strength, Dexterity, or Constitution). This bonus increases by +1 for every five wizard levels you possess to a maximum as +5 at 20th level. You can change this bonus to a new ability score when you prepare spells. At 20th level this applies to two physical ability scores at a time.
+193	10	349	Telekinetic Fist (sp)	1	NULL	NULL	As a standard action you can strike with a telekinetic fist, targeting any foe within 30 feet as a ranged touch attack. The telekinetic fist deals 1d4 points of bludgeoning damage + 1 for every two wizard levels you possess. You can use this ability a number of times per day equal to 3 + your Intelligence modifier.
+194	10	349	Change Shape (sp)	8	NULL	NULL	You can change your shape for a number of rounds per day equal to your wizard level. These rounds do not need to be consecutive. This ability otherwise functions like Beast Shape II or Elemental Body I. At 12th level, this ability functions like Beast Shape III or Elemental Body II.
+195	10	350	Hand of the Apprentice (su)	1	NULL	NULL	You cause your melee weapon to fly from your grasp and strike a foe before instantly returning to you. As a standard action, you can make a single attack using a melee weapon at a range of 30 feet. This attack is treated as a ranged attack with a thrown weapon, except that you add your Intelligence modifier on the attack roll instead of your Dexterity modifier (damage still relies on Strength). This ability cannot be used to perform a combat maneuver. You can use this ability a number of times per day equal to 3 + your Intelligence modifier.
+196	10	350	Metamagic Mastery (su)	8	NULL	NULL	You can apply any one metamagic feat that you know to a spell you are about to cast. This does not alter the level of the spell or the casting time. You can use this ability once per day at 8th level, and one additional time per day for every two wizard levels you possess beyond 8th. Any time you use this ability to apply a metamagic feat that increases the spell level by more than 1, you must use an additional daily usage for each level above 1 that the feat adds to the spell. Even though this ability does not modify the spell's actual level, you cannot use this ability to cast a spell whose modified spell level would be above the level of the highest-level spell that you are capable of casting.
+197	2	37	Lightning Arc (sp)	1	NULL	NULL	As a standard action you can unleaash an arc of electricity targeting any foe within 30 feet as a ranged touch attack. This arc deals 1d6 points of electricity damage + 1 for every two cleric levels you possess. You can use this ability a number of days equal to 3 + your Wisdom modifier.
+198	2	37	Electricity Resistance (ex)	6	NULL	NULL	You gain resist electricity 10, increasing to 20 at 12th level, and becomess immunity to electricity at 20th level.
+199	2	37	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+200	2	37	Wind Wall spell	2	1572	NULL	Your domain has granted you the Wind Wall spell
+201	2	37	Gaseous Form spell	3	1245	NULL	Your domain has granted you the Gaseous Form spell
+202	2	37	Air Walk spell	4	1588	NULL	Your domain has granted you the Air Walk spell
+203	2	37	Control Winds spell	5	2084	NULL	Your domain has granted you the Control Winds spell
+204	2	37	Chain Lightning spell	6	2400	NULL	Your domain has granted you the Chain Lightning spell
+205	2	37	Elemental Body IV spell (air only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (air only)
+206	2	37	Whirlwind spell	8	4895	NULL	Your domain has granted you the Whirlwind spell
+207	2	37	Elemental Swarm spell (air only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (air only)
+208	2	38	Speak with Animals (sp)	1	NULL	NULL	You can speak with animals, as per teh spell, for a number of rounds per day equal to 3 + your cleric level
+209	2	38	Animal Companion (ex)	4	NULL	NULL	You fain the service of an animal companion. Your effective druid level for this companion is equal to your cleric level - 3.
+210	2	38	Calm Animals spell	1	110	NULL	Your domain has granted you the Calm Animals spell
+211	2	38	Hold Animal spell	2	733	NULL	Your domain has granted you the Hold Animal spell
+212	2	38	Dominate Animal spell	3	1187	NULL	Your domain has granted you the Dominate Animal spell
+213	2	38	Summmon Nature's Ally IV spell (animals only)	4	1964	NULL	Your domain has granted you the Summon Nature's Ally IV spell (animals only)
+214	2	38	Beast Shape III spell (animals only)	5	2037	NULL	Your domain has granted you the Beast Shape III spell (animals only)
+215	2	38	Antilife Shell spell	6	2382	NULL	Your domain has granted you the Antilife Shell spell
+216	2	38	Animal Shapes spell	7	2793	NULL	Your domain has granted you the Animal Shapes spell
+217	2	38	Summon Nature's Ally VIII spell (animals only)	8	4875	NULL	Your domain has granted you the Summon Nature's Ally VIII spell (animals only)
+218	2	38	Shapechange spell	9	4966	NULL	Your domain has granted you the Shapechange spell
+219	2	39	Artificer's Touch (sp)	1	NULL	NULL	You can cast mending at will, using your cleric level as the caster level to repair damaged objects. In addition, you cause damage to objects and construct creatures by striking them with a melee touch attack. Objects and constructs take 1d6 points of damage +1 for every two cleric levels you possess. This attack bypasses an amount of damage reduction and hardness equal to your cleric level. You can usse this ability a number of times per day equal to 3 + your Wisdom modifier.
+220	2	39	(ex)	8	NULL	NULL	You can give a weapon touched the dancing special weapon quality for 4 rounds. You can use this ability once per day at 8th level, and an additional time per day for every four levels beyond 8th.
+221	2	39	Animate Rope spell	1	66	NULL	Your domain has granted you the Animate Rope spell
+222	2	39	Wood Shape spell	2	1050	NULL	Your domain has granted you the Wood Shape spell
+223	2	39	Stone Shape spell	3	1958	NULL	Your domain has granted you the Stone Shape spell
+224	2	39	Minor Creation spell	4	1858	NULL	Your domain has granted you the Minor Creation spell
+225	2	39	Fabricate spell	5	190	NULL	Your domain has granted you the Fabricate spell
+226	2	39	Major Creation spell	6	2204	NULL	Your domain has granted you the Major Creation spell
+227	2	39	Wall of Iron spell	7	2616	NULL	Your domain has granted you the Wall of Iron spell
+228	2	39	Statue spell	8	2764	NULL	Your domain has granted you the Statue spell
+229	2	39	Prismatic Sphere spell	9	4953	NULL	Your domain has granted you the Prismatic Sphere spell
+230	2	40	Touch of Chaos (sp)	1	NULL	NULL	You can imbue a target with chaos as a melee touch attack. For the next round, anytime the target rolls a d20 he must roll twice and take the less favorable result. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+231	2	40	Chaoss Blade (su)	8	NULL	NULL	You can give a weaon touched the anarchic special weapon quality for a number of rounds equal to 1/2 your Cleric level. You can use this ability once per day at 8th level, and an additional time per day for every four levels beyond 8th.
+232	2	40	Protection from Law spell	1	343	NULL	Your domain has granted you the Protection from Law spell
+233	2	40	Align Weapon spell (Chaos only)	2	476	NULL	Your domain has granted you the Align Weapon spell (Chaos only)
+234	2	40	Magic Circle Against Law spell	3	1335	NULL	Your domain has granted you the Magic Circle Against Law spell
+235	2	40	Chaos Hammer spell	4	1651	NULL	Your domain has granted you the Chaos Hammer spell
+236	2	40	Dispel Law spell	5	2105	NULL	Your domain has granted you the Dispel Law spell
+237	2	40	Animate Objects spell	6	2381	NULL	Your domain has granted you the Animate Objects spell
+238	2	40	Word of Chaos spell	7	2792	NULL	Your domain has granted you the Word of Chaos spell
+239	2	40	Cloak of Chaos spell	8	3796	NULL	Your domain has granted you the Cloak of Chaos spell
+240	2	40	Summon Monster IX spell (chaos spell only)	9	4975	NULL	Your domain has granted you the Summon Monster IX spell (chaos spell only)
+241	2	41	Dazing Touch (sp)	1	NULL	NULL	You can cause a livingg creaturre to become dazed for 1 round as a melee touch attack. Creatures with more Hit Dice than your Cleric level are unaffected. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+242	2	41	Charming Smile (sp)	8	NULL	NULL	You can cast Charm Person as a swift action, with a DC of 10 + 1/2 your Cleric level + your Wisdom modifier. You can only have one creature charmed this way at a time. The total number of roundss of this effect per day is equal to your Cleric level, these rounds do not need to be consecutive, and you can dismiss the charm at any time as a free action. Each attempt to use this ability consumes 1 round of its duration, whether it is successful or not.
+243	2	41	Charm Person spell	1	118	NULL	Your domain has granted you the Charm Person spell
+244	2	41	Calm Emotions spell	2	551	NULL	Your domain has granted you the Calm Emotions spell
+245	2	41	Suggetsion spell	3	1507	NULL	Your domain has granted you the Suggetsion spell
+246	2	41	Heroism spell	4	1276	NULL	Your domain has granted you the Heroism spell
+247	2	41	Charm Monster spell	5	1652	NULL	Your domain has granted you the Charm Monster spell
+248	2	41	Geas/Quest spell	6	2455	NULL	Your domain has granted you the Geas/Quest spell
+249	2	41	Insanity spell	7	2695	NULL	Your domain has granted you the Insanity spell
+250	2	41	Demand spell	8	4797	NULL	Your domain has granted you the Demand spell
+251	2	41	Dominate Monster spell	9	4909	NULL	Your domain has granted you the Dominate Monster spell
+252	2	42	Calming Touch (sp)	1	NULL	NULL	You can touch a creature as a standard action to heal it for 1d6 points of nonlethal damage + 1 point per Cleric level. This touch also removes the fatigued, shaken, and sickened conditions (but has no effect on more severe conditions). You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+253	2	42	Unity (ex)	8	NULL	NULL	Whenever a spell effect targets you and one or more allies within 30 feet, as an immediate action you can use this ability to allow your allies to use your saving throw against the effect in place of their own. Each ally must decide individually before the rolls are made. You can use this ability once per day at 8th level, and one additional time per day for every four Cleric levels beyond 8th.
+254	2	42	Bless spell	1	86	NULL	Your domain has granted you the Bless spell
+255	2	42	Shield Other spell	2	920	NULL	Your domain has granted you the Shield Other spell
+256	2	42	Prayer spell	3	1392	NULL	Your domain has granted you the Prayer spell
+257	2	42	Imbue with Spell Ability spell	4	1806	NULL	Your domain has granted you the Imbue with Spell Ability spell
+258	2	42	Telepathic Bond spell	5	2333	NULL	Your domain has granted you the Telepathic Bond spell
+259	2	42	Heroes' Feast spell	6	2484	NULL	Your domain has granted you the Heroes' Feast spell
+260	2	42	Refuge spell	7	4956	NULL	Your domain has granted you the Refuge spell
+261	2	42	Mass Cure Critical Wounds spell	8	4837	NULL	Your domain has granted you the Mass Cure Critical Wounds spell
+262	2	42	Miracle spell	9	4948	NULL	Your domain has granted you the Miracle spell
+263	2	43	Blind-Fight feat	1	NULL	15	Your domain has granted you the Blind-Fight feat
+264	2	43	Touch of Darkness (sp)	1	NULL	NULL	As a melee touch attack, you can cause a creature's vision to be fraught with shadows and darkness. The creature touched treats all other creatures as if they had concealment, suffering a 20% miss chance on all attack rolls. This effect lasts for a number of rounds equal to 1/22 your Cleric level (minimum 1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+265	2	43	Eyes of Darkness (su)	8	NULL	NULL	Your vision is not impaired by lighting conditions, even in absolute darkness and magic darkness. You can use this ability for a number of rounds per day equal to 1/2 your Cleric level, these rounds do not need to be consecutive.
+266	2	43	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+267	2	43	Blindness/Deafness spell	2	522	NULL	Your domain has granted you the Blindness/Deafness spell (only to cause blindness)
+268	2	43	Deeper Darkness spell	3	1168	NULL	Your domain has granted you the Deeper Darkness spell
+269	2	43	Shadow Conjuration spell	4	1929	NULL	Your domain has granted you the Shadow Conjuration spell
+270	2	43	Summon Monster V spell	5	2321	NULL	Your domain has granted you the Summon Monster V spell (summons 1d3 shadows)
+271	2	43	Shadow Walk spell	6	2555	NULL	Your domain has granted you the Shadow Walk spell
+272	2	43	Power Word Blind spell	7	2740	NULL	Your domain has granted you the Power Word Blind spell
+273	2	43	Greater Shadow Evocation spell	8	4822	NULL	Your domain has granted you the Greater Shadow Evocation spell
+274	2	43	Shades spell	9	4964	NULL	Your domain has granted you the Shades spell
+275	2	43	Bleeding Touch (sp)	1	NULL	NULL	As a melee touch attack you can cause a living creature to take 1d6 points of damage per round. This effect persists for a number of rounds equal to 1/2 your Cleric level (minimum 1) or until stopped with a DC 15 Heal check or any spell or effect that heals damage. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+276	2	43	Death's Embrace (ex)	8	NULL	NULL	You heal damage instead of taking damage from channeled negative energy. If the channeled negative energy targets undead, you heal hit points just like undead in the area.
+277	2	43	Cause Fear spell	1	111	NULL	Your domain has granted you the Cause Fear spell
+278	2	43	Death Knell spell	2	606	NULL	Your domain has granted you the Death Knell spell
+279	2	43	Animate Dead spell	3	1593	NULL	Your domain has granted you the Animate Dead spell
+280	2	43	Death Ward spell	4	1694	NULL	Your domain has granted you the Death Ward spell
+281	2	43	Slay Living spell	5	2293	NULL	Your domain has granted you the Slay Living spell
+282	2	43	Create Undead spell	6	2412	NULL	Your domain has granted you the Create Undead spell
+283	2	43	Destruction spell	7	2650	NULL	Your domain has granted you the Destruction spell
+284	2	43	Create Greater Undead spell	8	4794	NULL	Your domain has granted you the Create Greater Undead spell
+285	2	43	Wail of the Banshee spell	9	4989	NULL	Your domain has granted you the Wail of the Banshee spell
+286	2	44	Destructive Smite (su)	1	NULL	NULL	You can make a single melee attack with a morale bonus on damage rolls equal to 1/2 your Cleric level (minimum 1). You must declare teh destructive smite before making the attack. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+287	2	44	Destructive Aura (su)	8	NULL	NULL	You can emit a 30-foot aura of destruction for a number of rounds per day equal to your Cleric level. All attacks made against creatures in this aura (including you) gain a morale bonus on damage equal to 1/2 your Cleric level and all critical threats are automatically confirmed. These rounds to not need to be consecutive.
+288	2	44	True Strike spell	1	436	NULL	Your domain has granted you the True Strike spell
+289	2	44	Shatter spell	2	917	NULL	Your domain has granted you the Shatter spell
+290	2	44	Rage spell	3	1406	NULL	Your domain has granted you the Rage spell
+291	2	44	Inflict Critical Wounds spell	4	1807	NULL	Your domain has granted you the Inflict Critical Wounds spell
+292	2	44	Shout spell	5	1943	NULL	Your domain has granted you the Shout spell
+293	2	44	Harm spell	6	2480	NULL	Your domain has granted you the Harm spell
+294	2	44	Disintegrate spell	7	2423	NULL	Your domain has granted you the Disintegrate spell
+295	2	44	Earthquake spell	8	4801	NULL	Your domain has granted you the Earthquake spell
+296	2	44	Implosion spell	9	4931	NULL	Your domain has granted you the Implosion spell
+297	2	45	Acid Dart (sp)	1	NULL	NULL	As a standard action you can unleash an acid dart targeting any foe within 30 feet as a ranged touch attack. This deals 1d6 points of acid damage +1 for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+298	2	45	Acid Resistance (ex)	6	NULL	NULL	You gain resist acid 10, increasing to 20 at 12th level, and becomess immunity to acid at 20th level. 
+299	2	45	Magic Stone spell	1	294	NULL	Your domain has granted you the Magic Stone spell
+300	2	45	Soften Earth and Stone spell	2	930	NULL	Your domain has granted you the Soften Earth and Stone spell
+301	2	45	Stone Shape spell	3	1958	NULL	Your domain has granted you the Stone Shape spell
+302	2	45	Spike Stones spell	4	1953	NULL	Your domain has granted you the Spike Stones spell
+303	2	45	Wall of Stone spell	5	2368	NULL	Your domain has granted you the Wall of Stone spell
+304	2	45	Stoneskin spell	6	1959	NULL	Your domain has granted you the Stoneskin spell
+305	2	45	Elemental Body IV spell (earth only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (earth only)
+306	2	45	Earthquake spell	8	4801	NULL	Your domain has granted you the Earthquake spell
+307	2	45	Elemental Swarm spell (earth only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (earth spell only)
+308	2	46	Touch of Evil (sp)	1	NULL	NULL	You can cause a creature to become sickened as a melee touch attack. Creatures sickened by your touch count as good for the purpose of spells with the evil descriptor. This effect lasts for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+309	2	46	Scythe of Evil (su)	8	NULL	NULL	You can give a weapon the unholy special weapon quality for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability once per day at 8th level, and an additional time per day for every four levels beyond 8th.
+310	2	46	Protection from Good spell	1	342	NULL	Your domain has granted you the Protection from Good spell
+311	2	46	Align Weapon spell (evil only)	2	476	NULL	Your domain has granted you the Align Weapon spell (evil only)
+312	2	46	Magic Circle Against Good spell	3	1334	NULL	Your domain has granted you the Magic Circle Against Good spell
+313	2	46	Unholy Blight spell	4	1993	NULL	Your domain has granted you the Unholy Blight spell
+314	2	46	Dispel Good spell	5	2104	NULL	Your domain has granted you the Dispel Good spell
+315	2	46	Create Undead spell	6	2412	NULL	Your domain has granted you the Create Undead spell
+316	2	46	Blasphemy spell	7	2636	NULL	Your domain has granted you the Blasphemy spell
+317	2	46	Unholy Aura spell	8	4891	NULL	Your domain has granted you the Unholy Aura spell
+318	2	46	Summon Monster IX spell (evil only)	9	4975	NULL	Your domain has granted you the Summon Monster IX spell (evil spell only)
+319	2	47	Fire Bolt (sp)	1	NULL	NULL	As a standard action you can unleash scorching bolt of divine fire from your outstretched hand. You can target any single foe within 30 feet as a ranged touch attack wwith this bolt of fire. If you hit the foe, the fire bolt deals 1d6 points of fire damage + 1 point for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+320	2	47	Fire Resistance (ex)	6	NULL	NULL	You gain resist fire 10, increasing to 20 at 12th level, and becomes immunity to fire at 20th level. 
+321	2	47	Burning Hands spell	1	103	NULL	Your domain has granted you the Burning Hands spell
+322	2	47	Produce Flame spell	2	339	NULL	Your domain has granted you the Produce Flame spell
+323	2	47	Fireball spell	3	1217	NULL	Your domain has granted you the Fireball spell
+324	2	47	Wall of Fire spell	4	2009	NULL	Your domain has granted you the Wall of Fire spell
+325	2	47	Fire Shield spell	5	1732	NULL	Your domain has granted you the Fire Shield spell
+326	2	47	Fire Seeds spell	6	2443	NULL	Your domain has granted you the Fire Seeds spell
+327	2	47	Elemental Body IV spell (fire only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (fire only)
+328	2	47	Incendiary Cloud spell	8	4831	NULL	Your domain has granted you the Incendiary Cloud spell
+329	2	47	Elemental Swarm spell (fire only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (fire spell only)
+330	2	48	Touch of Glory (sp)	1	NULL	NULL	You can touch a creature as a standard action and give it a bonus equal to your cleric level on a single Charisma-based skill check or Charisma ability check. This ability lasts for 1 hour or until the creature touched elects to apply the bonus to a roll. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+331	2	48	Divine Presence (su)	8	NULL	NULL	You can emit a 30-fit aura of divine presence for a number of rounds per day equal to your cleric level. All allies within this aura are treated as if under the effects of a sanctuary spell with a DC equal to 10 + 1/2 your cleric level + your Wisdom modifier. These rounds do not need to be consecutive. Activating this ability is a standard action. If an ally leaves the area or makes an attack, the effect ends for that ally. If you make an attack, the effect ends for everyone.
+332	2	48	Shield of Faith spell	1	379	NULL	Your domain has granted you the Shield of Faith spell
+333	2	48	Bless Weapon spell	2	88	NULL	Your domain has granted you the Bless Weapon spell
+334	2	48	Searing Light spell	3	1437	NULL	Your domain has granted you the Searing Light spell
+335	2	48	Holy Smite spell	4	1793	NULL	Your domain has granted you the Holy Smite spell
+336	2	48	Righteous Might spell	5	2270	NULL	Your domain has granted you the Righteous Might spell
+337	2	48	Undeath to Death spell	6	2603	NULL	Your domain has granted you the Undeath to Death spell
+338	2	48	Holy Sword spell	7	1794	NULL	Your domain has granted you the Holy Sword spell
+339	2	48	Holy Aura spell	8	4829	NULL	Your domain has granted you the Holy Aura spell
+340	2	48	Gate spell	9	4919	NULL	Your domain has granted you the Gate spell
+341	2	49	Touch of Good (sp)	1	NULL	NULL	You can touch a creature as a standard action, granting a sacred bonus on attack rolls, skill checks, ability checks, and saving throws equal to 1/2 your cleric level (minimum 1) for 1 round. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+342	2	49	Holy Lance (su)	8	NULL	NULL	You can give a weapon you touch the holy special weapon quality for a number of rounds equal to 1/2 your cleric level. You can use this ability once per day at 8th level, and an additional time per day for every four levels after 8th.
+343	2	49	Protection From Evil spell	1	341	NULL	Your domain has granted you the Protection From Evil spell
+344	2	49	Align Weapon spell (good only)	2	476	NULL	Your domain has granted you the Align Weapon spell (good only)
+345	2	49	Magic Circle Against Evil spell	3	1333	NULL	Your domain has granted you the Magic Circle Against Evil spell
+346	2	49	Holy Smite spell	4	1793	NULL	Your domain has granted you the Holy Smite spell
+347	2	49	Dispel Evil spell	5	2103	NULL	Your domain has granted you the Dispel Evil spell
+348	2	49	Blade Barrier spell	6	2393	NULL	Your domain has granted you the Blade Barrier spell
+349	2	49	Holy Word spell	7	2690	NULL	Your domain has granted you the Holy Word spell
+350	2	49	Holy Aura spell	8	4829	NULL	Your domain has granted you the Holy Aura spell
+351	2	49	Summon Monster IX spell (good spell only)	9	4975	NULL	Your domain has granted you the Summon Monster IX spell (good spell only)
+352	2	50	Rebuke Death (sp)	1	NULL	NULL	You can touch a living creature as a standard action, healing it for 1d4 points of damage + 1 for every two cleric levels you possess. You can only use this ability on a creature that is below 0 hit points. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+353	2	50	Healer's Blessing (su)	6	NULL	NULL	All of your cure spells are treated as if they were empowered, increasing the amount of damage healed by half (+50%). This does not apply to damage dealt to undead with a cure spell. This does not stack with the Empower Spell metamagic feat.
+354	2	50	Cure Light Wounds spell	1	137	NULL	Your domain has granted you the Cure Light Wounds spell
+355	2	50	Cure Moderate Wounds spell	2	594	NULL	Your domain has granted you the Cure Moderate Wounds spell
+356	2	50	Cure Critical Wounds spell	3	1683	NULL	Your domain has granted you the Cure Critical Wounds spell
+357	2	50	Cure Serious Wounds spell	4	1158	NULL	Your domain has granted you the Cure Serious Wounds spell
+358	2	50	Breath of Life spell	5	2048	NULL	Your domain has granted you the Breath of Life spell
+359	2	50	Heal spell	6	2482	NULL	Your domain has granted you the Heal spell
+360	2	50	Regenerate spell	7	2748	NULL	Your domain has granted you the Regenerate spell
+361	2	50	Mass Cure Critical Wounds spell	8	4837	NULL	Your domain has granted you the Mass Cure Critical Wounds spell
+362	2	50	Mass Heal spell	9	4939	NULL	Your domain has granted you the Mass Heal spell
+363	2	51	Lore Keeper (sp)	1	NULL	NULL	You can make a melee touch attack against a creature to learn about its abilities and weaknesses. With a successful attack you gain information as if you had made the appropriate Knowledge skill check with a result of 15 + your cleric level + your Wisdom modifier.
+364	2	51	Remote Viewing (sp)	6	NULL	NULL	You can use clairvoyance/clairaudience as a spell-like ability using your cleric level as the caster level. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.
+365	2	51	Comprehend Languages spell	1	130	NULL	Your domain has granted you the Comprehend Languages spell
+366	2	51	Detect Thoughts spell	2	617	NULL	Your domain has granted you the Detect Thoughts spell
+367	2	51	Speak With Dead spell	3	1489	NULL	Your domain has granted you the Speak With Dead spell
+368	2	51	Divination spell	4	1706	NULL	Your domain has granted you the Divination spell
+369	2	51	True Seeing spell	5	2599	NULL	Your domain has granted you the True Seeing spell
+370	2	51	Find the Path spell	6	2442	NULL	Your domain has granted you the Find the Path spell
+371	2	51	Legend Lore spell	7	2496	NULL	Your domain has granted you the Legend Lore spell
+372	2	51	Discern Location spell	8	4799	NULL	Your domain has granted you the Discern Location spell
+373	2	51	Foresight spell	9	4917	NULL	Your domain has granted you the Foresight spell
+374	2	52	Touch of Law (sp)	1	NULL	NULL	You can touch a willing creature as a standard action, infusing it with the power of divine order and allowing it to treat all attack rolls, skill checks, ability checks, and saving throws for 1 round as if the natural d20 roll resulted in an 11. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+375	2	52	Staff of Order (su)	8	NULL	NULL	You can give a weapon touched the axiomatic special weapon quality for a number of rounds equal to 1/2 your cleric level. You can use this ability once per day at 8th level, and an additional time per day for every four levels after 8th.
+376	2	52	Protection From Chaos spell	1	340	NULL	Your domain has granted you the Protection From Chaos spell
+377	2	52	Align Weapon spell (law only)	2	476	NULL	Your domain has granted you the Align Weapon spell (law only)
+378	2	52	Magic Circle Against Chaos spell	3	1332	NULL	Your domain has granted you the Magic Circle Against Chaos spell
+379	2	52	Order's Wrath spell	4	1878	NULL	Your domain has granted you the Order's Wrath spell
+380	2	52	Dispel Chaos spell	5	2102	NULL	Your domain has granted you the Dispel Chaos spell
+381	2	52	Hold Monster spell	6	2174	NULL	Your domain has granted you the Hold Monster spell
+382	2	52	Dictum spell	7	2651	NULL	Your domain has granted you the Dictum spell
+383	2	52	Shield of Law spell	8	4866	NULL	Your domain has granted you the Shield of Law spell
+384	2	52	Summon Monster IX spell (law only)	9	4975	NULL	Your domain has granted you the Summon Monster IX spell (law only)
+385	2	53	Liberation (sp)	1	NULL	NULL	For a number of rounds per day equal to your cleric level, you can move normally regardless of magical effects that impede movement, as if you were affected by the Freedom of Movement spell. This effect occurs automatically as soon as it applies. These rounds do not need to be consecutive.
+386	2	53	Freedom's Call (su)	8	NULL	NULL	You can emit a 30-foot aura of freedom for a number of rounds per day equal to your cleric level. Allies within this aura are not affected by the confused, grappled, frightened, panicked, paralyzed, pinned, or shaken conditions. This aura only suppresses these effects, and they return once the creature leaves the aura or when the aura ends, if applicable. These rounds do not need to be consecutive.
+387	2	53	Remove Fear spell	1	354	NULL	Your domain has granted you the Remove Fear spell
+388	2	53	Remove Paralysis spell	2	867	NULL	Your domain has granted you the Remove Paralysis spell
+389	2	53	Remove Curse spell	3	1901	NULL	Your domain has granted you the Remove Curse spell
+390	2	53	Freedom of Movement spell	4	1750	NULL	Your domain has granted you the Freedom of Movement spell
+391	2	53	Break Enchantment spell	5	2047	NULL	Your domain has granted you the Break Enchantment spell
+392	2	53	Greater Dispel Magic spell	6	2465	NULL	Your domain has granted you the Greater Dispel Magic spell
+393	2	53	Refuge spell	7	4956	NULL	Your domain has granted you the Refuge spell
+394	2	53	Mind Blank spell	8	4843	NULL	Your domain has granted you the Mind Blank spell
+395	2	53	Freedom spell	9	2918	NULL	Your domain has granted you the Freedom spell
+396	2	54	Bit of Luck (sp)	1	NULL	NULL	You can touch a willing creature as a standard action, giving it a bit of luck. For the next round, any time the target rolls a d20, they may roll twice and take the more favorable result. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+397	2	54	Good Fortune (Ex)	6	NULL	NULL	As an immediate action, you can reroll any d20 you have just made before teh results of the roll are revealed. You must take the result of the reroll, even if it is worse. You can use this ability once per day at 6th level, and one additional time per day for every six cleric levels beyond 6th.
+398	2	54	True Strike spell	1	436	NULL	Your domain has granted you the True Strike spell
+399	2	54	Aid spell	2	472	NULL	Your domain has granted you the Aid spell
+400	2	54	Protection From Energy spell	3	1397	NULL	Your domain has granted you the Protection From Energy spell
+401	2	54	Freedom of Movement spell	4	1750	NULL	Your domain has granted you the Freedom of Movement spell
+402	2	54	Break Enchantment spell	5	2047	NULL	Your domain has granted you the Break Enchantment spell
+403	2	54	Mislead spell	6	2521	NULL	Your domain has granted you the Mislead spell
+404	2	54	Spell Turning spell	7	2762	NULL	Your domain has granted you the Spell Turning spell
+405	2	54	Moment of Prescience spell	8	4844	NULL	Your domain has granted you the Moment of Prescience spell
+406	2	54	Miracle spell	9	4948	NULL	Your domain has granted you thespell
+407	2	55	Vision of Madness (sp)	1	NULL	NULL	You can give a creature a vision of madness as a melee touch attack. Choose one of the following: attack rolls, saving throws, or skill checks. The target receives a bonus to the chosen rolls equal to 1/2 your cleric level (minimum +1) and a penalty of the same magnitude to the other two types of rolls. This effect fades after 3 rounds. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+408	2	55	Aura of Madness (su)	8	NULL	NULL	You can emit a 30-foot aura of madness for a number of rounds per day equal to your cleric level. Enemies within this aura are affected by confusion unless they make a Will save with a DC equal to 10 + 1/2 your cleric level + your Wisdom modifier. The confusion effect ends immediately when the creature leaves the aura or the aura expires. Creatures that succeed on their saving throw are immune to this aura for 24 hours. These rounds do not need to be consecutive.
+409	2	55	Lesser Confusion spell	1	271	NULL	Your domain has granted you the Lesser Confusion spell
+410	2	55	Touch of Idiocy spell	2	1006	NULL	Your domain has granted you the Touch of Idiocy spell
+411	2	55	Rage spell	3	1406	NULL	Your domain has granted you the Rage spell
+412	2	55	Confusion spell	4	1664	NULL	Your domain has granted you the Confusion spell
+413	2	55	Nightmare spell	5	2232	NULL	Your domain has granted you the Nightmare spell
+414	2	55	Phantasmal Killer spell	6	1882	NULL	Your domain has granted you the Phantasmal Killer spell
+415	2	55	Insanity spell	7	2695	NULL	Your domain has granted you the Insanity spell
+416	2	55	Scintillating Pattern spell	8	4862	NULL	Your domain has granted you the Scintillating Pattern spell
+417	2	55	Weird spell	9	4991	NULL	Your domain has granted you the Weird spell
+418	2	56	Hand of the Acolyte (sp)	1	NULL	NULL	You can cause your melee weapon to fly from your grasp and strike a foe before instantly returning. As a standard action, you can make a single attack using a melee weapon at a range of 30 feet. This attack is treated as a ranged attack with a thrown weapon, except that you add your Wisdom modifier to the attack roll instead of your Dexterity modifier (damage still relies on Strength). This ability cannot be used to perform a combat maneuver.You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+419	2	56	Dispelling Touch (su)	8	NULL	NULL	You can use a targeted dispel magic effect as a melee touch attack. You can use this ability once per day at 8th level, and an additional time per day for every four cleric levels beyond 8th.
+420	2	56	Identify spell	1	242	NULL	Your domain has granted you the Identify spell
+421	2	56	Magic Mouth spell	2	796	NULL	Your domain has granted you the Magic Mouth spell
+422	2	56	Dispel Magic spell	3	1181	NULL	Your domain has granted you the Dispel Magic spell
+423	2	56	Imbue With Spell Ability spell	4	1806	NULL	Your domain has granted you the Imbue With Spell Ability spell
+424	2	56	Spell Resistance spell	5	2305	NULL	Your domain has granted you the Spell Resistance spell
+425	2	56	Antimagic Field spell	6	2383	NULL	Your domain has granted you the Antimagic Field spell
+426	2	56	Spell Turning spell	7	2762	NULL	Your domain has granted you the Spell Turning spell
+427	2	56	Protection From Spells spell	8	4853	NULL	Your domain has granted you the Protection From Spells spell
+428	2	56	Mage's Disjunction spell	9	4936	NULL	Your domain has granted you the Mage's Disjunction spell
+429	2	57	Inspring Word (sp)	1	NULL	NULL	As a standard action, you can speak an inspiring word to a creature within 30 feet. That creature receives a +2 morale bonus on attack rolls, skill checks, ability checks, and saving throws for a number of rounds equal to 1/2 your cleric level (minimum 1). You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+430	2	57	Leadership (ex)	8	NULL	103	You receive Leadership as a bonus feat. In addition, you gain a +2 bonus on your leadership score as long as you uphold the tenets of your deity.
+431	2	57	Divine Favor spell	1	171	NULL	Your domain has granted you the Divine Favor spell
+432	2	57	Enthrall spell	2	657	NULL	Your domain has granted you the Enthrall spell
+433	2	57	Magic Vestment spell	3	1336	NULL	Your domain has granted you the Magic Vestment spell
+434	2	57	Discern Lies spell	4	1704	NULL	Your domain has granted you the Discern Lies spell
+435	2	57	Greater Command spell	5	2158	NULL	Your domain has granted you the Greater Command spell
+436	2	57	Geas/Quest spell	6	2455	NULL	Your domain has granted you the Geas/Quest spell
+437	2	57	Repulsion spell	7	2547	NULL	Your domain has granted you the Repulsion spell
+438	2	57	Demand spell	8	4797	NULL	Your domain has granted you the Demand spell
+439	2	57	Storm of Vengeance spell	9	4969	NULL	Your domain has granted you the Storm of Vengeance spell
+440	2	58	Wooden Fist (sp)	1	NULL	NULL	As a free action, your hands can become hard as wood, covered in tiny thorns. While you have wooden fists, your unarmed strikes do not provoke attacks of opportunity, deal lethal damage, and gain a bonus on damage rolls equal to 1/2 your cleric level (minimum 1). You can use this ability a number of rounds per day equal to 3 + your Wisdom modifier. These rounds do not need to be consecutive.
+441	2	58	Bramble Armor (su)	6	NULL	NULL	You can cause a host of wooden thorns to burst from your skin as a free action. While bramble armor is in effect, any foe striking you with an unarmed strike or a melee weapon without reach takes 1d6 points of piercing damage + 1 point per two cleric levels you possess. You can use this ability for a number of rounds equal to your cleric level. These rounds do not need to be consecutive.
+442	2	58	Entangle spell	1	184	NULL	Your domain has granted you the Entangle spell
+443	2	58	Barkskin spell	2	506	NULL	Your domain has granted you the Barkskin spell
+444	2	58	Plant Growth spell	3	1388	NULL	Your domain has granted you the Plant Growth spell
+445	2	58	Command Plants spell	4	1656	NULL	Your domain has granted you the Command Plants spell
+446	2	58	Wall of Thorns spell	5	2369	NULL	Your domain has granted you the Wall of Thorns spell
+447	2	58	Repel Wood spell	6	2546	NULL	Your domain has granted you the Repel Wood spell
+448	2	58	Animate Plants spell	7	2624	NULL	Your domain has granted you the Animate Plants spell
+449	2	58	Control Plants spell	8	3798	NULL	Your domain has granted you the Control Plants spell
+450	2	58	Shambler spell	9	4965	NULL	Your domain has granted you the Shambler spell
+451	2	59	Resistant Touch (sp)	1	NULL	NULL	As a standard action, you can touch an ally to grant him your resistance bonus for 1 minute. When you use this ability, you lose your resistance bonus granted by the Protection domain for 1 minute. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+452	2	59	Aura of Protection (su)	8	NULL	NULL	You can emit a 30-foot aura of protection for a number of rounds per day equal to your cleric level. You and your allies within the aura gain a +1 deflection bonus to AC and resistance 5 against all elements (acid, cold, electricity, fire, and sonic). The deflection bonus increases by +1 for every four cleric levels you possess beyond 8th. At 14th level the resistance against all elements increases to 10. These rounds do not need to be consecutive.
+453	2	59	Sanctuary spell	1	366	NULL	Your domain has granted you the Sanctuary spell
+454	2	59	Shield Other spell	2	920	NULL	Your domain has granted you the Shield Other spell
+455	2	59	Protection From Energy spell	3	1397	NULL	Your domain has granted you the Protection From Energy spell
+456	2	59	Spell Immunity spell	4	1952	NULL	Your domain has granted you the Spell Immunity spell
+457	2	59	Spell Resistance spell	5	2305	NULL	Your domain has granted you the Spell Resistance spell
+458	2	59	Antimagic Field spell	6	2383	NULL	Your domain has granted you the Antimagic Field spell
+459	2	59	Repulsion spell	7	2547	NULL	Your domain has granted you the Repulsion spell
+460	2	59	Mind Blank spell	8	4843	NULL	Your domain has granted you the Mind Blank spell
+461	2	59	Prismatic Sphere spell	9	4953	NULL	Your domain has granted you the Prismatic Sphere spell
+462	2	60	Gentle Rest (sp)	1	NULL	NULL	Your touch can fill a creature with lethargy, causing a living creature to become staggered for 1 round as a melee touch attack. If you touch a staggered living creature, that creature falls to sleep for 1 round instead. Undead creatures touched are staggered for a number of rounds equal to your Wisdom modifier. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+463	2	60	Ward Against Death (su)	8	NULL	NULL	You can emit a 30-foot aura that wards against death for a number of rounds per day equal to your cleric level. Living creatures in this area are immune to all death effects, energy drain, and effects that cause negative levels. This ward does not remove negative levels that a creature has already gaiined, but the negative levels have no effect while the creature is inside the warded area. These rounds do not need to be consecutive.
+464	2	60	Deathwatch spell	1	145	NULL	Your domain has granted you the Deathwatch spell
+465	2	60	Gentle Repose spell	2	1246	NULL	Your domain has granted you the Gentle Repose spell
+466	2	60	Speak With Dead spell	3	1489	NULL	Your domain has granted you the Speak With Dead spell
+467	2	60	Death Ward spell	4	1694	NULL	Your domain has granted you the Death Ward spell
+468	2	60	Slay Living spell	5	2293	NULL	Your domain has granted you the Slay Living spell
+469	2	60	Undeath To Death spell	6	2603	NULL	Your domain has granted you the Undeath To Death spell
+470	2	60	Destruction spell	7	2650	NULL	Your domain has granted you the Destruction spell
+471	2	60	Waves of Exhaustion spell	8	2790	NULL	Your domain has granted you the Waves of Exhaustion spell
+472	2	60	Wail of the Banshee spell	9	4989	NULL	Your domain has granted you the Wail of the Banshee spell
+473	2	61	Blast Rune (sp)	1	NULL	NULL	As a standard action, you can creaate a blast rune in any adjacent square. Any creature entering this squarre takes 1d6 points of damage +1 point for every two cleric levels you possess. This rune deals either acid, cold, electricity, or fire damage, decided when you create the rune. The rune is invisible and lasts a number of rounds equal to your cleric level or until discharged. You cannot create a blast rune in a square occupied by another creature. This rune counts as a 1st-level spell for the purposes of dispelling. It can be discovered with a DC 26 Disable Device skill check. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+474	2	61	Spell Rune (su)	8	NULL	NULL	You can attach another spell that you cast to one of your blast runes, causing that spell to affect the creature that triggers the rune, in addition to the damage. This spell must be of at least one level lower than the highest level cleric spell you can cast, and it must target one or more creatures. Regardless of the number of targets the spell can normally affect, it only affects the creature that triggers the rune.
+475	2	61	Erase spell	1	186	NULL	Your domain has granted you the Erase spell
+476	2	61	Secret Page spell	2	1449	NULL	Your domain has granted you the Secret Page spell
+477	2	61	Glyph of Warding spell	3	1251	NULL	Your domain has granted you the Glyph of Warding spell
+478	2	61	Explosive Runes spell	4	1208	NULL	Your domain has granted you the Explosive Runes spell
+479	2	61	Lesser Planar Binding spell	5	2196	NULL	Your domain has granted you the Lesser Planar Binding spell
+480	2	61	Greater Glyph of Warding spell	6	2468	NULL	Your domain has granted you the Greater Glyph of Warding spell
+481	2	61	Instant Summons spell	7	2696	NULL	Your domain has granted you the Instant Summons spell
+482	2	61	Symbol of Death spell	8	4878	NULL	Your domain has granted you the Symbol of Death spell
+483	2	61	Teleportation Circle spell	9	4981	NULL	Your domain has granted you the Teleportation Circle spell
+484	2	62	Strength Surge (sp)	1	NULL	NULL	As a standard action, you can touch a creature to give it great strength. For 1 round, the target gagins an enhancement bonus equal to 1/2 your cleric level (minimum +1) to melee attacks, combat maneuver checks that rely on Strength, Strength-based skills, and Strength checks. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+485	2	62	Might of the Gods (su)	8	NULL	NULL	You can add your cleric level as an enhancement bonus to your Strength score for a number of rounds equal to your cleric level. This bonus only applies on Strength checks and Strength-based skill checks. These rounds do not need to be consecutive.
+486	2	62	Enlarge Person spell	1	182	NULL	Your domain has granted you the Enlarge Person spell
+487	2	62	Bull's Strength spell	2	542	NULL	Your domain has granted you the Bull's Strength spell
+488	2	62	Magic Vestment spell	3	1336	NULL	Your domain has granted you the Magic Vestment spell
+489	2	62	Spell Immunity spell	4	1952	NULL	Your domain has granted you the Spell Immunity spell
+490	2	62	Righteous Might spell	5	2270	NULL	Your domain has granted you the Righteous Might spell
+491	2	62	Stoneskin spell	6	1959	NULL	Your domain has granted you the Stoneskin spell
+492	2	62	Grasping Hand spell	7	2673	NULL	Your domain has granted you the Grasping Hand spell
+493	2	62	Clenched Fist spell	8	3795	NULL	Your domain has granted you the Clenched Fist spell
+494	2	62	Crushing Hand spell	9	4905	NULL	Your domain has granted you the Crushing Hand spell
+495	2	63	Sun's Blessing (sp)	1	NULL	NULL	Whenever you channel positive energy to harm undead creaturess, add your cleric level to the damage dealt. Undead do not aadd their channel resistance to their saves when you channel positive energy.
+496	2	63	Nimbus of Light (su)	8	NULL	NULL	You can emit a 30-foot nimbus of light for a number of rounds per day equal to your cleric level. This acts as a Daylight spell. In addition, undead within this radius take an amount of damage equal to your cleric level each round that they remain inside the nimbus. Spells and spell-like abilities with the darkness descriptor are automatically dispelled if brought inside this nimbus. These rounds do not need to be consecutive.
+497	2	63	Endure Elements spell	1	180	NULL	Your domain has granted you the Endure Elements spell
+498	2	63	Heat Metal spell	2	724	NULL	Your domain has granted you the Heat Metal spell
+499	2	63	Searing Light spell	3	1437	NULL	Your domain has granted you the Searing Light spell
+500	2	63	Fire Shield spell	4	1732	NULL	Your domain has granted you the Fire Shield spell
+501	2	63	Flame Strike spell	5	2139	NULL	Your domain has granted you the Flame Strike spell
+502	2	63	Fire Seeds spell	6	2443	NULL	Your domain has granted you the Fire Seeds spell
+503	2	63	Sunbeam spell	7	2773	NULL	Your domain has granted you the Sunbeam spell
+504	2	63	Sunburst spell	8	4876	NULL	Your domain has granted you the Sunburst spell
+505	2	63	Prismatic Sphere spell	9	4953	NULL	Your domain has granted you the Prismatic Sphere spell
+506	2	64	Agile Feet (sp)	1	NULL	NULL	As a free action, you can gain increased mobility for 1 round. For the next round, you ignore all difficult terrain and do not take any penalties for moving through it. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+507	2	64	Dimensional Hop (sp)	8	NULL	NULL	You can teleport up to 10 feet per cleric level per day as a move action. This teleportation must be used in 5-foot increments and such movement does not provoke attacks of opportunity. You must have line of sight to your destination to use this ability. You can bring other willing creatures with you, but you must expend an equal amount of distance for each creature brought.
+508	2	64	Longstrider spell	1	287	NULL	Your domain has granted you the Longstrider spell
+509	2	64	Locate Object spell	2	790	NULL	Your domain has granted you the Locate Object spell
+510	2	64	Fly spell	3	1235	NULL	Your domain has granted you the Fly spell
+511	2	64	Dimension Door spell	4	1702	NULL	Your domain has granted you the Dimension Door spell
+512	2	64	Teleport spell	5	2334	NULL	Your domain has granted you the Teleport spell
+513	2	64	Find the Path spell	6	2442	NULL	Your domain has granted you the Find the Path spell
+514	2	64	Greater Teleport spell	7	2688	NULL	Your domain has granted you the Greater Teleport spell
+515	2	64	Phase Door spell	8	2732	NULL	Your domain has granted you the Phase Door spell
+516	2	64	Astral Projection spell	9	4900	NULL	Your domain has granted you the Astral Projection spell
+517	2	65	Copycat (sp)	1	NULL	NULL	You can create an illusory double of yourself as a move action. This double functions as a single mirror image and lasts for a number of rounds equal to your cleric level, or until the illusory duplicate is dispelled or destroyed. You can have no more than one copycate at a time. This ability does not stack with the Mirror Image spell. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+518	2	65	Master's Illusion (sp)	8	NULL	NULL	You can create an illusion that hides the appearance of yourself and any number of allies within 30 feet for 1 round per cleric level. The save DC to disbelieve this effect is equal to 10 + 1/2 your cleric level + your Wisdom modifier. This ability otherwise functions like the spell Veil. The rounds do not need to be consecutive.
+519	2	65	Disguise Self spell	1	169	NULL	Your domain has granted you the Disguise Self spell
+520	2	65	Invisibility spell	2	759	NULL	Your domain has granted you the Invisibility spell
+521	2	65	Nondetection spell	3	1366	NULL	Your domain has granted you the Nondetection spell
+522	2	65	Confusion spell	4	1664	NULL	Your domain has granted you the Confusion spell
+523	2	65	False Vision spell	5	2134	NULL	Your domain has granted you the False Vision spell
+524	2	65	Mislead spell	6	2521	NULL	Your domain has granted you the Mislead spell
+525	2	65	Screen spell	7	4863	NULL	Your domain has granted you the Screen spell
+526	2	65	Mass Invisibility spell	8	2720	NULL	Your domain has granted you the Mass Invisibility spell
+527	2	65	Time Stop spell	9	4983	NULL	Your domain has granted you the Time Stop spell
+528	2	66	Battle Rage (sp)	1	NULL	NULL	You can touch a creature as a standard action to give it a bonus on melee damage rolls equal to 1/2 your cleric level (minimum 1). You can do so a number of times per day equal to 3 + your Wisdom modifier.
+529	2	66	Weapon Master (su)	8	NULL	NULL	As a swift action, you gain the use of one combat feat for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive, and you can change the feat chosen each time you use this ability. You must meet the prerequisites to use this feat.
+530	2	66	Magic Weapon spell	1	295	NULL	Your domain has granted you the Magic Weapon spell
+531	2	66	Spiritual Weapon spell	2	941	NULL	Your domain has granted you the Spiritual Weapon spell
+532	2	66	Magic Vestment spell	3	1336	NULL	Your domain has granted you the Magic Vestment spell
+533	2	66	Divine Power spell	4	1707	NULL	Your domain has granted you the Divine Power spell
+534	2	66	Flame Strike spell	5	2139	NULL	Your domain has granted you the Flame Strike spell
+535	2	66	Blade Barrier spell	6	2393	NULL	Your domain has granted you the Blade Barrier spell
+536	2	66	Power Word Blind spell	7	2740	NULL	Your domain has granted you the Power Word Blind spell
+537	2	66	Power Word Stun spell	8	4850	NULL	Your domain has granted you the Power Word Stun spell
+538	2	66	Power Word Kill spell	9	4952	NULL	Your domain has granted you the Power Word Kill spell
+539	2	67	Icicle (sp)	1	NULL	NULL	As a standard action, you can fire an icicle from your finger, targeting any foe within 30 feet as a ranged touch attack. The icicle deals 1d6 points of cold damage + 1 point for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+540	2	67	Cold Resistance (ex)	6	NULL	NULL	You ggain resistance cold 10. This resistance increases to 20 at 12th level, and becomes immunity to cold at 20th level.
+541	2	67	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+542	2	67	Fog Cloud spell	2	689	NULL	Your domain has granted you the Fog Cloud spell
+543	2	67	Water Breathing spell	3	1568	NULL	Your domain has granted you the Water Breathing spell
+544	2	67	Control Water spell	4	2410	NULL	Your domain has granted you the Control Water spell
+545	2	67	Ice Storm spell	5	1800	NULL	Your domain has granted you the Ice Storm spell
+546	2	67	Cone of Cold spell	6	2079	NULL	Your domain has granted you the Cone of Cold spell
+547	2	67	Elemental Body IV spell (water only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (water only)
+548	2	67	Horrid Wilting spell	8	4830	NULL	Your domain has granted you the Horrid Wilting spell
+549	2	67	Elemental Swarm spell (water only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (water only)
+550	2	68	Storm Burst (sp)	1	NULL	NULL	As a standard action, you can create a storm burst targeting any foe within 30 feet as a ranged touch attack. The storm burst deals 1d6 points of nonlethal damage + 1 point for every two cleric levels you possess. In addition, the target is buffeted by winds and rain, causing it to take a -2 penalty on attack rolls for 1 round. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+551	2	68	Lightning Lord (sp)	8	NULL	NULL	You can call down a number of bolts of lightning per day to your cleric level. You can call down as many bolts as you want with a single standard action, but no creature can be the target of more than one bolt and no two targets can be more than 30 feet apart. This ability otherwise functions as the Call Lightning spell.
+552	2	68	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+553	2	68	Fog Cloud spell	2	689	NULL	Your domain has granted you the Fog Cloud spell
+554	2	68	Call Lightning spell	3	1120	NULL	Your domain has granted you the Call Lightning spell
+555	2	68	Sleet Storm spell	4	1485	NULL	Your domain has granted you the Sleet Storm spell
+556	2	68	Ice Storm spell	5	1800	NULL	Your domain has granted you the Ice Storm spell
+557	2	68	Control Winds spell	6	2084	NULL	Your domain has granted you the Control Winds spell
+558	2	68	Control Weather spell	7	2644	NULL	Your domain has granted you the Control Weather spell
+559	2	68	Whirlwind spell	8	4895	NULL	Your domain has granted you the Whirlwind spell
+560	2	68	Storm of Vengeance spell	9	4969	NULL	Your domain has granted you the Storm of Vengeance spell
+561	3	89	Lightning Arc (sp)	1	NULL	NULL	As a standard action you can unleaash an arc of electricity targeting any foe within 30 feet as a ranged touch attack. This arc deals 1d6 points of electricity damage + 1 for every two cleric levels you possess. You can use this ability a number of days equal to 3 + your Wisdom modifier.
+562	3	89	Electricity Resistance (ex)	6	NULL	NULL	You gain resist electricity 10, increasing to 20 at 12th level, and becomess immunity to electricity at 20th level.
+563	3	89	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+564	3	89	Wind Wall spell	2	1572	NULL	Your domain has granted you the Wind Wall spell
+565	3	89	Gaseous Form spell	3	1245	NULL	Your domain has granted you the Gaseous Form spell
+566	3	89	Air Walk spell	4	1588	NULL	Your domain has granted you the Air Walk spell
+567	3	89	Control Winds spell	5	2084	NULL	Your domain has granted you the Control Winds spell
+568	3	89	Chain Lightning spell	6	2400	NULL	Your domain has granted you the Chain Lightning spell
+569	3	89	Elemental Body IV spell (air only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (air only)
+570	3	89	Whirlwind spell	8	4895	NULL	Your domain has granted you the Whirlwind spell
+571	3	89	Elemental Swarm spell (air only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (air only)
+572	3	90	Speak with Animals (sp)	1	NULL	NULL	You can speak with animals, as per teh spell, for a number of rounds per day equal to 3 + your cleric level
+573	3	90	Animal Companion (ex)	4	NULL	NULL	You fain the service of an animal companion. Your effective druid level for this companion is equal to your cleric level - 3.
+574	3	90	Calm Animals spell	1	110	NULL	Your domain has granted you the Calm Animals spell
+575	3	90	Hold Animal spell	2	733	NULL	Your domain has granted you the Hold Animal spell
+576	3	90	Dominate Animal spell	3	1187	NULL	Your domain has granted you the Dominate Animal spell
+577	3	90	Summmon Nature's Ally IV spell (animals only)	4	1964	NULL	Your domain has granted you the Summon Nature's Ally IV spell (animals only)
+578	3	90	Beast Shape III spell (animals only)	5	2037	NULL	Your domain has granted you the Beast Shape III spell (animals only)
+579	3	90	Antilife Shell spell	6	2382	NULL	Your domain has granted you the Antilife Shell spell
+580	3	90	Animal Shapes spell	7	2793	NULL	Your domain has granted you the Animal Shapes spell
+581	3	90	Summon Nature's Ally VIII spell (animals only)	8	4875	NULL	Your domain has granted you the Summon Nature's Ally VIII spell (animals only)
+582	3	90	Shapechange spell	9	4966	NULL	Your domain has granted you the Shapechange spell
+583	3	91	Acid Dart (sp)	1	NULL	NULL	As a standard action you can unleash an acid dart targeting any foe within 30 feet as a ranged touch attack. This deals 1d6 points of acid damage +1 for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+584	3	91	Acid Resistance (ex)	6	NULL	NULL	You gain resist acid 10, increasing to 20 at 12th level, and becomess immunity to acid at 20th level. 
+585	3	91	Magic Stone spell	1	294	NULL	Your domain has granted you the Magic Stone spell
+586	3	91	Soften Earth and Stone spell	2	930	NULL	Your domain has granted you the Soften Earth and Stone spell
+587	3	91	Stone Shape spell	3	1958	NULL	Your domain has granted you the Stone Shape spell
+588	3	91	Spike Stones spell	4	1953	NULL	Your domain has granted you the Spike Stones spell
+589	3	91	Wall of Stone spell	5	2368	NULL	Your domain has granted you the Wall of Stone spell
+590	3	91	Stoneskin spell	6	1959	NULL	Your domain has granted you the Stoneskin spell
+591	3	91	Elemental Body IV spell (earth only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (earth only)
+592	3	91	Earthquake spell	8	4801	NULL	Your domain has granted you the Earthquake spell
+593	3	91	Elemental Swarm spell (earth only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (earth spell only)
+594	3	92	Fire Bolt (sp)	1	NULL	NULL	As a standard action you can unleash scorching bolt of divine fire from your outstretched hand. You can target any single foe within 30 feet as a ranged touch attack wwith this bolt of fire. If you hit the foe, the fire bolt deals 1d6 points of fire damage + 1 point for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+595	3	92	Fire Resistance (ex)	6	NULL	NULL	You gain resist fire 10, increasing to 20 at 12th level, and becomes immunity to fire at 20th level. 
+596	3	92	Burning Hands spell	1	103	NULL	Your domain has granted you the Burning Hands spell
+597	3	92	Produce Flame spell	2	339	NULL	Your domain has granted you the Produce Flame spell
+598	3	92	Fireball spell	3	1217	NULL	Your domain has granted you the Fireball spell
+599	3	92	Wall of Fire spell	4	2009	NULL	Your domain has granted you the Wall of Fire spell
+600	3	92	Fire Shield spell	5	1732	NULL	Your domain has granted you the Fire Shield spell
+601	3	92	Fire Seeds spell	6	2443	NULL	Your domain has granted you the Fire Seeds spell
+602	3	92	Elemental Body IV spell (fire only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (fire only)
+603	3	92	Incendiary Cloud spell	8	4831	NULL	Your domain has granted you the Incendiary Cloud spell
+604	3	92	Elemental Swarm spell (fire only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (fire spell only)
+605	3	93	Wooden Fist (sp)	1	NULL	NULL	As a free action, your hands can become hard as wood, covered in tiny thorns. While you have wooden fists, your unarmed strikes do not provoke attacks of opportunity, deal lethal damage, and gain a bonus on damage rolls equal to 1/2 your cleric level (minimum 1). You can use this ability a number of rounds per day equal to 3 + your Wisdom modifier. These rounds do not need to be consecutive.
+606	3	93	Bramble Armor (su)	6	NULL	NULL	You can cause a host of wooden thorns to burst from your skin as a free action. While bramble armor is in effect, any foe striking you with an unarmed strike or a melee weapon without reach takes 1d6 points of piercing damage + 1 point per two cleric levels you possess. You can use this ability for a number of rounds equal to your cleric level. These rounds do not need to be consecutive.
+607	3	93	Entangle spell	1	184	NULL	Your domain has granted you the Entangle spell
+608	3	93	Barkskin spell	2	506	NULL	Your domain has granted you the Barkskin spell
+609	3	93	Plant Growth spell	3	1388	NULL	Your domain has granted you the Plant Growth spell
+610	3	93	Command Plants spell	4	1656	NULL	Your domain has granted you the Command Plants spell
+611	3	93	Wall of Thorns spell	5	2369	NULL	Your domain has granted you the Wall of Thorns spell
+612	3	93	Repel Wood spell	6	2546	NULL	Your domain has granted you the Repel Wood spell
+613	3	93	Animate Plants spell	7	2624	NULL	Your domain has granted you the Animate Plants spell
+614	3	93	Control Plants spell	8	3798	NULL	Your domain has granted you the Control Plants spell
+615	3	93	Shambler spell	9	4965	NULL	Your domain has granted you the Shambler spell
+616	3	94	Icicle (sp)	1	NULL	NULL	As a standard action, you can fire an icicle from your finger, targeting any foe within 30 feet as a ranged touch attack. The icicle deals 1d6 points of cold damage + 1 point for every two cleric levels you possess. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+617	3	94	Cold Resistance (ex)	6	NULL	NULL	You ggain resistance cold 10. This resistance increases to 20 at 12th level, and becomes immunity to cold at 20th level.
+618	3	94	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+619	3	94	Fog Cloud spell	2	689	NULL	Your domain has granted you the Fog Cloud spell
+620	3	94	Water Breathing spell	3	1568	NULL	Your domain has granted you the Water Breathing spell
+621	3	94	Control Water spell	4	2410	NULL	Your domain has granted you the Control Water spell
+622	3	94	Ice Storm spell	5	1800	NULL	Your domain has granted you the Ice Storm spell
+623	3	94	Cone of Cold spell	6	2079	NULL	Your domain has granted you the Cone of Cold spell
+624	3	94	Elemental Body IV spell (water only)	7	2655	NULL	Your domain has granted you the Elemental Body IV spell (water only)
+625	3	94	Horrid Wilting spell	8	4830	NULL	Your domain has granted you the Horrid Wilting spell
+626	3	94	Elemental Swarm spell (water only)	9	4912	NULL	Your domain has granted you the Elemental Swarm spell (water only)
+627	3	95	Storm Burst (sp)	1	NULL	NULL	As a standard action, you can create a storm burst targeting any foe within 30 feet as a ranged touch attack. The storm burst deals 1d6 points of nonlethal damage + 1 point for every two cleric levels you possess. In addition, the target is buffeted by winds and rain, causing it to take a -2 penalty on attack rolls for 1 round. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.
+628	3	95	Lightning Lord (sp)	8	NULL	NULL	You can call down a number of bolts of lightning per day to your cleric level. You can call down as many bolts as you want with a single standard action, but no creature can be the target of more than one bolt and no two targets can be more than 30 feet apart. This ability otherwise functions as the Call Lightning spell.
+629	3	95	Obscuring Mist spell	1	320	NULL	Your domain has granted you the Obscuring Mist spell
+630	3	95	Fog Cloud spell	2	689	NULL	Your domain has granted you the Fog Cloud spell
+631	3	95	Call Lightning spell	3	1120	NULL	Your domain has granted you the Call Lightning spell
+632	3	95	Sleet Storm spell	4	1485	NULL	Your domain has granted you the Sleet Storm spell
+633	3	95	Ice Storm spell	5	1800	NULL	Your domain has granted you the Ice Storm spell
+634	3	95	Control Winds spell	6	2084	NULL	Your domain has granted you the Control Winds spell
+635	3	95	Control Weather spell	7	2644	NULL	Your domain has granted you the Control Weather spell
+636	3	95	Whirlwind spell	8	4895	NULL	Your domain has granted you the Whirlwind spell
+637	3	95	Storm of Vengeance spell	9	4969	NULL	Your domain has granted you the Storm of Vengeance spell
+638	1	NULL	Bardic Performance: Countersong (su)	1	NULL	NULL	You can use your performance to counter magic effects that depend on sound (but not spells that have verbal components). Each round of the countersong you must make a Perform (keyboard, percussion, wind, string, or sing) skill check. Any creature within 30 feet of the bard (including the bard) that is affected by a sonic or language-dependent magical attack may use the Bard's Perform check result in place of their own saving throw if, after the saving throw is rolled, the Perform check result is higher.If a creature within range of the countersong is already under the effect of a noninstantaneous sonic or language-dependent magical attack, they gain another saving throw against the effect each round it hears the countersong, but they must use the Bard's Perform check result for the save. This does not work on effects that don't allow saves. Relies on audible components.
+639	1	NULL	Bardic Performance: Distraction (su)	1	NULL	NULL	You can use your performance to counter magic effects that depend on sight. Each round of the distraction you must make a Perform (act, comedy, dance, or oratory) skill check. Any creature within 30 feet of the bard (including the bard) that is affected by a illusion (pattern) or illusion (figment) magical attack may use the Bard's Perform check result in place of their own saving throw if, after the saving throw is rolled, the Perform check result is higher.If a creature within range of the distraction is already under the effect of a noninstantaneous illusion (pattern) or illusion (figment) magical attack, they gain another saving throw against the effect each round it sees the distraction, but they must use the Bard's Perform check result for the save. This does not work on effects that don't allow saves. Relies on visual components.
+640	1	NULL	Bardic Performance: Fascinate (su)	1	NULL	NULL	You can use your performance to cause one or more creatures to become fascinated with you. Each creature to be fascinated must be within 90 feet, able to see and hear you, and capable of paying attention to you. You must also be able to see the creatures affected. The Distraction of a nearby combat or other dangers prevents the ability from working. For every three levels you have attained beyond 1st, you can target one additional creature with this ability. Each creature within range receives a Will save (DC 10 + 1/2 your bard level + your Cha modifier) to negate the effect. If a creature's saving throw succeeds, you cannot attempt to fascinate that creature again for 24 hours. If its saving throw fails, the creature sits quietly and observes the performance for as long as you continues to maintain it. While fascinated, a target takes a -4 penalty on skill checks made as reactions, such as Perception checks. Any potential threat to the target allows the target to make a new saving throw against the effect. Any obvious threat, such as someone drawing a weapon, casting a spell, or aiming a weapon at the target, automatically breaks the effect. Fascinate is an enchantment (compulsion), mind-affecting ability. Relies on audible and visual components.
+641	1	NULL	Bardic Performance: Inspire Courage (su)	1	NULL	NULL	You can use your performance to inspire courage in your allies (including yourself), bolstering them against fear and improving their combat abilities. To be affected, an ally must be able to perceive your performance. An affected ally receives a +1 morale bonus on saving throws against charm and fear effects and a +1 competence bonus on attack and weapon damage rolls. At 5th level, and every six bard levels thereafter, this bonus increases by +1, to a maximum of +4 at 17th level. Inspire courage is a mind-affecting ability. Inspire courage can use audible or visual components, You must choose which component to use when starting his performance.
+642	1	NULL	Bardic Performance: Inspire Competence (su)	3	NULL	NULL	You can use your performance to help an ally succeed at a task. The ally must be within 30 feet and able to see and hear you. The ally gets a +2 competence bonus on skill checks with a particular skill as long as they continue to hear the performance. This bonus increases by +1 for every four levels you have attained beyond 3rd (+3 at 7th, +4 at 11th, +5 at 15th, and +6 at 19th). Certain uses of this ability are infeasible, such as Stealth, and may be disallowed at the GM's discretion. You can't inspire competence in yourself. Relies on audible components.
+643	1	NULL	Bardic Performance: Suggestion (su)	6	NULL	NULL	You can use your performance to make a suggestion (as per the spell) to a creature that you have already fascinated (see above). Using this ability does not disrupt the fascinate effect, but it does require a standard action to activate (in addition to the free action to continue the fascinate effect). You can use this ability more than once against an individual creature during an individual performance. A Will saving throw (DC 10 + 1/2 your bard level + your Cha modifier) negates the effect. This ability affects only a single creature (but see mass suggestion, below). Suggestion is an enchantment (compulsion), mind-affecting, language-dependent ability and relies on audible components.
+644	1	NULL	Bardic Performance: Dirge of Doom (su)	8	NULL	NULL	You can use your performance to foster a sense of growing dread in your enemies, causing them to take become shaken. To be affected, an enemy must be within 30 feet and able to see and hear your performance. The effect persists for as long as the enemy is within 30 feet and you continue the performance. The performance cannot cause a creature to become frightened or panicked, even if the targets are already shaken from another effect. Dirge of doom is a mind-affecting fear effect, and it relies on audible and visual components.
+645	1	NULL	Bardic Performance: Inspire Greatness (su)	9	NULL	NULL	You can use your performance to inspire greatness in yourself or a single willing ally within 30 feet, granting extra fighting capability. For every three levels you attain beyond 9th, you can target one additional ally while using this performance (up to a maximum of four at 18th level). To inspire greatness, all of the targets must be able to see and hear you. A creature inspired with greatness gains 2 bonus Hit Dice (d10s), the commensurate number of temporary hit points (apply the target's Constitution modifier, if any, to these bonus Hit Dice), a +2 competence bonus on attack rolls, and a +1 competence bonus on Fortitude saves. The bonus Hit Dice count as regular Hit Dice for determining the effect of spells that are Hit Dice dependent. Inspire greatness is a mind-affecting ability and it relies on audible and visual components.
+646	1	NULL	Bardic Performance: Soothing Performance (su)	12	NULL	NULL	You can use your performance to create an effect equivalent to the mass cure serious wounds, using your bard level as the caster level. In addition, this performance removes the fatigued, sickened, and shaken condition from all those affected. Using this ability requires 4 rounds of continuous performance, and the targets must be able to see and hear you throughout the performance. Soothing performance relies on audible and visual components.
+647	1	NULL	Bardic Performance: Frightening Tune (su)	14	NULL	NULL	You can use your performance to cause fear in his enemies. To be affected, an enemy must be able to hear you perform and be within 30 feet. Each enemy within range receives a Will save (DC 10 + 1/2 your bard level + your Cha modifier) to negate the effect. If the save succeeds, the creature is immune to this ability for 24 hours. If the save fails, the target becomes frightened and flees for as long as the target can hear your performance. Frightening tune relies on audible components.
+648	1	NULL	Bardic Performance: Inspire Heroics (su)	15	NULL	NULL	You can use your performance to inspire tremendous heroism in yourself or a single ally within 30 feet. For every three bard levels you attain beyond 15th, you can inspire heroics in one additional creature. To inspire heroics, all of the targets must be able to see and hear you. Inspired creatures gain a +4 morale bonus on saving throws and a +4 dodge bonus to AC. The effect lasts for as long as the targets are able to witness the performance. Inspire heroics is a mind-affecting ability that relies on audible and visual components.
+649	1	NULL	Bardic Performance: Mass Suggestion (su)	18	NULL	NULL	This ability functions just like Bardic Performance: Suggestion, but allows you to make a suggestion simultaneously to any number of creatures that you have already fascinated. Mass suggestion is an enchantment (compulsion), mind-affecting, language dependent ability that relies on audible components.
+650	1	NULL	Bardic Performance: Deadly Performance (su)	20	NULL	NULL	You can use your performance to cause one enemy to die from joy or sorrow. To be affected, the target must be able to see and hear you perform for 1 full round and be within 30 feet. The target receives a Will save (DC 10 + 1/2 your bard level + your Cha modifier) to negate the effect. If a creature's saving throw succeeds, the target is staggered for 1d4 rounds, and you cannot use deadly performance on that creature again for 24 hours. If a creature's saving throw fails, it dies. Deadly performance is a mind-effecting death effect that relies on audible and visual components.

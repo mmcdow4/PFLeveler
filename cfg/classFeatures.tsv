@@ -1,0 +1,190 @@
+id	classId	categoryId	numChoices	lvlReq	optional	name	description
+0	0	0	0	1	0	Barbarian Weapon and Armor Proficiency	You are proficient with all simple and martial weapons, light armor, medium armor, and shields (except for tower shields)
+1	0	1	0	1	0	Fast Movement	Gain a +10 bonus to base speed when wearing no armor, light armor, or medium armor, and not carrying a heavy load.
+2	0	2	0	1	0	Rage	As a free action enter a rage for a number of rounds equal to 4 + Constitution modifier + 2 per barbarian level after first level. While raging gain +4 morale bonus to Strength and Constitution (granting 2 hit points per Hit Dice which disappear without being lost at the end of the rage), +2 morale bonus to Will saves, and a -2 penalty to AC. While raging cannot use Charisma, Dexterity, or Intelligence based skills except Acrobatics, Fly, Indimidate, and Ride. Rage can be ended as a free action. After a rage ends the barbarian is fatigued for a number of rounds equal to 2 times the number of rounds spent in a rage. Rage ends immediately upon going unconscious.
+3	0	3	1	2	0	Rage Power	Gain a new Rage Power effect while raging.
+4	0	3	1	4	0	Rage Power	Gain a new Rage Power effect while raging.
+5	0	3	1	6	0	Rage Power	Gain a new Rage Power effect while raging.
+6	0	3	1	8	0	Rage Power	Gain a new Rage Power effect while raging.
+7	0	3	1	10	0	Rage Power	Gain a new Rage Power effect while raging.
+8	0	3	1	12	0	Rage Power	Gain a new Rage Power effect while raging.
+9	0	3	1	14	0	Rage Power	Gain a new Rage Power effect while raging.
+10	0	3	1	16	0	Rage Power	Gain a new Rage Power effect while raging.
+11	0	3	1	18	0	Rage Power	Gain a new Rage Power effect while raging.
+12	0	3	1	20	0	Rage Power	Gain a new Rage Power effect while raging.
+13	0	4	0	2	0	Uncanny Dodge	Cannot be caught flat-footed and don't lose Dex bonus to AC if the attacker is invisible. 
+14	0	5	0	3	0	Trap Sense	Gain a +1 bonus on Reflex saves made to avoid traps and a +1 dodge bonus to AC against traps. Bonuses increase by an additional +1 at 6th, 9th, 12th, 15th, and 18th level. Trap Sense bonuses from multiple classes stack.
+15	0	6	0	5	0	Improved Uncanny Dodge	Cannot be flanked. Rogues must have at least 4 more rogue levels than your barbarian levels to sneak attack you.
+16	0	7	0	7	0	Damage Reduction	Subtract 1 from damage taken from a weapon or natural attack. Reduce damage by an additional 1 point at 10th, 13th, 16th, and 19th level. Does not reduce damage below 0.
+17	0	8	0	11	0	Greater Rage	While raging morale bonuses to Strength and Constitution increase to +6 and morale bonus to Will saves increases to +3.
+18	0	9	0	14	0	Indomitable Will	While raging gain a +4 bonus on Will saves against enchantment spells. Stacks with other effects including base Will save bonus from raging.
+19	0	10	0	17	0	Tireless Rage	No longer become fatigued after a rage
+20	0	11	0	20	0	Mighty Rage	While raging morale bonuses to Strength and Constitution increase to +8 and morale bonus to Will saves increases to +4.
+21	1	0	0	1	0	Bard Weapon and Armor Proficiency	You are proficient with all simple weapons plus the longsword, rapier, sap, short sword, short bow, whip, light armor and shields (except for tower shields). Can cast spells while wearing light armor and wearing a shield without a spell failure chance.
+22	1	1	0	1	0	Bardic Knowledge	Add half of your bard level to Knowledge skill checks and may make all Knowledge skill checks untrained.
+23	1	3	0	1	0	Cantrips	Learn a number of 0-level spells which do not consume any spell slots.
+24	1	4	1	2	0	Versatile Performance	Choose a type of Perform skill. You may substitute your total Perform skill bonus in place of your bonus in the associated skills.
+25	1	4	1	6	0	Versatile Performance	Choose a type of Perform skill. You may substitute your total Perform skill bonus in place of your bonus in the associated skills.
+26	1	4	1	10	0	Versatile Performance	Choose a type of Perform skill. You may substitute your total Perform skill bonus in place of your bonus in the associated skills.
+27	1	4	1	14	0	Versatile Performance	Choose a type of Perform skill. You may substitute your total Perform skill bonus in place of your bonus in the associated skills.
+28	1	4	1	18	0	Versatile Performance	Choose a type of Perform skill. You may substitute your total Perform skill bonus in place of your bonus in the associated skills.
+29	1	5	0	2	0	Well Versed	Gain a +4 bonus on saving throws made against the bardic performance, sonic, and language-dependent effects of others.
+30	1	6	0	5	0	Lore Master	You may take a 10 on any Knowledge skill check. Once per day (plus an additional time for every 6 bard levels beyond 5th) you may take a 20 on a Knowledge skill check.
+31	1	7	0	10	0	Jack of All Trades	You may use any skill. At 16th level all skills become class skills. At 19th level you may take a 10 on any skill check.
+32	2	0	0	1	0	Cleric Weapon and Armor Proficiency	You are proficient with all simple weapons, the favored weapon of your deity, light armor, medium armor, and shields (except for tower shields).
+33	2	1	0	1	0	Aura	You have a strong aura corresponding to your deity's alignment
+34	2	3	2	1	0	Domains	Choose two domains among those aligning with your deity.
+35	2	4	0	1	0	Orisons	You may prepare 3 0-level spells per day at first level and 4 0-level spells per day at every level after first. These spells are prepared like normal but may be used any number of times per day.
+36	2	5	0	1	0	Spontaneous Casting (Cleric)	If you channel positive energy you may spend any prepared spell to cast any Cure spell of the same spell level or lower. If you channel negative energy you may spend any prepared spell to cast any Inflict spell of the same spell level or lower. Converted spells must be 1st level or higher.
+37	2	6	0	1	0	Chaotic; Evil; Good; Lawful Spells	You may not cast spells of an alignment opposed to your own or your deity's.
+38	2	7	0	1	0	Bonus Language: Celestial	Celestial is available to you as a bonus starting language
+39	2	7	0	1	0	Bonus Language: Abyssal	Abyssal is available to you as a bonus starting language
+40	2	7	0	1	0	Bonus Language: Infernal	Infernal is available to you as a bonus starting language
+41	3	0	0	1	0	Druid Weapon and Armor Proficiency	You are proficient with the club, dagger, dart, quarterstaff, scimitar, scythe, sickle, shortspear, sling, spear, all natural attacks, light armor, medium armor, and shields (except for tower shields). While wearing metal armor or using a metal shield and for 24 hours thereafter you may not cast druid spells or use druid supernatural or spell-like abilities.
+42	3	1	0	1	0	Spontaneous Casting (Druid)	You may spend any prepared spell to cast any Summon Nature's Ally spell of the same level or lower.
+43	3	2	0	1	0	Chaotic; Evil; Good; Lawful Spells	You may not cast spells of an alignment opposed to your own or your deity's.
+44	3	3	0	1	0	Orisons	You may prepare 3 0-level spells per day at first level and 4 0-level spells per day at every level after first. These spells are prepared like normal but may be used any number of times per day.
+45	3	5	1	1	0	Nature Bond	You may choose to either bond with a cleric domain corresponding to the natural world or with an animal companion.
+46	3	6	0	1	0	Nature Sense	Gain a +2 bonus on Knowledge (nature) and Survival checks
+47	3	7	0	1	0	Wild Empathy	You may attempt to improve the disposition of an animal similar to a Diplomacy check. Roll 1d20 and add your druid level and Charisma modifier to determine the result.
+48	3	8	0	2	0	Woodland Stride	You may move through any undergrowth (such as thorns, briars, overgrown areas, etc.) at normal speed and without taking damage. Magically manipulated undergrowth still affect you.
+49	3	9	0	3	0	Trackless Step	You leave no trail in natural surroundings and cannot be tracked. You may choose to leave a trail if desired.
+50	3	10	0	4	0	Resist Nature's Lure	Gain a +4 bonus on saving throws against fey spell-like and supernatural abilities. This bonus also applies to spells which utilize or target plants.
+51	3	11	0	9	0	Venom Immunity	You are immune to all poisons
+52	3	12	0	15	0	Timeless Body	You no longer take ability score penalties for aging and cannot be magically aged. Penalties already incurred remain. Bonuses still accrue and you may still die of old age.
+53	4	0	0	1	0	Fighter Weapon and Armor Proficiency	You are proficient with all simple and martial weapons, light armor, medium armor, heavy armor, and shields (including for tower shields).
+54	4	1	1	1	0	Bonus Feat	Choose an additional combat feat. At 4th level and every four levels thereafter you may choose to replace one bonus feat with another combat feat (the replaced feat may not be a pre-requisite for another feat you know).
+55	4	1	1	2	0	Bonus Feat	Choose an additional combat feat.
+56	4	1	1	4	0	Bonus Feat	Choose an additional combat feat.
+57	4	1	1	6	0	Bonus Feat	Choose an additional combat feat.
+58	4	1	1	8	0	Bonus Feat	Choose an additional combat feat.
+59	4	1	1	10	0	Bonus Feat	Choose an additional combat feat.
+60	4	1	1	12	0	Bonus Feat	Choose an additional combat feat.
+61	4	1	1	14	0	Bonus Feat	Choose an additional combat feat.
+62	4	1	1	16	0	Bonus Feat	Choose an additional combat feat.
+63	4	1	1	18	0	Bonus Feat	Choose an additional combat feat.
+64	4	1	1	20	0	Bonus Feat	Choose an additional combat feat.
+65	4	2	0	2	0	Bravery	Gain a +1 bonus on Will saves against fear effects. This bonus increases by an additional +1 every four levels beyond 2nd.
+66	4	3	0	3	0	Armor Training	Whenever wearing armor reduce the armor check penalty by 1 (to a minimum of 0) and increase maximum Dexterity bonus allowed by 1. Every four levels after 3rd increase these bonuses by +1.
+67	4	4	1	5	0	Weapon Training	Select one group of weapons. Gain a +1 on all attack and damage rolls made with a weapon from this group. Becomes +2 at level 9, +3 at level 13, and +4 at level 17 (does not stack with weapon training for a different group, choose whichever bonus is higher).
+68	4	5	1	9	0	Weapon Training	Select one group of weapons. Gain a +1 on all attack and damage rolls made with a weapon from this group. Becomes +2 at level 13, and +3 at level 17 (does not stack with weapon training for a different group, choose whichever bonus is higher).
+69	4	6	1	13	0	Weapon Training	Select one group of weapons. Gain a +1 on all attack and damage rolls made with a weapon from this group. Becomes +2 at level 17 (does not stack with weapon training for a different group, choose whichever bonus is higher).
+70	4	7	1	17	0	Weapon Training	Select one group of weapons. Gain a +1 on all attack and damage rolls made with a weapon from this group (does not stack with weapon training for a different group, choose whichever bonus is higher).
+71	4	8	0	19	0	Armor Mastery	Gain DR 5/- whenever wearing armor or using a shield
+72	4	9	1	20	0	Weapon Mastery	Choose one weapon type. All attacks made with this weapon type automatically confirm all critical threats and have their damage multiplier increased by 1 (for example x2 becomes x3). In addition you can no longer be disarmed while wielding a weapon of this type.
+73	5	0	0	1	0	Monk Weapon and Armor Proficiency	You are proficient with the club, light crossbow, heavy crossbow, dagger, handaxe, javelin, kama, nunchaku, quarterstaff, sling, and spear. While wearing any armor, using a shield, or carrying a medium or heavy load you lose your AC bonus as well as Fast Movement and Flurry of Blows.
+74	5	1	0	1	0	AC Bonus	When unarmored and unencumbered add you Wisdom bonus to your AC and CMD. Increase this bonus by 1 for everry four Monk levels thereafter, up to +5 at 20th level.
+75	5	2	1	1	0	Bonus Feat	Gain a bonus feat from a specific list.
+76	5	2	1	2	0	Bonus Feat	Gain a bonus feat from a specific list.
+77	5	2	1	6	0	Bonus Feat	Gain a bonus feat from a specific list.
+78	5	2	1	10	0	Bonus Feat	Gain a bonus feat from a specific list., including supernatural and magical diseases.
+79	5	2	1	14	0	Bonus Feat	Gain a bonus feat from a specific list.
+80	5	2	1	18	0	Bonus Feat	Gain a bonus feat from a specific list.
+81	5	3	0	2	0	Evasion	You can avoid even magical and unusual attacks with great agility. If you make a Reflex saving throw to avoid an attack that would normally halve an attack's damage you instead take no damage. May only be used while wearing light armor or no armor and cannot be used while helpless.
+82	5	4	0	3	0	Fast Movement	Gain +10 bonus to base speed for every 3 monk levels you possess (i.e. +10 at level 3, becomes +20 at level 6, etc.)
+83	5	5	0	3	0	Maneuver Training	Use your monk level in place of base attack bonus when calculating CMB. Base attack bonuses of other classes are unaffected.
+84	5	6	0	3	0	Still Mind	Gain a +2 bonus on saving throws against enchantment spells and effects.
+85	5	7	0	4	0	Ki Pool	Gain a pool of ki points equal to 1/2 your monk level + Wisdom modifier., all types of armor and shields (except for tower shields).
+86	5	8	0	4	0	Slow Fall	If within arm's reach of a wall you may use it to slow your descent, causing you to take damage as if the fall were 20 feet shorter. This ability improves with your monk level, such that at 20th level you can use a nearby wall to take no damage from a fall of any height.
+87	5	9	0	5	0	High Jump	You may add your monk level to all Acrobatics checks made to jump (vertically or horizontally). You always count as having a running start when making jump checks. You may spend 1 ki point as a swift action to gain a +20 bonus on Acrobatics checks made to jump.
+88	5	10	0	5	0	Purity of Body	You are immune to all diseases, including supernatural and magical diseases.
+89	5	11	0	9	0	Improved Evasion	You take half damage on failed Reflex saves (only when not helpless).
+90	5	12	0	11	0	Diamond Body	You are immune to all poisons.
+91	5	13	0	13	0	Diamond Soul	Gain spell resistance equal to your monk level + 10.
+92	5	14	0	17	0	Timeless Body	You no longer take ability score penalties for aging and cannot be magically aged. Penalties already incurred remain. Bonuses still accrue and you may still die of old age.
+93	5	15	0	17	0	Tongue of the Sun and Moon	You can speak with any living creature.
+94	5	16	0	20	0	Perfect Self	You are treated as an outsider for the purpose of spells and magical effects. Gain DR 10/chaotic. You may still be brought back from the dead as if you weren't an outsider.
+95	6	0	0	1	0	Paladin Weapon and Armor Proficiency	You are proficient with all simple and martial weapons, light armor, medium armor, heavy armor, and shields (except for tower shields)
+96	6	1	0	1	0	Aura of Good	You have an aura of good with strength equal to your paladin level.
+97	6	2	0	2	0	Divine Grace	Gain a bonus equal to your Charisma modifier to all saving throws.
+98	6	3	0	3	0	Aura of Courage	You are immune to all fear effects. Allies within 10 feet gain a +4 morale bonus on saving throws against fear effects. This ability only functions while you are conscious.
+99	6	4	0	3	0	Divine Health	You are immune to all diseases, including supernatural and magical diseases, including mummy rot.
+100	6	5	1	3	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+101	6	5	1	6	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+102	6	5	1	9	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+103	6	5	1	12	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+104	6	5	1	15	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+105	6	5	1	18	0	Mercy	Pick a mercy effect to add to your Lay on Hands ability
+106	6	6	0	4	0	Spells	You may cast Paladin spells from the Paladin Spell List. Spells must be prepared in advance in 1 hour per day in quiet prayer; to prepare a spell you must have a Charisma score equal to at least 10 + the spells level, and the Difficulty Class for a saving throw against your spells is 10 + the spell level + your Charisma modifier.
+107	6	7	1	5	0	Divine Bond	Choose a divine bond as either a weapon or a steed.
+108	6	8	0	8	0	Aura of Resolve	You are immune to charm spells and spell-like abilities. Allies within 10 feet gain a +4 morale bonus on saving throws against charm effects. This ability only functions while the paladin is conscious.
+109	6	9	0	14	0	Aura of Faith	Your weapons and any attack made against an enemy within 10 feet are treated as good aligned. This ability only functions while you are conscious.
+110	6	10	0	17	0	Aura of Righteousness	Gain DR 5/evil and immunity to compulsion spells and spell-like abilities. Allies within 10 feet gain a +4 morale bonus on saving throws against compulsion effects. This ability only functions while you are conscious.
+111	6	11	0	20	0	Holy Champion	Your DR increases to 10/evil. Apply banishment to any evil outsider successfully hit by Smite Evil. Whenever channeling positive energy or using Lay on Hands you heal for the maximum possible amount.
+112	7	0	0	1	0	Ranger Weapon and Armor Proficiency	You are proficient with all simple and martial weapons and with light armor, medium armor and shields (except for tower shields)
+113	7	1	1	1	0	Favored Enemy	Select a favored enemy from the favored enemies table. Gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of the chosen type and also +2 on weapon attack and damage rolls against them
+114	7	1	1	5	0	Favored Enemy	Select a favored enemy from the favored enemies table. Gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of the chosen type and also +2 on weapon attack and damage rolls against them
+115	7	1	1	10	0	Favored Enemy	Select a favored enemy from the favored enemies table. Gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of the chosen type and also +2 on weapon attack and damage rolls against them
+116	7	1	1	15	0	Favored Enemy	Select a favored enemy from the favored enemies table. Gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of the chosen type and also +2 on weapon attack and damage rolls against them
+117	7	1	1	20	0	Favored Enemy	Select a favored enemy from the favored enemies table. Gain a +2 bonus on Bluff, Knowledge, Perception, Sense Motive, and Survival checks against creatures of the chosen type and also +2 on weapon attack and damage rolls against them
+118	7	2	0	1	0	Track	Add half your ranger level (minimum 1) to Survival skill checks made to follow tracks
+119	7	3	0	1	0	Wild Empathy	You may attempt to improve the disposition of an animal similar to a Diplomacy check. Roll 1d20 and add your ranger level and Charisma modifier to determine the result.
+120	7	4	1	1	0	Combat Style Feat	Choose a combat style to pursue: archery or two-weapon combat
+121	7	5	1	2	0	Bonus Feat	Choose a combat feat from your chosen combat style
+122	7	5	1	6	0	Bonus Feat	Choose a combat feat from your chosen combat style
+123	7	5	1	10	0	Bonus Feat	Choose a combat feat from your chosen combat style
+124	7	5	1	14	0	Bonus Feat	Choose a combat feat from your chosen combat style
+125	7	5	1	18	0	Bonus Feat	Choose a combat feat from your chosen combat style
+126	7	6	1	3	0	Favored Terrain	Select a favored terrain from the favored terrain table. Gain a +2 bonus on initiative checks and Knowledge (geography), Perception, Stealth, and Survival skill checks when in this terrain. You leave no trail (unless you choose to) when traveling through this terrain.
+127	7	6	1	8	0	Favored Terrain	Select a favored terrain from the favored terrain table. Gain a +2 bonus on initiative checks and Knowledge (geography), Perception, Stealth, and Survival skill checks when in this terrain. You leave no trail (unless you choose to) when traveling through this terrain.
+128	7	6	1	13	0	Favored Terrain	Select a favored terrain from the favored terrain table. Gain a +2 bonus on initiative checks and Knowledge (geography), Perception, Stealth, and Survival skill checks when in this terrain. You leave no trail (unless you choose to) when traveling through this terrain.
+129	7	6	1	18	0	Favored Terrain	Select a favored terrain from the favored terrain table. Gain a +2 bonus on initiative checks and Knowledge (geography), Perception, Stealth, and Survival skill checks when in this terrain. You leave no trail (unless you choose to) when traveling through this terrain.
+130	7	7	1	4	0	Hunter's Bond	Choose one of two bonds: bond to your companions, or bond with an animal companion.
+131	7	8	0	4	0	Spells	You may cast Ranger spells from the Ranger Spell List. Spells must be prepared in advance in 1 hour per day of quiet meditation; to prepare a spell you must have a Wisdom score at least 10 + the spell's level, and the Difficulty Class for a saving throw against your spells is 10 + the spell level + your Wisdom modifier.
+132	7	9	0	7	0	Woodland Stride	You may move through any undergrowth (such as thorns, briars, overgrown areas, etc.) at normal speed and without taking damage. Magically manipulated undergrowth still affect you.
+133	7	10	0	8	0	Swift Tracker	You may move at normal speed while using Survival to follow tracks without taking the normal -5 penalty. You take only a -10 penalty when moving twice your normal speed while tracking.
+134	7	11	0	9	0	Evasion	If you make a Reflex saving throw to avoid magical and unusual attacks. If a Reflex saving throw would halve an attack's damage you instead take no damage. May only be used while wearing light armor
+135	7	12	0	12	0	Camouflage	You may use Stealth to hide in any of your favored terrains even without cover or concealment.
+136	7	13	0	12	0	Improved Evasion	You take half damage on failed Reflex saves (only when not helpless).
+137	7	14	0	17	0	Hide in Plain Sight	You may use the Stealth skill while in any favored terrain, even while being observed.
+138	7	15	0	20	0	Master Hunter	You take no penalty when using Survival to track an enemy while moving at full speed. Once per day per favored enemy type you may make a single attack against a favored enemy at full attack bonus as a standard action: if the attack hits the target takes damage normally and must make a Fortitude save or die (you may instead choose to deal an amount of nonlethal damage equal to the creature's current hit points). The DC of the save is equal to 10 + 1/2 your Ranger level + your Wisdom modifier. You may not make more than one such an attack against the same enemy in a 24 hour period.
+139	8	0	0	1	0	Rogue Weapon and Armor Proficiency	You are proficient with all simple weapons, the hand crossbow, rapier, sap, shortbow, short sword, and light armor.
+140	8	1	0	1	0	Trap Finding	Add 1/2 of your rogue level your Perception skill to checks made to find traps and to Disable Device checks (minimum +1). You may use Disable Device to disarm magical traps.
+141	8	2	1	2	0	Rogue Talent	Select a talent.
+142	8	2	1	4	0	Rogue Talent	Select a talent.
+143	8	2	1	6	0	Rogue Talent	Select a talent.
+144	8	2	1	8	0	Rogue Talent	Select a talent.
+145	8	2	1	10	0	Rogue Talent	Select a talent.
+146	8	2	1	12	0	Rogue Talent	Select a talent.
+147	8	2	1	14	0	Rogue Talent	Select a talent.
+148	8	2	1	16	0	Rogue Talent	Select a talent.
+149	8	2	1	18	0	Rogue Talent	Select a talent.
+150	8	2	1	20	0	Rogue Talent	Select a talent.
+151	8	3	0	2	0	Evasion	You can avoid even magical and unusual attacks with great agility. If you make a Reflex saving throw to avoid an attack that would normally halve an attack's damage you instead take no damage. May only be used while wearing light armor or no armor and cannot be used while helpless.
+152	8	4	0	3	0	Trap Sense	Gain a +1 bonus on Reflex saves made to avoid traps and a +1 dodge bonus to AC against traps. Bonuses increase by an additional +1 at 6th, 9th, 12th, 15th, and 18th level. Trap Sense bonuses from multiple classes stack.
+153	8	5	0	4	0	Uncanny Dodge	Cannot be caught flat-footed and don't lose Dex bonus to AC if the attacker is invisible. 
+154	8	6	0	5	0	Improved Uncanny Dodge	Cannot be flanked. Other rogues must have at least 4 more rogue levels than you to sneak attack you.
+155	8	7	0	20	0	Master Strike	Each time you deal sneak attack damage you may choose one of the following: put the target to sleep for 1d4 hours; paralyze the target for 2d6 rounds; slay the target. The target receives a Fortitude save to negate the additional effect. The DC of the save is equal to 10 + 1/2 your rogue level + your Intelligence modifier. A creature can only be targed by Master Strike once per 24 hours (regardless of whether or not the save is successful).
+156	9	0	0	1	0	Sorcerer Weapon and Armor Proficiency	You are proficient with all simple weapons. Armor interferes with your gestures, which can cause spells with somatic components to fail.
+157	9	1	1	1	0	Bloodline	The source of your magic lies somewhere in your heritage, which grants you spells, bonus feats, additional class skills, and special abilities.
+158	9	2	0	1	0	Cantrips	Your 0-level spells do not consume any spell slots
+159	9	3	1	7	0	Bloodline Feat	You may pick a bonus Feat from a bloodline specific list
+160	9	3	1	13	0	Bloodline Feat	You may pick a bonus Feat from a bloodline specific list
+161	9	3	1	19	0	Bloodline Feat	You may pick a bonus Feat from a bloodline specific list
+162	10	0	0	1	0	Wizard Weapon and Armor Proficiency	You are proficient with the club, dagger, heavy crossbow, light crossbow, and quarterstaff. Armor interferes with your movements, which can cause spells with somatic components to fail.
+163	10	1	0	1	0	Spells	You cast spells from the sorcerer/wizard list. To prepare a spell you must have an Intelligence score of 10 + the spell level and the DC for the saving throw is 10 + the spell level + your Intelligence modifier.
+164	10	2	0	1	0	Bonus Language: Draconic	You may substitute Draconic for one of the bonus languages available because of your race.
+165	10	3	1	1	0	Arcane Bond	You form a powerful bond with an object or creature
+166	10	6	1	5	0	Bonus Feat	You may choose a metamagic feat
+167	10	6	1	10	0	Bonus Feat	You may choose a metamagic feat
+168	10	6	1	15	0	Bonus Feat	You may choose a metamagic feat
+169	10	6	1	20	0	Bonus Feat	You may choose a metamagic feat
+170	10	7	1	1	0	Arcane School	Choose to specialize in one school of magic, gaining additional spells and powers based on the school
+171	3	4	0	1	0	Bonus Language: Sylvan	Sylvan is available to you as a bonus starting language
+172	3	13	0	1	0	Known Language: Druidic	You know the Druidic language
+173	1	8	1	5	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+174	1	8	1	8	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+175	1	8	1	11	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+176	1	8	1	14	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+177	1	8	1	17	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+178	1	8	1	20	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell, and must be at least one level lower than the highest level spell you can cast.
+179	4	10	1	4	1	Swap Feat	You may choose to learn a new bonus feat in exchange for losing one you already learned. The lost feat cannot be a prerequisite for another feat, a prestige class, or ability.
+180	4	10	1	8	1	Swap Feat	You may choose to learn a new bonus feat in exchange for losing one you already learned. The lost feat cannot be a prerequisite for another feat, a prestige class, or ability.
+181	4	10	1	12	1	Swap Feat	You may choose to learn a new bonus feat in exchange for losing one you already learned. The lost feat cannot be a prerequisite for another feat, a prestige class, or ability.
+182	4	10	1	16	1	Swap Feat	You may choose to learn a new bonus feat in exchange for losing one you already learned. The lost feat cannot be a prerequisite for another feat, a prestige class, or ability.
+183	4	10	1	20	1	Swap Feat	You may choose to learn a new bonus feat in exchange for losing one you already learned. The lost feat cannot be a prerequisite for another feat, a prestige class, or ability.
+184	9	4	1	4	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell.
+185	9	4	1	8	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell.
+186	9	4	1	12	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell.
+187	9	4	1	16	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell.
+188	9	4	1	20	1	Swap Spell	You may choose to learn a new spell in exchange for losing one spell you already know. The new spell must be the same level as the lost spell.

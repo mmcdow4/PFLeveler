@@ -1,0 +1,7 @@
+id	ammo_cost_mod	light_cost_mod	med_cost_mod	hvy_cost_mod	weap_cost_mod	shield_cost_mod	weight_mod	name	description
+0	60 gp	5000 gp	10000 gp	15000 gp	3000 gp	0	1	Adamantine	
+1	10 gp*	10 gp*	10 gp*	10 gp*	10 gp*	0	0.5	Darkwood	
+2	 	2x	2x	2x	   	2x	1	Dragonhide	
+3	2x	2x	2x	2x	2x	2x	1	Cold Iron	
+4	500 gp*	1000 gp	4000 gp	9000 gp	500 gp*	1000 gp	1*	Mithral	
+5	2 gp				90 gp		1	Alchemical Silver	

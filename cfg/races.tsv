@@ -1,0 +1,8 @@
+id	name	size	speed	bonusStr	bonusDex	bonusCon	bonusInt	bonusWis	bonusCha	bonusFlex	bonusFeat	bonusSkill	numFavoredClass	langKnown	langAvail
+0	Dwarf	Medium	20	0	0	2	0	2	-2	0	0	0	1	Common;Dwarven	Giant;Gnome;Goblin;Orc;Terran;Undercommon
+1	Elf	Medium	30	0	2	-2	2	0	0	0	0	0	1	Common;Elven	Celestial;Draconic;Gnoll;Gnome;Goblin;Orc;Sylvan
+2	Gnome	Small	20	-2	0	2	0	0	2	0	0	0	1	Common;Gnome;Sylvan	Draconic;Dwarven;Elven;Giant;Goblin;Orc
+3	Half-Elf	Medium	30	0	0	0	0	0	0	2	0	0	2	Common;Elven	0;Aklo;Aquan;Auran;Celestial;Draconic;Dwarven;Giant;Gnoll;Gnome;Goblin;Halfling;Ignan;Infernal;Orc;Sylvan;Terran;Undercommon
+4	Half-Orc	Medium	30	0	0	0	0	0	0	2	0	0	1	Common;Orc	Abyssal;Draconic;Giant;Gnoll;Goblin
+5	Halfling	Small	20	-2	2	0	0	0	2	0	0	0	1	Common;Halfling	Dwarven;Elven;Gnome;Goblin
+6	Human	Medium	30	0	0	0	0	0	0	2	1	1	1	Common	Abyssal;Aklo;Aquan;Auran;Celestial;Draconic;Dwarven;Elven;Giant;Gnoll;Gnome;Goblin;Halfling;Ignan;Infernal;Orc;Sylvan;Terran;Undercommon

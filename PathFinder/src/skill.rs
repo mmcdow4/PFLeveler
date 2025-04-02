@@ -2,7 +2,7 @@ use crate::ability_scores;
 
 pub const NUMBER_SKILLS: usize = 39;
 
-#[derive(Debug)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Skill {
     pub name: String,
     pub rank: u8,

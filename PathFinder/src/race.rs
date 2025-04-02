@@ -1,7 +1,7 @@
 use crate::{error::PathFinderError, ability_scores};
 use std::{fmt, collections::HashSet};
 
-#[derive(Debug)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Race {
     pub id: u32,
     pub name: String,
@@ -75,7 +75,7 @@ impl Race {
 
 }
 
-#[derive(Clone)]
+#[derive(Clone, PartialEq)]
 pub struct RacialAbility {
     pub id: u32,
     pub race_id: u32,
@@ -94,6 +94,7 @@ impl RacialAbility {
     }
 }
 
+#[derive(Clone, PartialEq)]
 pub struct CharacterSize {
     pub text: String,
     pub combat_mod: i8,

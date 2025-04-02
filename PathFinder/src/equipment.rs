@@ -5,7 +5,7 @@ pub const SP_TO_CP: u32 = 10;
 pub const GP_TO_CP: u32 = 100;
 pub const PP_TO_CP: u32 = 1000;
 
-#[derive(Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum EquipmentCategoryMarker {
     AllEquipment = 0,
     OtherEquipment = 1,
@@ -106,7 +106,7 @@ pub fn eq_category_id_to_str(category_id: &EquipmentCategoryMarker) -> String {
         EquipmentCategoryMarker::Armor => "12".to_string(),
     }
 }
-#[derive(Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum WeaponCategoryMarker {
     LightMeleeWeapon,
     OneHandedMelee,
@@ -136,7 +136,7 @@ pub fn weapon_category_to_index(weapon_category: &WeaponCategoryMarker) -> u32 {
     }
 }
 
-#[derive(Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum WeaponProficiencyMarker {
     MartialWeapon,
     SimpleWeapon,
@@ -160,7 +160,7 @@ pub fn proficiency_to_index(proficiency: &WeaponProficiencyMarker) -> u32 {
     }
 }
 
-#[derive(Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum ArmorCategoryMarker {
     LightArmor,
     MediumArmor,
@@ -204,7 +204,7 @@ pub trait Equipment {
     fn get_weight(&self, size: &race::CharacterSize) -> f64;
 }
 
-#[derive(Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct GeneralItem {
     pub id: u32,
     pub name: String,
@@ -273,7 +273,7 @@ impl Equipment for &GeneralItem {
     }
 }
 
-#[derive(Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Material {
     pub id: u32,
     pub name: String,
@@ -285,7 +285,7 @@ pub struct Material {
     pub weapon_price_mod: f64,
 }
 
-#[derive(Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Weapon {
     pub id: u32,
     pub name: String,
@@ -398,7 +398,7 @@ impl Equipment for &Weapon {
     }
 }
 
-#[derive(Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Armor {
     pub id: u32,
     pub name: String,

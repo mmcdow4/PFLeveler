@@ -12,7 +12,7 @@ pub const EXTRA_ATTACK_BAB_MODULUS: usize = 5;
 pub const MAX_CHARACTER_LEVEL: usize = 20;
 pub const NUMBER_BASE_CLASSES: usize = 11;
 
-#[derive(Debug)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct CharacterClass {
     pub id: u32,
     pub name: String,
@@ -68,7 +68,7 @@ impl CharacterClass {
 }
 
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct ClassFeature {
     pub id: u32,
     pub class_id: u32,
@@ -117,7 +117,7 @@ impl ClassFeature {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct ClassAbility {
     pub id: u32,
     pub class_id: u32,
@@ -187,7 +187,7 @@ impl ClassAbility {
     }
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct ClassChoice {
     pub id: u32,
     pub class_id: u32,
@@ -273,7 +273,7 @@ impl ClassChoice {
 }
 
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct ClassLevelUpInfo {
     pub base_attack_bonus: u8,
     pub base_fort_save: u8,

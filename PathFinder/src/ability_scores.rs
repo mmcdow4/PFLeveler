@@ -1,6 +1,6 @@
 pub const NUMBER_ABILITY_SCORES: usize = 6;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum AbilityScore {
     Strength,
     Dexterity,

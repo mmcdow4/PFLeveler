@@ -1,5 +1,5 @@
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub enum FeatChoiceType {
     FeatListChoice = 0,
     FeatWeaponChoice = 1,
@@ -29,7 +29,7 @@ pub fn feat_choice_type_to_index(choice: FeatChoiceType) -> u32 {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, PartialEq)]
 pub struct Feat {
     pub id: u32,
     pub name: String,

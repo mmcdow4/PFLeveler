@@ -38,6 +38,10 @@ pub fn index_to_ability_score(index: Option<usize>) -> Option<AbilityScore> {
     }
 }
 
+pub fn index_to_ability_score_string(index: Option<usize>) -> String {
+    ability_score_to_string(index_to_ability_score(index))
+}
+
 pub fn ability_score_to_string(ability_score: Option<AbilityScore>) -> String {
     match ability_score {
         Some(AbilityScore::Strength) => String::from("Strength"),
@@ -59,5 +63,18 @@ pub fn string_to_ability_score(str: &String) -> Option<AbilityScore> {
         "Wisdom" => Some(AbilityScore::Wisdom),
         "Charisma" => Some(AbilityScore::Charisma),
         _ => None
+    }
+}
+
+pub fn ability_score_to_mod(value: i8) -> i8 {
+    (value - 10) / 2
+}
+
+pub fn number_bonus_spell_slots(caster_ability_value: i8, spell_level: i8) -> i8 {
+    let modifier = ability_score_to_mod(caster_ability_value);
+    if spell_level == 0 || modifier < spell_level {
+        0
+    } else {
+        ((modifier - spell_level) / 4) + 1
     }
 }

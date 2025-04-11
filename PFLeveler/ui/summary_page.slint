@@ -1,0 +1,228 @@
+import { ComboBox, Button, StandardTableView, StandardListView, LineEdit } from "std-widgets.slint";
+
+
+
+export struct InputField {
+    label: string,
+    value: string,
+    input: string
+}
+
+export component SummaryPage inherits Rectangle {
+    callback lock-clicked;
+    callback summary-class-selected(string);
+
+    in-out property <string> character-alignment-text: "";
+    in-out property <string> alignment-text: "";
+    in-out property <string> race: "";
+    in-out property <string> size: "";
+    in-out property <string> speed: "";
+    in-out property <string> languages: "";
+    in-out property <string> favored-class: "";
+    in-out property <[string]> class-levels-text: [""];
+    in-out property <[string]> ability-score-text: [""];
+    in-out property <[string]> skills-text: [""];
+    in-out property <[string]> feats-text: [""];
+    in-out property <[string]> abilities-text: [""];
+    in-out property <[string]> spells-class-list: [""];
+    in-out property <int> spells-class-idx: -1;
+    in-out property <[[StandardListViewItem]]> spell-slots-text: [[]];
+    in-out property <[string]> spells-text: [""];
+    in-out property <bool> locked: true;
+    in-out property <[InputField]> input-fields: [
+        { label: "Character Name", value: "", input: "" },
+        { label: "Player Name", value: "", input: "" },
+        { label: "Height", value: "", input: "" },
+        { label: "Weight", value: "", input: "" },
+        { label: "Hair", value: "", input: "" },
+        { label: "Eyes", value: "", input: "" },
+        { label: "Deity", value: "", input: "" },
+        { label: "Homeland", value: "", input: "" },
+        { label: "Gender", value: "", input: "" },
+        { label: "Age", value: "", input: "" }
+    ];
+
+    background: lightgray;
+    HorizontalLayout {
+        spacing: 5px;
+        VerticalLayout {
+            spacing: 0px;
+            width: 25%;
+            for field in input-fields: HorizontalLayout {
+                alignment: start;
+                Text { 
+                    text: field.label + ": " + field.value;
+                    horizontal-alignment: left;
+                }
+                
+                LineEdit { 
+                    text: field.input;
+                    horizontal-alignment: center;
+                    enabled: !locked;
+                    visible: !locked;
+                    height: 20px;
+                    edited(new_text) => {
+                        field.input = new_text;
+                    }
+                }
+            }
+            HorizontalLayout {
+                Text { text: "Alignment: " + character-alignment-text; }
+                ComboBox {
+                    height: 20px;
+                    model: [
+                        "Lawful Good",
+                        "Lawful Neutral",
+                        "Lawful Evil",
+                        "Neutral Good",
+                        "True Neutral",
+                        "Neutral Evil",
+                        "Chaotic Good",
+                        "Chaotic Neutral",
+                        "Chaotic Evil"
+                    ];
+                    current-value: alignment-text;
+                    selected(value) => {
+                        alignment-text = value;
+                    }
+                    enabled: !locked;
+                    visible: !locked;
+                }
+            }
+            Text { text: "Race: " + race; }
+            Text { text: "Size: " + size; }
+            Text { text: "Speed: " + speed; }
+            Text { text: "Languages: " + languages; }
+            Text { text: "Favored Class: " + favored-class; }
+            HorizontalLayout {
+                Text {
+                    text: "Class Levels:";
+                    horizontal-alignment: left;
+                }
+                Rectangle {
+                    horizontal-stretch: 1;
+                    background: transparent;
+                }
+                Button {
+                    text: "Lock Info";
+                    //height: 18px;
+                    enabled: !locked;
+                    visible: !locked;
+                    horizontal-stretch: 0;
+                    clicked => { root.lock-clicked(); }
+                }
+            }
+            Rectangle {
+                height: 40%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in class-levels-text:
+                        Text { text: item; }
+                }
+            }
+        }
+        VerticalLayout {
+            spacing: 5px;
+            width: 25%;
+            Text { text: "Ability Scores:"; }
+            Rectangle {
+                height: 45%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in ability-score-text:
+                        Text { text: item; }
+                }
+            }
+            Text { text: "Skills:"; }
+            Rectangle {
+                height: 45%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in skills-text:
+                        Text { text: item; }
+                }
+            }
+        }
+        VerticalLayout {
+            spacing: 5px;
+            width: 25%;
+            Text { text: "Feats:"; }
+            Rectangle {
+                
+                height: 45%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in feats-text:
+                        Text { text: item; }
+                }
+            }
+            Text { text: "Special Abilities:"; }
+            Rectangle {
+                height: 45%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in abilities-text:
+                        Text { text: item; }
+                }
+            }
+        }
+        VerticalLayout {
+            spacing: 5px;
+            width: 25%;
+            HorizontalLayout {
+                alignment: start;
+                height: 10%;
+                // Rectangle { horizontal-stretch: 1; background: transparent; }
+                Text { text: "Class: "; }
+                ComboBox {
+                    height: 20px;
+                    width: 100px;
+                    model: spells-class-list;
+                    current-index: spells-class-idx;
+                    enabled: !locked;
+                    visible: !locked;
+                }
+                // Rectangle { horizontal-stretch: 1; background: transparent; }
+            }
+            Text { text: "Spell Slots:"; }
+            Rectangle {
+                height: 20%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardTableView {
+                    columns: [
+                        { title: "Spells Known" },
+                        { title: "Spell Save DC" },
+                        { title: "Level" },
+                        { title: "Spells/Day" },
+                        { title: "Bonus Slots" }
+                    ];
+            
+                    rows: root.spell-slots-text;
+                }
+            }
+            Text { text: "Spells Known:"; }
+            Rectangle {
+                height: 60%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView { 
+                    for item in spells-text:
+                        Text { text: item; }
+                }
+            }
+        }
+    }
+}

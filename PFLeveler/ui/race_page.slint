@@ -1,0 +1,118 @@
+import { ComboBox, Button, StandardListView } from "std-widgets.slint";
+
+// export struct RacialAbilityInfo {
+//     name: string,
+//     description: string,
+// }
+
+export component RacePage inherits Rectangle {
+    in-out property<[string]> race-names: [];
+    in-out property<string> selected-race: "";
+    in-out property<string> character-race: "";
+    in-out property<string> size: "";
+    in-out property<string> speed: "";
+    in-out property<string> ability-score-offsets: "";
+    in-out property <string> languages-known: "";
+    in-out property <string> languages-available: "";
+    in-out property <int> selected-racial-index: -1;
+    in-out property <[StandardListViewItem]> racial-ability-names: [];
+    in-out property <[string]> racial-ability-descriptions: [];
+    in-out property <string> selected-racial-description: "";
+    in-out property<bool> locked: true;
+
+    callback lock-clicked;
+    callback race-selected(string);
+
+    background: lightgrey;
+
+    HorizontalLayout {
+        VerticalLayout {
+            width: 50%;
+            HorizontalLayout {
+                Text {
+                    text: "Race: " + character-race;
+                }
+
+                ComboBox {
+                    height: 18px;
+                    model: race-names;
+                    current-value: selected-race;
+                    selected(value) => {
+                        selected-race = value;
+                        root.race_selected(value);
+                    }
+                    enabled: !locked;
+                    visible: !locked;
+                }
+
+                Button {
+                    text: "Lock Race Selection";
+                    height: 18px;
+                    enabled: !locked;
+                    visible: !locked;
+                    clicked => { root.lock-clicked(); }
+                }
+            }
+
+            Text {
+                text: "Size: " + size;
+            }
+
+            Text {
+                text: "Speed: " + speed;
+            }
+            
+            Text {
+                text: "Ability Score Offsets: " + ability-score-offsets;
+            }
+
+            Text {
+                text: "Languages Known: " + languages-known;
+                wrap: word-wrap;
+            }
+
+            Text {
+                text: "Languages Avaiilable: " + languages-available;
+                wrap: word-wrap;
+            }
+        }
+
+        VerticalLayout {
+            width: 50%;
+            padding: 5px;
+            Text {
+                text: "Racial Bonuses: ";
+            }
+
+            Rectangle {
+                height: 60%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                StandardListView {
+                    model: racial-ability-names;
+                    current-item: selected-racial-index;
+
+                    current-item-changed(index) => {
+                        selected-racial-description = racial-ability-descriptions[index];//racial-abilities[index].description;
+                    }
+                }
+            }
+
+            Rectangle {
+                height: 30%;
+                background: white;
+                border-color: black;
+                border-width: 1px;
+                Text { 
+                    height: parent.height;
+                    width: parent.width;
+                    vertical-alignment: top;
+                    horizontal-alignment: left;
+                    text: "Description: \n" + selected-racial-description;
+                    wrap: word-wrap;
+                }
+            }
+        }
+    }
+}

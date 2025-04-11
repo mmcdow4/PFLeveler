@@ -120,4 +120,11 @@ impl Feat {
             None => "NULL".to_string(),
         }
     }
+
+    pub fn full_name(&self) -> String {
+        match self.choice_string.is_empty() {
+            true => self.name.clone(),
+            false => String::from(self.name.clone() + ": " + &self.choice_string.clone())
+        }
+    }
 }

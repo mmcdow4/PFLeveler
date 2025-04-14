@@ -1,6 +1,14 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashMap;
 use rusqlite;
-use crate::{spell, ability_scores, race, skill, character_class, feat, equipment};
+use crate::{
+  spell,
+  ability_scores,
+  race,
+  skill,
+  character_class,
+  feat,
+  equipment
+};
 
 pub fn init_sqlit_db(database: &rusqlite::Connection) -> rusqlite::Result<()> {
     //Create SPELLS table
@@ -340,7 +348,7 @@ pub fn write_races_to_db(database: &rusqlite::Connection, race_vec: &Vec<race::R
           true => 1,
           false => 0,
         },
-        race.num_favored_classes, race.languages_str(), race.available_languages_str(),
+        race.num_favored_classes, race.languages_str(), race.languages_available_str(),
     );
   }
 
@@ -372,8 +380,8 @@ pub fn read_races_from_db(database: &rusqlite::Connection, race_map: &mut HashMa
       row.get::<usize, i8>(10).expect("Wrong number of Race Elements"),
     ];
 
-    let languages: HashSet<String> = row.get::<usize, String>(14).expect("Wrong number of Race Elements").split(';').map(String::from).collect();
-    let available_languages: HashSet<String> = row.get::<usize, String>(15).expect("Wrong number of Race Elements").split(';').map(String::from).collect();
+    let languages: Vec<String> = row.get::<usize, String>(14).expect("Wrong number of Race Elements").split(';').map(String::from).collect();
+    let languages_available: Vec<String> = row.get::<usize, String>(15).expect("Wrong number of Race Elements").split(';').map(String::from).collect();
 
     let racial_query = format!("SELECT ID,NAME,DESCRIPTION FROM RACIAL_ABILITIES WHERE RACE_ID == {}\n", id);
     let mut racial_stmt = database.prepare(&racial_query).expect("Racial Table Query Failed");
@@ -405,7 +413,7 @@ pub fn read_races_from_db(database: &rusqlite::Connection, race_map: &mut HashMa
       &row.get::<usize, String>(2).expect("Wrong number of Race Elements"),
       row.get::<usize, usize>(3).expect("Wrong number of Race Elements"),
       &languages,
-      &available_languages,
+      &languages_available,
       &racials,
       ability_score_offsets,
       bonus_feat,
@@ -483,12 +491,12 @@ pub fn read_skills_from_db(database: &rusqlite::Connection, skill_map: &mut Hash
           1 => true,
           _ => unreachable!("Unexpected trained only value in skill table"),
         },
-        match row.get::<usize, u32>(2).expect("Wrong number of Skill Elements") {
+        match row.get::<usize, u32>(3).expect("Wrong number of Skill Elements") {
           0 => false,
           1 => true,
           _ => unreachable!("Unexpected ac penalty value in skill table"),
         },
-        ability_scores::index_to_ability_score(row.get::<usize, Option<usize>>(2).expect("Wrong number of Skill Elements")).unwrap(),
+        ability_scores::string_to_ability_score(&row.get::<usize, String>(4).expect("Wrong number of Skill Elements")).unwrap(),
       ));
     }
 }

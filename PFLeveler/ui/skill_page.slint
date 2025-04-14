@@ -1,0 +1,265 @@
+import { ScrollView, CheckBox, Button, VerticalBox } from "std-widgets.slint";
+import { Styles } from "styles.slint";
+
+export struct SkillInfo {
+    is-class-skill: bool,
+    name: string,
+    ability: string,
+    ability-mod: int,
+    ranks: int,
+    temp-ranks: int,
+    misc: int,
+}
+
+component SkillLine inherits Rectangle {
+    in property<SkillInfo> skill-info;
+    in property<int> id;
+    in property<[length]> pos-vec;
+    in property<bool> plus-button-enabled;
+
+    callback increment-skill(int);
+    callback decrement-skill(int);
+
+    padding: 10px;
+    min-height: 20px;
+    CheckBox { 
+        x: pos-vec[0] + 10px;
+        enabled: false;
+        checked: skill-info.is-class-skill;
+    }
+
+    Text {
+        x: pos-vec[1];
+        text: skill-info.name;
+    }
+
+    Text {
+        x: pos-vec[2] + 5px;
+        text: skill-info.ranks + skill-info.ability-mod + skill-info.misc + skill-info.temp-ranks;
+    }
+
+    Text {
+        x: pos-vec[3];
+        text: " = ";
+    }
+
+    Text { 
+        x: pos-vec[4];
+        text: skill-info.ability;
+    }
+
+    Text { 
+        x: pos-vec[5] + 20px;
+        text: skill-info.ability-mod;
+    }
+
+    Text { 
+        x: pos-vec[6];
+        text: " + ";
+    }
+
+    Text {
+        x: pos-vec[7] + 10px;
+        text: skill-info.ranks;
+    }
+
+    Text {
+        x: pos-vec[8];
+        text: " + ";
+    }
+
+    Text {
+        x: pos-vec[9] + 20px;
+        text: skill-info.misc;
+    }
+
+    Button {
+        x: pos-vec[9] + 100px;
+        preferred-height: 20px;
+        text: "+ Rank";
+        enabled: plus-button-enabled;
+        clicked => { root.increment-skill(root.id); }
+    }
+
+    Button {
+        x: pos-vec[9] + 200px;
+        preferred-height: 20px;
+        text: "- Rank";
+        enabled: skill-info.temp-ranks > 0;
+        clicked => { root.decrement-skill(root.id); }
+    }
+}
+
+export component SkillPage inherits Rectangle {
+    in-out property <[SkillInfo]> skill-data: [];
+    out property<[length]> label-pos: [
+        class-skill-label.x,
+        skill-label.x,
+        total-label.x,
+        equals-label.x,
+        ability-label.x,
+        ability-mod-label.x,
+        plus1-label.x,
+        ranks-label.x,
+        plus2-label.x,
+        misc-mod-label.x,
+        buttons-label.x,
+    ];
+    in-out property <int> num-points-remaining: 0;
+    in-out property <length> window-width: Styles.window-init-width;
+    in-out property <bool> locked: true;
+
+    callback increment-skill(int);
+    increment-skill(index) => {
+        skill-data[index].temp-ranks += 1;
+        if(skill-data[index].temp-ranks + skill-data[index].ranks == 1 &&
+            skill-data[index].is-class-skill) {
+                skill-data[index].misc += 3;
+        }
+        root.num-points-remaining -= 1;
+    }
+
+    callback decrement-skill(int);
+    decrement-skill(index) => {
+        skill-data[index].temp-ranks -= 1;
+        if(skill-data[index].temp-ranks + skill-data[index].ranks == 0 &&
+            skill-data[index].is-class-skill) {
+                skill-data[index].misc -= 3;
+        }
+        root.num-points-remaining += 1;
+    }
+
+    callback lock-clicked;
+
+    width: window-width;
+    background: lightgrey;
+
+    ScrollView {
+        HorizontalLayout {
+            alignment: start;
+            padding: 5px;
+            VerticalLayout {
+                width: 50%;
+                spacing: 20px;
+                HorizontalLayout {
+                    alignment: start;
+                    class-skill-label := Text { 
+                        width: 75px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Class Skill";
+                    }
+                    
+                    skill-label := Text { 
+                        width: 200px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "          Skill          ";
+                    }
+                    
+                    total-label := Text { 
+                        width: 40px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Total";
+                    }
+                    
+                    equals-label := Text {
+                        width: 40px;
+                        horizontal-alignment: center; 
+                        horizontal-stretch: 0;
+                        text: "   ";
+                    }
+
+                    ability-label := Text { 
+                        width: 40px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Ability";
+                    }
+                    
+                    ability-mod-label := Text { 
+                        width: 75px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Ability Mod.";
+                    }
+                    
+                    plus1-label := Text {
+                        width: 40px;
+                        horizontal-alignment: center; 
+                        horizontal-stretch: 0;
+                        text: "   ";
+                    }
+                    
+                    ranks-label := Text { 
+                        width: 40px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Ranks";
+                    }
+                    
+                    plus2-label := Text {
+                        width: 40px;
+                        horizontal-alignment: center; 
+                        horizontal-stretch: 0;
+                        text: "   ";
+                    }
+ 
+                    misc-mod-label := Text { 
+                        width: 75px;
+                        horizontal-alignment: left; 
+                        horizontal-stretch: 1;
+                        text: "Misc. Mod.";
+                    }
+                    
+                    buttons-label := Text {
+                        width: 400px;
+                        horizontal-alignment: center; 
+                        horizontal-stretch: 0;
+                        text: "        ";
+                    }
+                }
+
+                for item[i] in root.skill-data: SkillLine {
+                    skill-info: item;
+                    id: i;
+                    pos-vec: label-pos;
+                    plus-button-enabled: root.num-points-remaining > 0;
+                    increment-skill(val) => { root.increment-skill(val); }
+                    decrement-skill(val) => { root.decrement-skill(val); }
+                }
+            }
+            
+            VerticalLayout {
+                width: 50%;
+                spacing: 5px;
+                Rectangle {
+                    height: 45%;
+                    background: transparent;
+                }
+
+                Text {
+                    // horizontal-alignment: center;
+                    preferred-width: 400px;
+                    max-height: 40px;
+                    text: root.num-points-remaining + " Skill Points Remaining";
+                }
+
+                Button {
+                    text: "Lock Skill Points";
+                    max-height: 40px;
+                    preferred-height: 20px;
+                    width: 200px;
+                    enabled: !locked;
+                    clicked => { root.lock-clicked(); }
+                }
+                
+                Rectangle {
+                    height: 45%;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

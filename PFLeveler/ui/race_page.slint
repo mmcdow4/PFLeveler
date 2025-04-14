@@ -1,10 +1,5 @@
 import { ComboBox, Button, StandardListView } from "std-widgets.slint";
 
-// export struct RacialAbilityInfo {
-//     name: string,
-//     description: string,
-// }
-
 export component RacePage inherits Rectangle {
     in-out property<[string]> race-names: [];
     in-out property<string> selected-race: "";
@@ -29,12 +24,14 @@ export component RacePage inherits Rectangle {
         VerticalLayout {
             width: 50%;
             HorizontalLayout {
+                vertical-stretch: 0;
                 Text {
                     text: "Race: " + character-race;
                 }
 
                 ComboBox {
                     height: 18px;
+                    width: 200px;
                     model: race-names;
                     current-value: selected-race;
                     selected(value) => {
@@ -47,7 +44,7 @@ export component RacePage inherits Rectangle {
 
                 Button {
                     text: "Lock Race Selection";
-                    height: 18px;
+                    height: 25px;
                     enabled: !locked;
                     visible: !locked;
                     clicked => { root.lock-clicked(); }
@@ -55,25 +52,35 @@ export component RacePage inherits Rectangle {
             }
 
             Text {
+                vertical-stretch: 0;
                 text: "Size: " + size;
             }
 
             Text {
+                vertical-stretch: 0;
                 text: "Speed: " + speed;
             }
             
             Text {
+                vertical-stretch: 0;
                 text: "Ability Score Offsets: " + ability-score-offsets;
             }
 
             Text {
+                vertical-stretch: 0;
                 text: "Languages Known: " + languages-known;
                 wrap: word-wrap;
             }
 
             Text {
-                text: "Languages Avaiilable: " + languages-available;
+                vertical-stretch: 0;
+                text: "Languages Available: " + languages-available;
                 wrap: word-wrap;
+            }
+
+            Rectangle {
+                vertical-stretch: 1;
+                background: transparent;
             }
         }
 

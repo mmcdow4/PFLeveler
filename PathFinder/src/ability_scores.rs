@@ -1,6 +1,8 @@
+use std::hash::{Hash, Hasher};
+
 pub const NUMBER_ABILITY_SCORES: usize = 6;
 
-#[derive(Debug, Clone, Copy, PartialEq)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum AbilityScore {
     Strength,
     Dexterity,
@@ -8,6 +10,12 @@ pub enum AbilityScore {
     Intelligence,
     Wisdom,
     Charisma,
+}
+
+impl Hash for AbilityScore {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        ability_score_to_index(Some(*self)).hash(state);
+    }
 }
 
 pub fn ability_score_to_index(ability_score: Option<AbilityScore>) -> usize {
@@ -54,6 +62,18 @@ pub fn ability_score_to_string(ability_score: Option<AbilityScore>) -> String {
     }
 }
 
+pub fn ability_score_to_abbrev(ability_score: Option<AbilityScore>) -> String {
+    match ability_score {
+        Some(AbilityScore::Strength) => String::from("STR"),
+        Some(AbilityScore::Dexterity) => String::from("DEX"),
+        Some(AbilityScore::Constitution) => String::from("CON"),
+        Some(AbilityScore::Intelligence) => String::from("INT"),
+        Some(AbilityScore::Wisdom) => String::from("WIS"),
+        Some(AbilityScore::Charisma) => String::from("CHA"),
+        _ => String::from("")
+    }
+}
+
 pub fn string_to_ability_score(str: &String) -> Option<AbilityScore> {
     match str.as_str() {
         "Strength" => Some(AbilityScore::Strength),
@@ -66,11 +86,11 @@ pub fn string_to_ability_score(str: &String) -> Option<AbilityScore> {
     }
 }
 
-pub fn ability_score_to_mod(value: i8) -> i8 {
+pub fn ability_score_to_mod(value: i32) -> i32 {
     (value - 10) / 2
 }
 
-pub fn number_bonus_spell_slots(caster_ability_value: i8, spell_level: i8) -> i8 {
+pub fn number_bonus_spell_slots(caster_ability_value: i32, spell_level: i32) -> i32 {
     let modifier = ability_score_to_mod(caster_ability_value);
     if spell_level == 0 || modifier < spell_level {
         0

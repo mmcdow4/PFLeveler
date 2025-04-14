@@ -1,43 +1,13 @@
 import { TabWidget, StandardButton, VerticalBox } from "std-widgets.slint";
 import { SummaryPage, InputField } from "summary_page.slint";
 import { RacePage } from "race_page.slint";
+import { SkillPage, SkillInfo } from "skill_page.slint";
+import { Styles } from "styles.slint";
 
 export component MainWindow inherits Window {
-    width: 1350px;
-    height: 800px;
-    MenuBar {
-        Menu {
-            title: @tr("File");
-            MenuItem {
-                title: @tr("New Character");
-                activated => { handle-file-new-character(); }
-            }
-            MenuItem {
-                title: @tr("Import Character");
-                activated => { handle-file-import-character(); }
-            }
-            MenuItem {
-                title: @tr("Export Character");
-                activated => { handle-file-export-character(); }
-            }
-            MenuItem {
-                title: @tr("Exit");
-                activated => { handle-file-exit(); }
-            }
-        }
-        
-        Menu {
-            title: @tr("Help");
-            MenuItem {
-                title: @tr("Describe Page");
-                activated => { help-describe-page(); }
-            }
-            MenuItem {
-                title: @tr("Version");
-                activated => { help-version(); }
-            }
-        }
-    }
+    preferred-width: Styles.window-init-width;
+    preferred-height: Styles.window-init-height;
+
 
     /* Menu Callbacks */
     callback handle-file-new-character;
@@ -46,49 +16,87 @@ export component MainWindow inherits Window {
     callback handle-file-exit;
     callback help-describe-page;
     callback help-version;
-
-    TabWidget {
-        x: 0px;
-        y: 0px;
-        Tab {
-            title: "Summary";
-            summary_page:= SummaryPage {
-                lock-clicked => { root.summary-lock-button-clicked(); }
+    MenuBar {
+        Menu {
+            title: @tr("File");
+            MenuItem {
+                title: @tr("New Character");
+                activated => { root.handle-file-new-character(); }
+            }
+            MenuItem {
+                title: @tr("Import Character");
+                activated => { root.handle-file-import-character(); }
+            }
+            MenuItem {
+                title: @tr("Export Character");
+                activated => { root.handle-file-export-character(); }
+            }
+            MenuItem {
+                title: @tr("Exit");
+                activated => { root.handle-file-exit(); }
             }
         }
-        Tab {
-            title: "Race";
-            race_page:= RacePage {
-                lock-clicked => { root.race-lock-button-clicked(); }
-                race-selected(value) => { root.race-selected(value); }
+        
+        Menu {
+            title: @tr("Help");
+            MenuItem {
+                title: @tr("Describe Page");
+                activated => { root.help-describe-page(); }
             }
-        }
-        Tab {
-            title: "Ability Scores";
-            Rectangle {}
-        }
-        Tab {
-            title: "Class";
-            Rectangle {}
-        }
-        Tab {
-            title: "Skills";
-            Rectangle {}
-        }
-        Tab {
-            title: "Spells";
-            Rectangle {}
-        }
-        Tab {
-            title: "Feats";
-            Rectangle {}
-        }
-        Tab {
-            title: "Equipment";
-            Rectangle {}
+            MenuItem {
+                title: @tr("Version");
+                activated => { root.help-version(); }
+            }
         }
     }
 
+    HorizontalLayout {
+        x: 0px;
+        y: 0px;
+        VerticalLayout {
+            TabWidget {
+                Tab {
+                    title: "Summary";
+                    summary_page:= SummaryPage {
+                        lock-clicked => { root.summary-lock-button-clicked(); }
+                    }
+                }
+                Tab {
+                    title: "Race";
+                    race_page:= RacePage {
+                        lock-clicked => { root.race-lock-button-clicked(); }
+                        race-selected(value) => { root.race-selected(value); }
+                    }
+                }
+                Tab {
+                    title: "Ability Scores";
+                    Rectangle {}
+                }
+                Tab {
+                    title: "Class";
+                    Rectangle {}
+                }
+                Tab {
+                    title: "Skills";
+                    skill_page:= SkillPage {
+                        window-width: root.width;
+                    }
+                }
+                Tab {
+                    title: "Spells";
+                    Rectangle {}
+                }
+                Tab {
+                    title: "Feats";
+                    Rectangle {}
+                }
+                Tab {
+                    title: "Equipment";
+                    Rectangle {}
+                }
+            }
+        }
+    }
     /* SummaryPage Callbacks */
     callback summary-lock-button-clicked;
 
@@ -100,14 +108,14 @@ export component MainWindow inherits Window {
     in-out property <string> summary__speed <=> summary_page.speed;
     in-out property <string> summary__languages <=> summary_page.languages;
     in-out property <string> summary__favored-class <=> summary_page.favored-class;
-    in-out property <[string]> summary__class-levels-text <=> summary_page.class-levels-text;
-    in-out property <[string]> summary__ability-score-text <=> summary_page.ability-score-text;
-    in-out property <[string]> summary__skills-text <=> summary_page.skills-text;
-    in-out property <[string]> summary__feats-text <=> summary_page.feats-text;
-    in-out property <[string]> summary__abilities-text <=> summary_page.abilities-text;
+    in-out property <[StandardListViewItem]> summary__class-levels-text <=> summary_page.class-levels-text;
+    in-out property <[StandardListViewItem]> summary__ability-score-text <=> summary_page.ability-score-text;
+    in-out property <[StandardListViewItem]> summary__skills-text <=> summary_page.skills-text;
+    in-out property <[StandardListViewItem]> summary__feats-text <=> summary_page.feats-text;
+    in-out property <[StandardListViewItem]> summary__abilities-text <=> summary_page.abilities-text;
     in-out property <int> summary__spells-class-idx <=> summary_page.spells-class-idx;
     in-out property <[[StandardListViewItem]]> summary__spell-slots-text <=> summary_page.spell-slots-text;
-    in-out property <[string]> summary__spells-text <=> summary_page.spells-text;
+    in-out property <[StandardListViewItem]> summary__spells-text <=> summary_page.spells-text;
     in-out property <bool> summary__locked <=> summary_page.locked;
     in-out property <[InputField]> summary__input-fields <=> summary_page.input-fields;
 
@@ -130,4 +138,11 @@ export component MainWindow inherits Window {
     in-out property <string> race__selected-racial-description <=> race_page.selected-racial-description;
     in-out property <bool> race__locked <=> race_page.locked;
 
+    // SkillPage Callbacks
+    callback skill-lock-button-clicked;
+
+    // SkilPage Properties
+    in-out property <[SkillInfo]> skill__skill-data <=> skill_page.skill-data;
+    in-out property <int> skill__num-points-remaining <=> skill_page.num-points-remaining;
+    in-out property <bool> skill__locked <=> skill_page.locked;
 }

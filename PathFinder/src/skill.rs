@@ -5,7 +5,7 @@ pub const NUMBER_SKILLS: usize = 39;
 #[derive(Debug, Clone, PartialEq)]
 pub struct Skill {
     pub name: String,
-    pub rank: u8,
+    pub rank: i32,
     pub is_favored: bool,
     pub trained_only: bool,
     pub ac_penalty_applies: bool,
@@ -15,7 +15,7 @@ pub struct Skill {
 impl Skill {
     pub fn new(
         name: &String,
-        rank: u8,
+        rank: i32,
         is_favored: bool,
         trained_only: bool,
         ac_penalty_applies: bool,

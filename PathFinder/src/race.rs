@@ -1,5 +1,5 @@
 use crate::{error::PathFinderError, ability_scores};
-use std::{fmt, collections::HashSet};
+use std::fmt;
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct Race {
@@ -7,8 +7,8 @@ pub struct Race {
     pub name: String,
     pub size: CharacterSize,
     pub speed: usize,
-    pub languages: HashSet<String>,
-    pub available_languages: HashSet<String>,
+    pub languages: Vec<String>,
+    pub languages_available: Vec<String>,
     pub racials: Vec<RacialAbility>,
     pub ability_score_offsets: [i8; ability_scores::NUMBER_ABILITY_SCORES + 1],
     pub bonus_feat: bool,
@@ -22,8 +22,8 @@ impl Race {
         name: &String,
         size: &String,
         speed: usize,
-        languages: &HashSet<String>,
-        available_languages: &HashSet<String>,
+        languages: &Vec<String>,
+        languages_available: &Vec<String>,
         racials: &Vec<RacialAbility>,
         ability_score_offsets: [i8; ability_scores::NUMBER_ABILITY_SCORES + 1],
         bonus_feat: bool,
@@ -36,7 +36,7 @@ impl Race {
             size: CharacterSize::build(size).unwrap(),
             speed,
             languages: languages.clone(),
-            available_languages: available_languages.clone(),
+            languages_available: languages_available.clone(),
             racials: racials.clone(),
             ability_score_offsets,
             bonus_feat,
@@ -57,10 +57,10 @@ impl Race {
         language_list
     }
 
-    pub fn available_languages_str(&self) -> String {
+    pub fn languages_available_str(&self) -> String {
         let mut language_list = String::new();
 
-        for lang in &self.available_languages {
+        for lang in &self.languages_available {
             language_list += lang;
             language_list += ";";
         }

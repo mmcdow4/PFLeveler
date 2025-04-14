@@ -19,15 +19,15 @@ export component SummaryPage inherits Rectangle {
     in-out property <string> speed: "";
     in-out property <string> languages: "";
     in-out property <string> favored-class: "";
-    in-out property <[string]> class-levels-text: [""];
-    in-out property <[string]> ability-score-text: [""];
-    in-out property <[string]> skills-text: [""];
-    in-out property <[string]> feats-text: [""];
-    in-out property <[string]> abilities-text: [""];
-    in-out property <[string]> spells-class-list: [""];
+    in-out property <[StandardListViewItem]> class-levels-text: [];
+    in-out property <[StandardListViewItem]> ability-score-text: [];
+    in-out property <[StandardListViewItem]> skills-text: [];
+    in-out property <[StandardListViewItem]> feats-text: [];
+    in-out property <[StandardListViewItem]> abilities-text: [];
+    in-out property <[string]> spells-class-list: [];
     in-out property <int> spells-class-idx: -1;
     in-out property <[[StandardListViewItem]]> spell-slots-text: [[]];
-    in-out property <[string]> spells-text: [""];
+    in-out property <[StandardListViewItem]> spells-text: [];
     in-out property <bool> locked: true;
     in-out property <[InputField]> input-fields: [
         { label: "Character Name", value: "", input: "" },
@@ -60,16 +60,18 @@ export component SummaryPage inherits Rectangle {
                     horizontal-alignment: center;
                     enabled: !locked;
                     visible: !locked;
-                    height: 20px;
+                    preferred-height: 20px;
                     edited(new_text) => {
                         field.input = new_text;
                     }
                 }
             }
             HorizontalLayout {
+                alignment: start;
                 Text { text: "Alignment: " + character-alignment-text; }
                 ComboBox {
-                    height: 20px;
+                    preferred-height: 20px;
+                    width: 100px;
                     model: [
                         "Lawful Good",
                         "Lawful Neutral",
@@ -105,7 +107,7 @@ export component SummaryPage inherits Rectangle {
                 }
                 Button {
                     text: "Lock Info";
-                    //height: 18px;
+                    preferred-height: 20px;
                     enabled: !locked;
                     visible: !locked;
                     horizontal-stretch: 0;
@@ -118,8 +120,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in class-levels-text:
-                        Text { text: item; }
+                    model: class-levels-text;
                 }
             }
         }
@@ -133,8 +134,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in ability-score-text:
-                        Text { text: item; }
+                    model: ability-score-text;
                 }
             }
             Text { text: "Skills:"; }
@@ -144,8 +144,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in skills-text:
-                        Text { text: item; }
+                    model: skills-text;
                 }
             }
         }
@@ -160,8 +159,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in feats-text:
-                        Text { text: item; }
+                    model: feats-text;
                 }
             }
             Text { text: "Special Abilities:"; }
@@ -171,8 +169,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in abilities-text:
-                        Text { text: item; }
+                    model: abilities-text;
                 }
             }
         }
@@ -185,7 +182,7 @@ export component SummaryPage inherits Rectangle {
                 // Rectangle { horizontal-stretch: 1; background: transparent; }
                 Text { text: "Class: "; }
                 ComboBox {
-                    height: 20px;
+                    preferred-height: 20px;
                     width: 100px;
                     model: spells-class-list;
                     current-index: spells-class-idx;
@@ -219,8 +216,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardListView { 
-                    for item in spells-text:
-                        Text { text: item; }
+                    model: spells-text;
                 }
             }
         }

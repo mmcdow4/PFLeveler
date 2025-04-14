@@ -1,6 +1,7 @@
 mod ui;
 mod summary_page_logic;
 mod race_page_logic;
+mod skill_page_logic;
 
 use ui::MainWindow;
 use slint::ComponentHandle;
@@ -24,6 +25,7 @@ fn main() -> Result<(), slint::PlatformError> {
             let new_character = pf_character::PFCharacter::new();
             summary_page_logic::reset_summary_page(&new_character, &ui);
             race_page_logic::reset_race_page(&new_character, &ui);
+            skill_page_logic::reset_skill_page(&new_character, &ui);
             char_clone.replace(Some(new_character));
         }
     });
@@ -52,6 +54,14 @@ fn main() -> Result<(), slint::PlatformError> {
     main_window.on_race_lock_button_clicked(move || {
         if let Some(ui) = weak_window.upgrade() {
             let _ = race_page_logic::handle_race_lock_button(char_clone.borrow_mut(), &ui);
+        }
+    });
+
+    let weak_window = main_window.as_weak();
+    let char_clone = current_character.clone();
+    main_window.on_skill_lock_button_clicked(move || {
+        if let Some(ui) = weak_window.upgrade() {
+            let _ = skill_page_logic::handle_skill_lock_button(char_clone.borrow_mut(), &ui);
         }
     });
 

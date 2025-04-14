@@ -52,6 +52,8 @@ pub fn handle_race_lock_button(
                 for race in pf_table::get_pf_table().get_races().values() {
                     if race.name == race_name {
                         curr_char.race = Some(race.clone());
+                        curr_char.languages_known = race.languages.clone();
+                        curr_char.languages_available = race.languages_available.clone();
                         ui.set_race__character_race(race_name.clone().into());
                         ui.set_race__locked(true);
                     }
@@ -86,12 +88,12 @@ fn update_race_page(character_race: &race::Race, ui: &MainWindow) {
         languages_known += &lang.clone();
     }
 
-    let mut languages_avail = String::new();
-    for lang in &character_race.available_languages {
-        if !languages_avail.is_empty() {
-            languages_avail += ", ";
+    let mut languages_available = String::new();
+    for lang in &character_race.languages_available {
+        if !languages_available.is_empty() {
+            languages_available += ", ";
         }
-        languages_avail += &lang.clone();
+        languages_available += &lang.clone();
     }
 
     let mut offsets_str = String::new();
@@ -124,7 +126,7 @@ fn update_race_page(character_race: &race::Race, ui: &MainWindow) {
     ui.set_race__speed(race_speed.into());
     ui.set_race__ability_score_offsets(offsets_str.into());
     ui.set_race__languages_known(languages_known.into());
-    ui.set_race__languages_available(languages_avail.into());
+    ui.set_race__languages_available(languages_available.into());
     ui.set_race__racial_ability_names(ModelRc::new(VecModel::from(racial_names)));
     ui.set_race__racial_ability_descriptions(ModelRc::new(VecModel::from(racial_descriptions)));
     ui.set_race__selected_racial_index(-1);

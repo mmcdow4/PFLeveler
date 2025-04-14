@@ -147,8 +147,8 @@ fn main() {
             let name = race_map.get("name").unwrap().get(race_idx).unwrap();
             let size = race_map.get("size").unwrap().get(race_idx).unwrap();
             let speed = race_map.get("speed").unwrap().get(race_idx).unwrap().parse::<usize>().unwrap();
-            let languages: HashSet<String> = race_map.get("langKnown").unwrap().get(race_idx).unwrap().split(';').map(|s| String::from(s)).collect();
-            let available_languages: HashSet<String> = race_map.get("langAvail").unwrap().get(race_idx).unwrap().split(';').map(|s| String::from(s)).collect();
+            let languages: Vec<String> = race_map.get("langKnown").unwrap().get(race_idx).unwrap().split(';').map(|s| String::from(s)).collect();
+            let languages_available: Vec<String> = race_map.get("langAvail").unwrap().get(race_idx).unwrap().split(';').map(|s| String::from(s)).collect();
             let bonus_feat = race_map.get("bonusFeat").unwrap().get(race_idx).unwrap().parse::<usize>().unwrap() > 0;
             let bonus_skill = race_map.get("bonusSkill").unwrap().get(race_idx).unwrap().parse::<usize>().unwrap() > 0;
             let num_favored_classes = race_map.get("numFavoredClass").unwrap().get(race_idx).unwrap().parse::<usize>().unwrap();
@@ -175,7 +175,7 @@ fn main() {
             ] = race_map.get("bonusFlex").unwrap().get(race_idx).unwrap().parse::<i8>().unwrap();
 
             let racials: Vec<race::RacialAbility> = vec![];
-            let new_race = race::Race::new(id, name, size, speed, &languages, &available_languages, &racials, ability_score_offsets, bonus_feat, bonus_skill, num_favored_classes);
+            let new_race = race::Race::new(id, name, size, speed, &languages, &languages_available, &racials, ability_score_offsets, bonus_feat, bonus_skill, num_favored_classes);
             
             race_list.push(new_race);
         }

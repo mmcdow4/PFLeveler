@@ -1,7 +1,14 @@
 use crate::ui::{self, InputField, MainWindow};
-use slint::{ComponentHandle, Model, ModelRc, VecModel, SharedString};
+use slint::{
+    ComponentHandle,
+    Model,
+    ModelRc,
+    VecModel,
+    SharedString,
+    StandardListViewItem
+};
 use std::cell::RefMut;
-use PathFinder::{pf_table, ability_scores, pf_character::PFCharacter};
+use PathFinder::{error, pf_table, ability_scores, pf_character::PFCharacter};
 
 pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
     let weak_ui = ui.as_weak();
@@ -26,54 +33,65 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
         ui.set_summary__languages(language_string.into());
         
         // Fill in class level table
-        let mut class_level_text: Vec<SharedString> = Vec::new();
+        let mut class_level_text: Vec<StandardListViewItem> = Vec::new();
         for (id, level) in current_character.class_levels.iter() {
             class_level_text.push(
-                SharedString::from(
-                pf_table::get_pf_table().get_class(*id).expect(&format!("No class with ID {id}")).name.clone() + 
-                " : level " +
-                &level.to_string())
+                StandardListViewItem::from(
+                    SharedString::from(
+                        pf_table::get_pf_table().get_class(*id).expect(&format!("No class with ID {id}")).name.clone() + 
+                        " : level " +
+                        &level.to_string()
+                ))
             );
         }
         ui.set_summary__class_levels_text(ModelRc::new(VecModel::from(class_level_text)));
 
         // Fill in ability score table
-        let mut ability_score_text: Vec<SharedString> = Vec::new();
+        let mut ability_score_text: Vec<StandardListViewItem> = Vec::new();
         for (id, value) in current_character.ability_scores.iter() {
             ability_score_text.push(
-                SharedString::from(
-                    ability_scores::ability_score_to_string(Some(*id)) +
-                    " = " +
-                    &value.to_string()
-                )
+                StandardListViewItem::from(
+                    SharedString::from(
+                        ability_scores::ability_score_to_string(Some(*id)) +
+                        " = " +
+                        &value.to_string()
+                ))
             );
         }
         ui.set_summary__ability_score_text(ModelRc::new(VecModel::from(ability_score_text)));
 
         // Fill in skills table
-        let mut skills_text: Vec<SharedString> = Vec::new();
-        for value in current_character.skills.values() {
+        let mut skills_text: Vec<StandardListViewItem> = Vec::new();
+        for index in 0..current_character.skills.len() {
+            let value = match current_character.get_effective_skill_rank(index) {
+                Err(error::PathFinderError::InvalidArgument(err_str)) => {
+                    ui::launch_error_dialog(&err_str).expect("Failed to launch error window");
+                    0
+                },
+                Ok(val) => val,
+            };
             skills_text.push(
-                SharedString::from(
-                    value.name.clone() +
-                    " : " +
-                    &value.rank.to_string() //Change to effective rank
-                )
+                StandardListViewItem::from(
+                    SharedString::from(
+                        current_character.skills[index].name.clone() +
+                        " : " +
+                        &value.to_string()
+                ))
             );
         }
         ui.set_summary__skills_text(ModelRc::new(VecModel::from(skills_text)));
 
         // Fill in the feats table
-        let mut feats_text: Vec<SharedString> = Vec::new();
+        let mut feats_text: Vec<StandardListViewItem> = Vec::new();
         for value in &current_character.feats {
             feats_text.push(
-                SharedString::from(value.full_name())
+                StandardListViewItem::from(SharedString::from(value.full_name()))
             );
         }
         ui.set_summary__feats_text(ModelRc::new(VecModel::from(feats_text)));
 
         // Fill in the abilities table
-        let /* mut */ abilities_text: Vec<SharedString> = Vec::new();
+        let /* mut */ abilities_text: Vec<StandardListViewItem> = Vec::new();
         ui.set_summary__abilities_text(ModelRc::new(VecModel::from(abilities_text)));
 
         // reset spell class choice and clear spell slots and spells tables 

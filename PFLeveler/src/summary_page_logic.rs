@@ -8,29 +8,37 @@ use slint::{
     StandardListViewItem
 };
 use std::cell::RefMut;
-use PathFinder::{error, pf_table, ability_scores, pf_character::PFCharacter};
+use PathFinder::{
+    error,
+    pf_table,
+    ability_scores,
+    pf_character::PFCharacter
+};
 
-pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
-    let weak_ui = ui.as_weak();
-    if let Some(ui) = weak_ui.upgrade() {
-        ui.set_summary__character_alignment_text(current_character.alignment.clone().into());
-        ui.set_summary__alignment_text(current_character.alignment.clone().into());
+pub fn reset_summary_page(
+    current_character: &PFCharacter,
+    main_window: &MainWindow)
+{
+    let weak_window = main_window.as_weak();
+    if let Some(main_window) = weak_window.upgrade() {
+        main_window.set_summary__character_alignment_text(current_character.alignment.clone().into());
+        main_window.set_summary__alignment_text(current_character.alignment.clone().into());
 
         // Populate race data
         if current_character.race.is_none() {
-            ui.set_summary__race("".into());
-            ui.set_summary__size("".into());
-            ui.set_summary__speed("".into());
+            main_window.set_summary__race("".into());
+            main_window.set_summary__size("".into());
+            main_window.set_summary__speed("".into());
         } else {
             let char_race = current_character.race.clone().unwrap();
-            ui.set_summary__race(char_race.name.clone().into());
-            ui.set_summary__size(char_race.size.text.clone().into());
-            ui.set_summary__speed(char_race.speed.to_string().into());
+            main_window.set_summary__race(char_race.name.clone().into());
+            main_window.set_summary__size(char_race.size.text.clone().into());
+            main_window.set_summary__speed(char_race.speed.to_string().into());
         }
 
         // Populate language string
         let language_string = current_character.get_languages_known();
-        ui.set_summary__languages(language_string.into());
+        main_window.set_summary__languages(language_string.into());
         
         // Fill in class level table
         let mut class_level_text: Vec<StandardListViewItem> = Vec::new();
@@ -44,7 +52,7 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
                 ))
             );
         }
-        ui.set_summary__class_levels_text(ModelRc::new(VecModel::from(class_level_text)));
+        main_window.set_summary__class_levels_text(ModelRc::new(VecModel::from(class_level_text)));
 
         // Fill in ability score table
         let mut ability_score_text: Vec<StandardListViewItem> = Vec::new();
@@ -58,7 +66,7 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
                 ))
             );
         }
-        ui.set_summary__ability_score_text(ModelRc::new(VecModel::from(ability_score_text)));
+        main_window.set_summary__ability_score_text(ModelRc::new(VecModel::from(ability_score_text)));
 
         // Fill in skills table
         let mut skills_text: Vec<StandardListViewItem> = Vec::new();
@@ -79,7 +87,7 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
                 ))
             );
         }
-        ui.set_summary__skills_text(ModelRc::new(VecModel::from(skills_text)));
+        main_window.set_summary__skills_text(ModelRc::new(VecModel::from(skills_text)));
 
         // Fill in the feats table
         let mut feats_text: Vec<StandardListViewItem> = Vec::new();
@@ -88,16 +96,16 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
                 StandardListViewItem::from(SharedString::from(value.full_name()))
             );
         }
-        ui.set_summary__feats_text(ModelRc::new(VecModel::from(feats_text)));
+        main_window.set_summary__feats_text(ModelRc::new(VecModel::from(feats_text)));
 
         // Fill in the abilities table
         let /* mut */ abilities_text: Vec<StandardListViewItem> = Vec::new();
-        ui.set_summary__abilities_text(ModelRc::new(VecModel::from(abilities_text)));
+        main_window.set_summary__abilities_text(ModelRc::new(VecModel::from(abilities_text)));
 
         // reset spell class choice and clear spell slots and spells tables 
-        ui.set_summary__spells_class_idx(-1);
-        ui.set_summary__spell_slots_text(ModelRc::new(VecModel::from(VecModel::from(vec![]))));
-        ui.set_summary__spells_text(ModelRc::new(VecModel::from(vec![])));
+        main_window.set_summary__spells_class_idx(-1);
+        main_window.set_summary__spell_slots_text(ModelRc::new(VecModel::from(VecModel::from(vec![]))));
+        main_window.set_summary__spells_text(ModelRc::new(VecModel::from(vec![])));
 
         // Set biographical information
         let fields = vec![
@@ -142,18 +150,19 @@ pub fn reset_summary_page(current_character: &PFCharacter, ui: &MainWindow) {
                 value: SharedString::from(current_character.age.clone()),
                 input: SharedString::from("") }
         ];
-        ui.set_summary__input_fields(ModelRc::new(VecModel::from(fields)));
+        main_window.set_summary__input_fields(ModelRc::new(VecModel::from(fields)));
 
-        ui.set_summary__locked(!current_character.name.is_empty());
+        main_window.set_summary__locked(!current_character.name.is_empty());
     }
 }
 
 pub fn handle_summary_lock_button(
     mut current_character: RefMut<'_, Option<PFCharacter>>,
-    ui: &MainWindow) -> Result<(), slint::PlatformError> {
+    main_window: &MainWindow
+) -> Result<(), slint::PlatformError> {
 
-    let mut fields: Vec<InputField> = ui.get_summary__input_fields().iter().collect();
-    let alignment_string = ui.get_summary__alignment_text();
+    let mut fields: Vec<InputField> = main_window.get_summary__input_fields().iter().collect();
+    let alignment_string = main_window.get_summary__alignment_text();
 
     let mut err_str = String::new();
     match &mut *current_character {
@@ -186,15 +195,16 @@ pub fn handle_summary_lock_button(
                 curr_char.age = fields[9].value.to_string();
                 curr_char.alignment = alignment_string.clone().to_string();
                 /* Update the UI as well = */
-                ui.set_summary__input_fields(ModelRc::new(VecModel::from(fields)));
-                ui.set_summary__character_alignment_text(alignment_string);
-                ui.set_summary__locked(true);
+                main_window.set_summary__input_fields(ModelRc::new(VecModel::from(fields)));
+                main_window.set_summary__character_alignment_text(alignment_string);
+                main_window.set_summary__locked(true);
             }
         },
         None => { err_str = String::from("You have not created a character yet"); },
     }
 
     if !err_str.is_empty() {
+        // ui::launch_error_dialog(&err_str)?;
         ui::launch_error_dialog(&err_str)?;
     }
 

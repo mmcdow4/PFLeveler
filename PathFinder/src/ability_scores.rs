@@ -86,12 +86,12 @@ pub fn string_to_ability_score(str: &String) -> Option<AbilityScore> {
     }
 }
 
-pub fn ability_score_to_mod(value: i32) -> i32 {
+pub fn value_to_modifier(value: i32) -> i32 {
     (value - 10) / 2
 }
 
 pub fn number_bonus_spell_slots(caster_ability_value: i32, spell_level: i32) -> i32 {
-    let modifier = ability_score_to_mod(caster_ability_value);
+    let modifier = value_to_modifier(caster_ability_value);
     if spell_level == 0 || modifier < spell_level {
         0
     } else {

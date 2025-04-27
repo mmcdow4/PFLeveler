@@ -1,0 +1,168 @@
+
+export component ArmorClassGrid inherits VerticalLayout {
+    in property<int> armor-val;
+    in property<int> shield-val;
+    in property<int> dex-mod;
+    in property<int> size-mod;
+    in property<int> deflection-mod;
+    in property<int> natural-armor;
+    in property<int> misc-ac-mod;
+    in property<int> misc-initiative-mod;
+
+    spacing: 10px;
+    padding: 10px;        
+    GridLayout {
+        Text { horizontal-alignment: center; text: "Armor Class: "; }
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text {
+                horizontal-alignment: center;
+                text: 10 + root.armor-val + root.shield-val + root.dex-mod +
+                root.size-mod + root.natural-armor + root.deflection-mod + root.misc-ac-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " = "; }
+
+        Text { horizontal-alignment: center; text: " 10 "; }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.armor-val; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.shield-val; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.dex-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.size-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.natural-armor; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.deflection-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.misc-ac-mod; }
+        }
+
+        // Labels row
+        Text { row: 1; col: 1; horizontal-alignment: center; text: "Total"; }
+
+        Text { row: 1; col: 3; horizontal-alignment: center; text: "Base"; }
+
+        Text { row: 1; col: 5; horizontal-alignment: center; text: "Armor"; }
+
+        Text { row: 1; col: 7; horizontal-alignment: center; text: "Shield"; }
+
+        Text { row: 1; col: 9; horizontal-alignment: center; text: "Dex Mod."; }
+
+        Text { row: 1; col: 11; horizontal-alignment: center; text: "Size Mod."; }
+
+        Text { row: 1; col: 13; horizontal-alignment: center; text: "Natural Armor"; }
+
+        Text { row: 1; col: 15; horizontal-alignment: center; text: "Deflection Mod."; }
+
+        Text { row: 1; col: 17; horizontal-alignment: center; text: "Misc."; }
+    }
+
+    GridLayout {
+        padding-right: root.width / 2;
+        Text { horizontal-alignment: center; text: "Touch AC = "; }
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: 10 + root.dex-mod + root.size-mod +
+                root.deflection-mod + root.misc-ac-mod; }
+        }
+
+        Text { row: 1; col: 0; horizontal-alignment: center; text: "Flat-Footed AC = "; }
+        Rectangle {
+            row: 1; col: 1;
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { 
+                horizontal-alignment: center; 
+                text: 10 + root.armor-val + root.shield-val +
+                root.size-mod + root.natural-armor + root.deflection-mod + root.misc-ac-mod;
+            }
+        }
+
+        Text { row: 2; col: 0; horizontal-alignment: center; text: "Initiative Modifier = "; }
+        Rectangle {
+            row: 2; col: 1; 
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.dex-mod + root.misc-initiative-mod; }
+        }
+    }
+}

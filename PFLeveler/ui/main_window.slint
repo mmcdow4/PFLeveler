@@ -1,13 +1,67 @@
-import { TabWidget, StandardButton, VerticalBox } from "std-widgets.slint";
+import { TabWidget, StandardButton, VerticalBox, LineEdit } from "std-widgets.slint";
 import { SummaryPage, InputField } from "summary_page.slint";
 import { RacePage } from "race_page.slint";
 import { SkillPage, SkillInfo } from "skill_page.slint";
+import { AbilityScoreInfo, AbilityScoreMode } from "ability_score_grid.slint";
 import { Styles } from "styles.slint";
+
+export component ErrorDialog inherits Dialog {
+    in property <string> error_text: "Error";
+    preferred-height: Styles.dialog-init-height;
+    preferred-width: Styles.dialog-init-width;
+    always-on-top: true;
+    title: "Error";
+    VerticalBox {
+        alignment: start;
+        Text {
+            horizontal-alignment: center;
+            text: error_text;
+        }
+        StandardButton { 
+            kind: ok;
+            clicked => { root.close-button(); }
+        }
+    }
+
+    callback close-button;
+}
+
+export component InputDialog inherits Dialog {
+    in property <string> prompt-text: "Requesting user input";
+    property <string> user-input: "";
+    preferred-height: Styles.dialog-init-height;
+    preferred-width: Styles.dialog-init-width;
+    always-on-top: true;
+    title: "Input";
+    VerticalBox {
+        alignment: start;
+        Text {
+            horizontal-alignment: center;
+            text: prompt-text;
+        }
+        
+        LineEdit {
+            text: root.user_input;
+            // input-type: number;
+            horizontal-alignment: center;
+            preferred-height: 20px;
+            edited(new_text) => {
+                root.user_input = new_text;
+            }
+        }
+
+        StandardButton { 
+            kind: ok;
+            clicked => { root.close-button(root.user-input); }
+        }
+    }
+
+    callback close-button(string);
+}
 
 export component MainWindow inherits Window {
     preferred-width: Styles.window-init-width;
     preferred-height: Styles.window-init-height;
-
 
     /* Menu Callbacks */
     callback handle-file-new-character;
@@ -62,15 +116,15 @@ export component MainWindow inherits Window {
                     }
                 }
                 Tab {
-                    title: "Race";
+                    title: "Race & Ability Scores";
                     race_page:= RacePage {
-                        lock-clicked => { root.race-lock-button-clicked(); }
+                        lock-race-clicked => { root.race-lock-button-clicked(); }
+                        lock-abiilty-scores-clicked => { root.ability-score-lock-button-clicked(); }
                         race-selected(value) => { root.race-selected(value); }
+                        ability-score-select-clicked(value) => {root.ability-score-select-clicked(value); }
+                        ability-score-dropdown-selected(as_id, id) => { root.ability-score-dropdown-selected(as_id, id); }
+                        ability-score-roll-value(value) => { root.ability-score-roll-value(value); }
                     }
-                }
-                Tab {
-                    title: "Ability Scores";
-                    Rectangle {}
                 }
                 Tab {
                     title: "Class";
@@ -121,6 +175,10 @@ export component MainWindow inherits Window {
 
     // RacePage Callbacks
     callback race-lock-button-clicked;
+    callback ability-score-lock-button-clicked;
+    callback ability-score-select-clicked(int);
+    callback ability-score-dropdown-selected(int, int);
+    callback ability-score-roll-value(int);
     callback race-selected(string);
 
     // RacePage Properties
@@ -138,10 +196,36 @@ export component MainWindow inherits Window {
     in-out property <string> race__selected-racial-description <=> race_page.selected-racial-description;
     in-out property <bool> race__locked <=> race_page.locked;
 
+    // Ability Score Sub-Page Properties
+    in-out property<[string]> race__as__dropdown-values <=> race_page.as__dropdown-values; 
+    in-out property<[int]> race__as__dropdown-assignments <=> race_page.as__dropdown-assignments;
+    in-out property<int> race__as__dice-remaining <=> race_page.as__dice-remaining; 
+    in-out property<int> race__as__points-remaining <=> race_page.as__points-remaining; 
+    in-out property<[AbilityScoreInfo]> race__as__ability-score-data <=> race_page.as__ability-score-data; 
+    in-out property<bool> race__as__ability-score-locked <=> race_page.as__ability-score-locked; 
+    in-out property<AbilityScoreMode> race__as__mode <=> race_page.as__mode;
+    in-out property<bool> race__as__flex-racial-bonus <=> race_page.as__flex-racial-bonus; 
+    in-out property<string> race__as__text-box-string <=> race_page.as__text-box-string;
+    
+    in-out property<int> race__as__armor-val <=> race_page.as__armor-val; 
+    in-out property<int> race__as__shield-val <=> race_page.as__shield-val;
+    in-out property<int> race__as__deflection-mod <=> race_page.as__deflection-mod; 
+    in-out property<int> race__as__natural-armor <=> race_page.as__natural-armor; 
+    in-out property<int> race__as__misc-ac-mod <=> race_page.as__misc-ac-mod; 
+    in-out property<int> race__as__misc-initiative-mod <=> race_page.as__misc-initiative-mod; 
+
+    in-out property<[int]> race__as__saving-throw-bases <=> race_page.as__saving-throw-bases; 
+    in-out property<[int]> race__as__saving-throw-magic-mods <=> race_page.as__saving-throw-magic-mods; 
+    in-out property<[int]> race__as__saving-throw-misc-mods <=> race_page.as__saving-throw-misc-mods; 
+    in-out property<[int]> race__as__saving-throw-temp-mods <=> race_page.as__saving-throw-temp-mods; 
+
+    in-out property<int> race__as__base-attack-bonus <=> race_page.as__base-attack-bonus; 
+    in-out property<int> race__as__size-combat-mod <=> race_page.as__size-combat-mod;
+
     // SkillPage Callbacks
     callback skill-lock-button-clicked;
 
-    // SkilPage Properties
+    // SkillPage Properties
     in-out property <[SkillInfo]> skill__skill-data <=> skill_page.skill-data;
     in-out property <int> skill__num-points-remaining <=> skill_page.num-points-remaining;
     in-out property <bool> skill__locked <=> skill_page.locked;

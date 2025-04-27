@@ -1,0 +1,1043 @@
+import { VerticalBox, ComboBox, Button, CheckBox } from "std-widgets.slint";
+
+export struct AbilityScoreInfo {
+    name: string,
+    base-value: int,
+    racial-bonus: int,
+    mod: int,
+}
+
+component AbilityScoreGrid inherits GridLayout {
+    in property<[int]> dropdown-values;
+    in property<int> dice-remaining;
+    in property<int> points-remaining;
+    in property<[AbilityScoreInfo]> ability-score-data;
+    in property<bool> locked;
+    in property<bool> dropdowns-active;
+    in property<bool> buttons-active;
+    in property<bool> input-boxes-active;
+    in property<bool> flex-racial-bonus;
+
+    callback decrement-score(int);
+    callback increment-score(int);
+    
+    function calculate-mod(value: int) -> int {
+        return (value - 10) / 2;
+    }
+
+    // Top Row
+    Text { horizontal-alignment: center; text: "Attribute Name"; }
+    Text { horizontal-alignment: center; text: " "; width: 20px; }
+    Text { horizontal-alignment: center; text: "Raw Value"; }
+    Text { horizontal-alignment: center; text: " "; width: 20px; }
+    Text { horizontal-alignment: center; text: "Racial Bonus"; }
+    Text { horizontal-alignment: center; text: "Total"; }
+    Text { horizontal-alignment: center; text: "Modifier"; }
+
+    // Name Column
+    Text { row: 1; col: 0; horizontal-alignment: center; text: ability-score-data[0].name; }
+    Text { row: 2; col: 0; horizontal-alignment: center; text: ability-score-data[1].name; }
+    Text { row: 3; col: 0; horizontal-alignment: center; text: ability-score-data[2].name; }
+    Text { row: 4; col: 0; horizontal-alignment: center; text: ability-score-data[3].name; }
+    Text { row: 5; col: 0; horizontal-alignment: center; text: ability-score-data[4].name; }
+    Text { row: 6; col: 0; horizontal-alignment: center; text: ability-score-data[5].name; }
+    
+    // Minus Button Column
+    Button {
+        row: 1;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 2;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 3;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 4;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 5;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 6;
+        col: 1;
+        text: "-";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+
+    // Dropdown column
+    Rectangle { row: 1; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+    Rectangle { row: 2; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+    Rectangle { row: 3; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+    Rectangle { row: 4; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+    Rectangle { row: 5; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+    Rectangle { row: 6; col: 2;
+        Text {
+            horizontal-alignment: center; 
+            text: ability-score-data[0].base-value;
+        }
+        ComboBox {
+            width: 20px;
+            model: ["0", "0", "0", "0", "0", "0"];//dropdown-values;
+            visible: dropdowns-active;
+            enabled: dropdowns-active;
+        }
+    }
+
+    // Plus Button Column
+    Button {
+        row: 1; col: 3; 
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 2; col: 3; 
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 3; col: 3; 
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 4; col: 3;
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 5; col: 3;
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+    Button {
+        row: 6; col: 3;
+        text: "+";
+        width: 20px;
+        visible: buttons-active;
+        enabled: buttons-active;
+    }
+
+    // Racial Bonus Column
+    Rectangle{
+        row: 1;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[0].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[0].racial-bonus; }
+    }
+    Rectangle{
+        row: 2;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[1].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[1].racial-bonus; }
+    }
+    Rectangle{
+        row: 3;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[2].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[2].racial-bonus; }
+    }
+    Rectangle{
+        row: 4;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[3].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[3].racial-bonus; }
+    }
+    Rectangle{
+        row: 5;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[4].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[4].racial-bonus; }
+    }
+    Rectangle{
+        row: 6;
+        col: 4;
+        CheckBox {
+            text: "+" + ability-score-data[5].racial-bonus;
+            visible: flex-racial-bonus;
+            enabled: flex-racial-bonus;
+        }
+        Text { horizontal-alignment: center; text: ability-score-data[5].racial-bonus; }
+    }
+    
+    // Total Column    
+    Text { 
+        row: 1;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[0].base-value + ability-score-data[0].racial-bonus;
+    }    
+    Text { 
+        row: 2;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[1].base-value + ability-score-data[1].racial-bonus;
+    }    
+    Text { 
+        row: 3;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[2].base-value + ability-score-data[2].racial-bonus;
+    }    
+    Text { 
+        row: 4;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[3].base-value + ability-score-data[3].racial-bonus;
+    }    
+    Text { 
+        row: 5;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[4].base-value + ability-score-data[4].racial-bonus;
+    }    
+    Text { 
+        row: 6;
+        col: 5;
+        horizontal-alignment: center;
+        text: ability-score-data[5].base-value + ability-score-data[5].racial-bonus;
+    }    
+        
+    
+    // Modifier Column    
+    Text {
+        row: 1;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[0].mod;
+    }
+    Text {
+        row: 2;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[1].mod;
+    }
+    Text {
+        row: 3;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[2].mod;
+    }
+    Text {
+        row: 4;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[3].mod;
+    }
+    Text {
+        row: 5;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[4].mod;
+    }
+    Text {
+        row: 6;
+        col: 6;
+        horizontal-alignment: center;
+        text: ability-score-data[5].mod;
+    }
+}
+
+component ArmorClassGrid inherits VerticalLayout {
+    in property<int> armor-val;
+    in property<int> shield-val;
+    in property<int> dex-mod;
+    in property<int> size-mod;
+    in property<int> deflection-mod;
+    in property<int> natural-armor;
+    in property<int> misc-ac-mod;
+    in property<int> misc-initiative-mod;
+
+    spacing: 10px;
+    padding: 10px;        
+    GridLayout {
+        Text { horizontal-alignment: center; text: "Armor Class: "; }
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text {
+                horizontal-alignment: center;
+                text: 10 + root.armor-val + root.shield-val + root.dex-mod +
+                root.size-mod + root.natural-armor + root.deflection-mod + root.misc-ac-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " = "; }
+
+        Text { horizontal-alignment: center; text: " 10 "; }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.armor-val; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.shield-val; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.dex-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.size-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.natural-armor; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.deflection-mod; }
+        }
+
+        Text { horizontal-alignment: center; text: " + "; }
+
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.misc-ac-mod; }
+        }
+
+        // Labels row
+        Text { row: 1; col: 1; horizontal-alignment: center; text: "Total"; }
+
+        Text { row: 1; col: 3; horizontal-alignment: center; text: "Base"; }
+
+        Text { row: 1; col: 5; horizontal-alignment: center; text: "Armor"; }
+
+        Text { row: 1; col: 7; horizontal-alignment: center; text: "Shield"; }
+
+        Text { row: 1; col: 9; horizontal-alignment: center; text: "Dex Mod."; }
+
+        Text { row: 1; col: 11; horizontal-alignment: center; text: "Size Mod."; }
+
+        Text { row: 1; col: 13; horizontal-alignment: center; text: "Natural Armor"; }
+
+        Text { row: 1; col: 15; horizontal-alignment: center; text: "Deflection Mod."; }
+
+        Text { row: 1; col: 17; horizontal-alignment: center; text: "Misc."; }
+    }
+
+    GridLayout {
+        padding-right: root.width / 2;
+        Text { horizontal-alignment: center; text: "Touch AC = "; }
+        Rectangle {
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: 10 + root.dex-mod + root.size-mod +
+                root.deflection-mod + root.misc-ac-mod; }
+        }
+
+        Text { row: 1; col: 0; horizontal-alignment: center; text: "Flat-Footed AC = "; }
+        Rectangle {
+            row: 1; col: 1;
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { 
+                horizontal-alignment: center; 
+                text: 10 + root.armor-val + root.shield-val +
+                root.size-mod + root.natural-armor + root.deflection-mod + root.misc-ac-mod;
+            }
+        }
+
+        Text { row: 2; col: 0; horizontal-alignment: center; text: "Initiative Modifier = "; }
+        Rectangle {
+            row: 2; col: 1; 
+            background: white;
+            border-color: black;
+            border-width: 1px;
+            max-width: 20px;
+            max-height: 30px;
+            Text { horizontal-alignment: center; text: root.dex-mod + root.misc-initiative-mod; }
+        }
+    }
+}
+
+component SavingThrowGrid inherits GridLayout {
+    in property<[int]> saving-throw-bases;
+    in property<[int]> saving-throw-ability-mods;
+    in property<[int]> saving-throw-magic-mods;
+    in property<[int]> saving-throw-misc-mods;
+    in property<[int]> saving-throw-temp-mods;
+
+    padding: 40px;
+
+    Text { horizontal-alignment: center; text: "Saving Throw"; } 
+    Text { horizontal-alignment: center; text: "Total"; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Base"; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Ability Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Magic Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Misc. Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Temp. Mod."; }
+
+    // Fortitude Save Row
+    Text { row: 1; col: 0; horizontal-alignment: center; text: "Fortitude (CON)"; }
+    Rectangle {
+        row: 1; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[0] + root.saving-throw-ability-mods[0] +
+                root.saving-throw-magic-mods[0] + root.saving-throw-temp-mods[0] +
+                root.saving-throw-misc-mods[0];
+        }
+    }
+
+    Text { row: 1; col: 2; horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        row: 1; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-bases[0]; }
+    }
+
+    Text { row: 1; col: 4; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-ability-mods[0]; }
+    }
+
+    Text { row: 1; col: 6; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-magic-mods[0]; }
+    }
+
+    Text { row: 1; col: 8; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-misc-mods[0]; }
+    }
+
+    Text { row: 1; col: 10; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-temp-mods[0]; }
+    }
+
+    // Reflex Save Row
+    Text { row: 2; col: 0; horizontal-alignment: center; text: "Reflex (DEX)"; }
+    Rectangle {
+        row: 2; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { 
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[1] + root.saving-throw-ability-mods[1] +
+                root.saving-throw-magic-mods[1] + root.saving-throw-temp-mods[1] +
+                root.saving-throw-misc-mods[1];
+        }
+    }
+
+    Text { row: 2; col: 2; horizontal-alignment: center;text: " = "; }
+    Rectangle {
+        row: 2; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-bases[1]; }
+    }
+
+    Text { row: 2; col: 4; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-ability-mods[1]; }
+    }
+
+    Text { row: 2; col: 6; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-magic-mods[1]; }
+    }
+
+    Text { row: 2; col: 8; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-misc-mods[1]; }
+    }
+
+    Text { row: 2; col: 10; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-temp-mods[1]; }
+    }
+
+    // Will Save Row
+    Text { row: 3; col: 0; horizontal-alignment: center; text: "Will (WIS)"; }
+    Rectangle {
+        row: 3; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { 
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[2] + root.saving-throw-ability-mods[2] +
+                root.saving-throw-magic-mods[2] + root.saving-throw-temp-mods[2] +
+                root.saving-throw-misc-mods[2];
+        }
+    }
+
+    Text { row: 3; col: 2; horizontal-alignment: center;text: " = "; }
+    Rectangle {
+        row: 3; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-bases[2]; }
+    }
+
+    Text { row: 3; col: 4; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-ability-mods[2]; }
+    }
+
+    Text { row: 3; col: 6; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-magic-mods[2]; }
+    }
+
+    Text { row: 3; col: 8; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-misc-mods[2]; }
+    }
+
+    Text { row: 3; col: 10; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-temp-mods[2]; }
+    }
+}
+
+component CombatBonusGrid inherits GridLayout {
+    in property<int> base-attack-bonus;
+    in property<int> str-mod;
+    in property<int> dex-mod;
+    in property<int> size-cmb-mod;
+    in property<int> size-cmd-mod;
+    
+
+    padding: 40px;
+
+    // CMB Row
+    Text { horizontal-alignment: center; text: "Combat Maneuver Bonus"; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus + root.str-mod + root.size-cmb-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.str-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.size-cmb-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: "   "; }
+    Text { horizontal-alignment: center; text: "   "; }
+
+    // CMB Labels row
+    Text { row: 1; col: 1; horizontal-alignment: center; text: "Total"; }
+    Text { row: 1; col: 3; horizontal-alignment: center; text: "Base Attack Bonus"; }
+    Text { row: 1; col: 5; horizontal-alignment: center; text: "STR Mod."; }
+    Text { row: 1; col: 7; horizontal-alignment: center; text: "Size Mod."; }
+
+    //CMD Row
+    Text { row: 2; horizontal-alignment: center; text: "Combat Maneuver Defense"; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus + root.str-mod + root.dex-mod + root.size-cmd-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.str-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.dex-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.size-cmd-mod;
+        }
+    }
+
+    // CMD Labels row
+    Text { row: 3; col: 1; horizontal-alignment: center; text: "Total"; }
+    Text { row: 3; col: 3; horizontal-alignment: center; text: "Base Attack Bonus"; }
+    Text { row: 3; col: 5; horizontal-alignment: center; text: "STR Mod."; }
+    Text { row: 3; col: 7; horizontal-alignment: center; text: "DEX Mod."; }
+    Text { row: 3; col: 9; horizontal-alignment: center; text: "Size Mod."; }
+}
+
+export component AbilityScorePanel inherits Rectangle {
+    in-out property<[int]> dropdown-values: [0, 0, 0, 0, 0, 0];
+    in-out property<int> dice-remaining: 0;
+    in-out property<int> points-remaining: 0;
+    in-out property<[AbilityScoreInfo]> ability-score-data: [
+        { name: "Strength", base-value: 0, racial-bonus: 0 },
+        { name: "Dexterity", base-value: 0, racial-bonus: 0 },
+        { name: "Constitution", base-value: 0, racial-bonus: 0 },
+        { name: "Intelligence", base-value: 0, racial-bonus: 0 },
+        { name: "Wisdom", base-value: 0, racial-bonus: 0 },
+        { name: "Charisma", base-value: 0, racial-bonus: 0 },
+    ];
+    in-out property<bool> locked: false;
+    in-out property<bool> dropdowns-active: false;
+    in-out property<bool> buttons-active: false;
+    in-out property<bool> input-boxes-active: false;
+    in-out property<bool> flex-racial-bonus: false;
+
+    in property<int> selected-method-index: method-box.current-index;
+    property<[string]> method-descriptions: [
+        "Roll 4d6 and discard the lowest die, then sum the remaining three. Repeat 5 more times, then assign each value to an ability score.",
+        "Roll 3d6 and sum the dice. Repeat 5 more times, then assign each value to an ability score.",
+        "Roll 2d6 and add 6 to the sum of the dice. Repeat 5 more times, then assign each value to an ability score.",
+        "You start with a pool of 24 dice. For each ability score, choose how many dice to roll (minimum 3), then sum the highest three dice to get that ability score's value.",
+        "Choose a point budget (10 is low power, 15 is standard, 20 is high power, 25 is very high power). Each ability score starts at 10, and you may spend points to increase a single score (up to a max of 18 before racial bonuses), or gain points by reducing an ability score (to a minimum of 7 before racial bonuses). It becomes more expensive to increase an ability score the higher the value gets - see Table 1-1 of the Core Rulebook for a full breakdown of point costs.",
+        "Generate values however you want and directly type them in yourself."
+    ];
+
+    property<[int]> value-costs: [-4, -2, -1, 0, 1, 2, 3, 5, 7, 10, 13, 17];
+    in-out property<string> text-box-string: "[Method Description]";
+
+    in-out property<int> armor-val: 0;
+    in-out property<int> shield-val: 0;
+    in-out property<int> size-mod: 0;
+    in-out property<int> deflection-mod: 0;
+    in-out property<int> natural-armor: 0;
+    in-out property<int> misc-ac-mod: 0;
+    in-out property<int> misc-initiative-mod: 0;
+
+    in-out property<[int]> saving-throw-bases: [0, 0, 0];
+    in-out property<[int]> saving-throw-ability-mods: [
+        root.ability-score-data[2].mod,
+        root.ability-score-data[1].mod,
+        root.ability-score-data[4].mod,
+    ];
+    in-out property<[int]> saving-throw-magic-mods: [0, 0, 0];
+    in-out property<[int]> saving-throw-misc-mods: [0, 0, 0];
+    in-out property<[int]> saving-throw-temp-mods: [0, 0, 0];
+
+    in-out property<int> base-attack-bonus: 0;
+    in-out property<int> size-cmb-mod: 0;
+    in-out property<int> size-cmd-mod: 0;
+
+    function calculate-cost(value: int, minus: bool) -> int {
+        if minus {
+            return root.value-costs[value - 8] - root.value-costs[value - 7];
+        } else {
+            return root.value-costs[value - 6] - root.value-costs[value - 7];
+        }
+    }
+
+    callback lock-clicked;
+    callback select-clicked(int);
+    callback decrement-score(int);
+    callback increment-score(int);
+    
+    VerticalLayout {
+        HorizontalLayout {
+            height: 15%;
+            padding: 8px;
+            spacing: 4px;
+            Text {
+                vertical-alignment: top;
+                horizontal-alignment: left;
+                text: "Choose a Method: ";
+                visible: !locked;
+            }
+
+            method-box:= ComboBox {
+                model: [
+                    "Standard",
+                    "Classic",
+                    "Heroic",
+                    "Dice Pool",
+                    "Purchase",
+                    "Direct Input",
+                ];
+                preferred-height: 30px;
+                vertical-stretch: 0;
+                width: 200px;
+                visible: !locked;
+                selected(current-value) => { root.text-box-string = root.method-descriptions[selected-method-index]; }
+            }
+
+            Button {
+                text: "Select";
+                preferred-height: 30px;
+                vertical-stretch: 0;
+                width: 150px;
+                visible: !locked;
+                clicked => { root.select-clicked(method-box.current-index); }
+            }
+
+            Rectangle {
+                width: 75%;
+                background: white;
+                preferred-height: 150px;
+                visible: !locked;
+                Text {
+                    width: parent.width;
+                    horizontal-alignment: left;
+                    vertical-alignment: top;
+                    text: text-box-string;
+                    wrap: word-wrap;
+                }
+            }
+        }
+
+        ability-score-grid:= AbilityScoreGrid {
+            height: 15%;
+            dropdown-values: root.dropdown-values;
+            dice-remaining: root.dice-remaining;
+            points-remaining: root.points-remaining;
+            ability-score-data: root.ability-score-data;
+            locked: root.locked;
+            dropdowns-active: root.dropdowns-active;
+            buttons-active: root.buttons-active;
+            input-boxes-active: root.input-boxes-active;
+            flex-racial-bonus: root.flex-racial-bonus;
+
+            decrement-score(index) => { root.decrement-score(index); }
+            increment-score(index) => { root.increment-score(index); }
+        }
+
+        armor-class-grid:= ArmorClassGrid {
+            height: 15%;
+            armor-val: root.armor-val;
+            shield-val: root.shield-val;
+            dex-mod: root.ability-score-data[1].mod;
+            size-mod: root.size-mod;
+            natural-armor: root.natural-armor;
+            deflection-mod: root.deflection-mod;
+            misc-ac-mod: root.misc-ac-mod;
+            misc-initiative-mod: root.misc-initiative-mod;
+        }
+
+        saving-throw-grid:= SavingThrowGrid {
+            height: 15%;
+            saving-throw-bases: root.saving-throw-bases;
+            saving-throw-ability-mods: root.saving-throw-ability-mods;
+            saving-throw-magic-mods: root.saving-throw-magic-mods;
+            saving-throw-misc-mods: root.saving-throw-misc-mods;
+            saving-throw-temp-mods: root.saving-throw-temp-mods;
+        }
+
+        combat-bonus-grid:= CombatBonusGrid {
+            height: 15%;
+            base-attack-bonus: root.base-attack-bonus;
+            str-mod: root.ability-score-data[0].mod;
+            dex-mod: root.ability-score-data[1].mod;
+            size-cmb-mod: root.size-cmb-mod;
+            size-cmd-mod: root.size-cmd-mod;
+        }
+    }
+}

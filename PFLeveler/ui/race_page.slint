@@ -1,9 +1,71 @@
 import { ComboBox, Button, StandardListView } from "std-widgets.slint";
+import { AbilityScorePanel } from "ability_score_panel.slint";
+import { AbilityScoreInfo, AbilityScoreMode } from "ability_score_grid.slint";
 
+component RaceInfoBox inherits Rectangle {
+    in property<[string]> race-names;
+    in property<string> character-race: "";
+    in-out property<string> selected-race: "";
+    in property<string> size;
+    in property<string> speed;
+    in property<string> ability-score-offsets;
+    in property<string> languages-known;
+    in property<string> languages-available;
+    in property<bool> locked;
+
+    callback race-selected(string);
+    callback lock-race-clicked;
+    Text {
+        x: 0px;
+        y: 0px;
+        width: 40px;
+        height: 25px;
+        vertical-alignment: center;
+        horizontal-alignment: left;
+        text: "Race: " + root.character-race;
+    }
+
+    ComboBox {
+        x: 42px;
+        y: 0px;
+        width: 100px;
+        height: 25px;
+        model: race-names;
+        // current-value: selected-race;
+        selected(value) => {
+            selected-race = value;
+            root.race-selected(value);
+        }
+        visible: !locked;
+        enabled: !locked;
+    }
+
+    Button {
+        x: 144px;
+        y: 0px;
+        text: "Lock Race Selection";
+        height: 25px;
+        width: 150px;
+        enabled: !locked;
+        visible: !locked;
+        clicked => { root.lock-race-clicked(); }
+    }
+
+    Text {
+        x: 0px;
+        y: 27px;
+        text: "Size: " + size + "\n" +
+            "Speed: " + speed + "\n" +
+            "Ability Score Offsets: " + ability-score-offsets + "\n" +
+            "Languages Known: " + languages-known + "\n" +
+            "Languages Available: " + languages-available;
+        wrap: word-wrap;
+    }
+}
 export component RacePage inherits Rectangle {
     in-out property<[string]> race-names: [];
-    in-out property<string> selected-race: "";
-    in-out property<string> character-race: "";
+    in-out property<string> selected-race <=> race-box.selected-race;
+    in-out property<string> character-race <=> race-box.character-race;
     in-out property<string> size: "";
     in-out property<string> speed: "";
     in-out property<string> ability-score-offsets: "";
@@ -15,99 +77,122 @@ export component RacePage inherits Rectangle {
     in-out property <string> selected-racial-description: "";
     in-out property<bool> locked: true;
 
-    callback lock-clicked;
+    callback lock-race-clicked;
+    callback lock-abiilty-scores-clicked;
     callback race-selected(string);
 
     background: lightgrey;
 
-    HorizontalLayout {
-        VerticalLayout {
-            width: 50%;
-            HorizontalLayout {
-                vertical-stretch: 0;
+    VerticalLayout {
+        padding: 2px;
+        spacing: 2px;
+        HorizontalLayout {
+            spacing: 2px;
+            height: 25%;
+            race-box:= RaceInfoBox {
+                width: 29%;
+                race-names: root.race-names;
+                size: root.size;
+                speed: root.speed;
+                ability-score-offsets: root.ability-score-offsets;
+                languages-known: root.languages-known;
+                languages-available: root.languages-available;
+                locked: root.locked;
+                race-selected(value) => { root.race-selected(value); }
+                lock-race-clicked => { root.lock-race-clicked(); }
+            }
+            // VerticalLayout {
+            //     width: 29%;
+            //     HorizontalLayout {
+            //         vertical-stretch: 0;
+            //         alignment: start;
+            //         Text {
+            //             horizontal-stretch: 0;
+            //             text: "Race: " + character-race;
+            //         }
+
+            //         ComboBox {
+            //             horizontal-stretch: 0;
+            //             height: 18px;
+            //             width: 200px;
+            //             model: race-names;
+            //             current-value: selected-race;
+            //             selected(value) => {
+            //                 selected-race = value;
+            //                 root.race_selected(value);
+            //             }
+            //             enabled: !locked;
+            //             visible: !locked;
+            //         }
+
+            //         Button {
+            //             horizontal-stretch: 0;
+            //             text: "Lock Race Selection";
+            //             height: 25px;
+            //             width: 200px;
+            //             enabled: !locked;
+            //             visible: !locked;
+            //             clicked => { root.lock-race-clicked(); }
+            //         }
+            //     }
+
+            //     Text {
+            //         vertical-stretch: 0;
+            //         text: "Size: " + size;
+            //     }
+
+            //     Text {
+            //         vertical-stretch: 0;
+            //         text: "Speed: " + speed;
+            //     }
+                
+            //     Text {
+            //         vertical-stretch: 0;
+            //         text: "Ability Score Offsets: " + ability-score-offsets;
+            //     }
+
+            //     Text {
+            //         vertical-stretch: 0;
+            //         text: "Languages Known: " + languages-known;
+            //         wrap: word-wrap;
+            //     }
+
+            //     Text {
+            //         vertical-stretch: 0;
+            //         text: "Languages Available: " + languages-available;
+            //         wrap: word-wrap;
+            //     }
+
+            //     Rectangle {
+            //         vertical-stretch: 1;
+            //         background: transparent;
+            //     }
+            // }
+
+            VerticalLayout {
+                width: 34%;
                 Text {
-                    text: "Race: " + character-race;
+                    text: "Racial Bonuses: ";
                 }
 
-                ComboBox {
-                    height: 18px;
-                    width: 200px;
-                    model: race-names;
-                    current-value: selected-race;
-                    selected(value) => {
-                        selected-race = value;
-                        root.race_selected(value);
-                    }
-                    enabled: !locked;
-                    visible: !locked;
-                }
+                Rectangle {
+                    // height: 59%;
+                    background: white;
+                    border-color: black;
+                    border-width: 1px;
+                    StandardListView {
+                        model: racial-ability-names;
+                        current-item: selected-racial-index;
 
-                Button {
-                    text: "Lock Race Selection";
-                    height: 25px;
-                    enabled: !locked;
-                    visible: !locked;
-                    clicked => { root.lock-clicked(); }
-                }
-            }
-
-            Text {
-                vertical-stretch: 0;
-                text: "Size: " + size;
-            }
-
-            Text {
-                vertical-stretch: 0;
-                text: "Speed: " + speed;
-            }
-            
-            Text {
-                vertical-stretch: 0;
-                text: "Ability Score Offsets: " + ability-score-offsets;
-            }
-
-            Text {
-                vertical-stretch: 0;
-                text: "Languages Known: " + languages-known;
-                wrap: word-wrap;
-            }
-
-            Text {
-                vertical-stretch: 0;
-                text: "Languages Available: " + languages-available;
-                wrap: word-wrap;
-            }
-
-            Rectangle {
-                vertical-stretch: 1;
-                background: transparent;
-            }
-        }
-
-        VerticalLayout {
-            width: 50%;
-            padding: 5px;
-            Text {
-                text: "Racial Bonuses: ";
-            }
-
-            Rectangle {
-                height: 60%;
-                background: white;
-                border-color: black;
-                border-width: 1px;
-                StandardListView {
-                    model: racial-ability-names;
-                    current-item: selected-racial-index;
-
-                    current-item-changed(index) => {
-                        selected-racial-description = racial-ability-descriptions[index];//racial-abilities[index].description;
+                        current-item-changed(index) => {
+                            selected-racial-description = racial-ability-descriptions[index];
+                        }
                     }
                 }
             }
 
             Rectangle {
-                height: 30%;
+                width: 34%;
                 background: white;
                 border-color: black;
                 border-width: 1px;
@@ -116,10 +201,52 @@ export component RacePage inherits Rectangle {
                     width: parent.width;
                     vertical-alignment: top;
                     horizontal-alignment: left;
-                    text: "Description: \n" + selected-racial-description;
+                    text: "Ability Description: \n" + selected-racial-description;
                     wrap: word-wrap;
                 }
             }
         }
+
+        Rectangle { 
+            height: 5px;
+            width: 100%;
+            background: black;
+        }
+
+        ability-score-panel:= AbilityScorePanel {
+            height: 75%;
+            select-clicked(value) => { root.ability-score-select-clicked(value); }
+            dropdown-selected(as_id, id) => { root.ability-score-dropdown-selected(as_id, id); }
+            roll-value(value) => { root.ability-score-roll-value(value); }
+        }
     }
+    
+    callback ability-score-select-clicked(int);
+    callback ability-score-dropdown-selected(int, int);
+    callback ability-score-roll-value(int);
+
+    in-out property<[string]> as__dropdown-values <=> ability-score-panel.dropdown-values;
+    in-out property<[int]> as__dropdown-assignments <=> ability-score-panel.dropdown-assignments;
+    in-out property<int> as__dice-remaining <=> ability-score-panel.dice-remaining;
+    in-out property<int> as__points-remaining <=> ability-score-panel.points-remaining;
+    in-out property<[AbilityScoreInfo]> as__ability-score-data <=> ability-score-panel.ability-score-data;
+    in-out property<bool> as__ability-score-locked <=> ability-score-panel.locked;
+    in-out property<AbilityScoreMode> as__mode <=> ability-score-panel.mode;
+    in-out property<bool> as__flex-racial-bonus <=> ability-score-panel.flex-racial-bonus;
+    in-out property<string> as__text-box-string <=> ability-score-panel.text-box-string;
+    
+    in-out property<int> as__armor-val <=> ability-score-panel.armor-val;
+    in-out property<int> as__shield-val <=> ability-score-panel.shield-val;
+    in-out property<int> as__deflection-mod <=> ability-score-panel.deflection-mod;
+    in-out property<int> as__natural-armor <=> ability-score-panel.natural-armor;
+    in-out property<int> as__misc-ac-mod <=> ability-score-panel.misc-ac-mod;
+    in-out property<int> as__misc-initiative-mod <=> ability-score-panel.misc-initiative-mod;
+
+    in-out property<[int]> as__saving-throw-bases <=> ability-score-panel.saving-throw-bases;
+    in-out property<[int]> as__saving-throw-magic-mods <=> ability-score-panel.saving-throw-magic-mods;
+    in-out property<[int]> as__saving-throw-misc-mods <=> ability-score-panel.saving-throw-misc-mods;
+    in-out property<[int]> as__saving-throw-temp-mods <=> ability-score-panel.saving-throw-temp-mods;
+
+    in-out property<int> as__base-attack-bonus <=> ability-score-panel.base-attack-bonus;
+    in-out property<int> as__size-combat-mod <=> ability-score-panel.size-combat-mod;
 }

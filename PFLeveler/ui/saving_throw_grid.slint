@@ -1,0 +1,221 @@
+
+export component SavingThrowGrid inherits GridLayout {
+    in property<[int]> saving-throw-bases;
+    in property<[int]> saving-throw-ability-mods;
+    in property<[int]> saving-throw-magic-mods;
+    in property<[int]> saving-throw-misc-mods;
+    in property<[int]> saving-throw-temp-mods;
+
+    padding: 10px;
+
+    Text { horizontal-alignment: center; text: "Saving Throw"; } 
+    Text { horizontal-alignment: center; text: "Total"; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Base"; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Ability Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Magic Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Misc. Mod."; }
+    Text { horizontal-alignment: center; text: " "; }
+    Text { horizontal-alignment: center; text: "Temp. Mod."; }
+
+    // Fortitude Save Row
+    Text { row: 1; col: 0; horizontal-alignment: center; text: "Fortitude (CON)"; }
+    Rectangle {
+        row: 1; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[0] + root.saving-throw-ability-mods[0] +
+                root.saving-throw-magic-mods[0] + root.saving-throw-temp-mods[0] +
+                root.saving-throw-misc-mods[0];
+        }
+    }
+
+    Text { row: 1; col: 2; horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        row: 1; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-bases[0]; }
+    }
+
+    Text { row: 1; col: 4; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-ability-mods[0]; }
+    }
+
+    Text { row: 1; col: 6; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-magic-mods[0]; }
+    }
+
+    Text { row: 1; col: 8; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-misc-mods[0]; }
+    }
+
+    Text { row: 1; col: 10; horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        row: 1; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center; text: root.saving-throw-temp-mods[0]; }
+    }
+
+    // Reflex Save Row
+    Text { row: 2; col: 0; horizontal-alignment: center; text: "Reflex (DEX)"; }
+    Rectangle {
+        row: 2; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { 
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[1] + root.saving-throw-ability-mods[1] +
+                root.saving-throw-magic-mods[1] + root.saving-throw-temp-mods[1] +
+                root.saving-throw-misc-mods[1];
+        }
+    }
+
+    Text { row: 2; col: 2; horizontal-alignment: center;text: " = "; }
+    Rectangle {
+        row: 2; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-bases[1]; }
+    }
+
+    Text { row: 2; col: 4; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-ability-mods[1]; }
+    }
+
+    Text { row: 2; col: 6; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-magic-mods[1]; }
+    }
+
+    Text { row: 2; col: 8; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-misc-mods[1]; }
+    }
+
+    Text { row: 2; col: 10; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 2; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-temp-mods[1]; }
+    }
+
+    // Will Save Row
+    Text { row: 3; col: 0; horizontal-alignment: center; text: "Will (WIS)"; }
+    Rectangle {
+        row: 3; col: 1; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { 
+            horizontal-alignment: center;
+            text: root.saving-throw-bases[2] + root.saving-throw-ability-mods[2] +
+                root.saving-throw-magic-mods[2] + root.saving-throw-temp-mods[2] +
+                root.saving-throw-misc-mods[2];
+        }
+    }
+
+    Text { row: 3; col: 2; horizontal-alignment: center;text: " = "; }
+    Rectangle {
+        row: 3; col: 3; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-bases[2]; }
+    }
+
+    Text { row: 3; col: 4; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 5; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-ability-mods[2]; }
+    }
+
+    Text { row: 3; col: 6; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 7; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-magic-mods[2]; }
+    }
+
+    Text { row: 3; col: 8; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 9; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-misc-mods[2]; }
+    }
+
+    Text { row: 3; col: 10; horizontal-alignment: center;text: " + "; }
+    Rectangle {
+        row: 3; col: 11; 
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text { horizontal-alignment: center;text: root.saving-throw-temp-mods[2]; }
+    }
+}

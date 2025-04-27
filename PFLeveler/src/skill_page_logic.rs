@@ -3,7 +3,13 @@ use slint::{Model, ModelRc, VecModel};
 use std::cell::RefMut;
 use PathFinder::{pf_character::PFCharacter, ability_scores};
 
-pub fn reset_skill_page(current_character: &PFCharacter, ui: &MainWindow) {
+pub fn reset_skill_page(current_character: &PFCharacter, main_window: &MainWindow) {
+    update_skill_page(current_character, main_window);
+    main_window.set_skill__num_points_remaining(0);
+    main_window.set_skill__locked(true);
+}
+
+pub fn update_skill_page(current_character: &PFCharacter, main_window: &MainWindow) {
     let skills_vec: Vec<SkillInfo> = current_character
         .skills
         .iter()
@@ -21,16 +27,16 @@ pub fn reset_skill_page(current_character: &PFCharacter, ui: &MainWindow) {
         })
         .collect();
 
-    ui.set_skill__skill_data(ModelRc::new(VecModel::from(skills_vec)));
-    ui.set_skill__num_points_remaining(0);
-    ui.set_skill__locked(true);
+    main_window.set_skill__skill_data(ModelRc::new(VecModel::from(skills_vec)));
 }
 
 pub fn handle_skill_lock_button(
     mut current_character: RefMut<'_, Option<PFCharacter>>,
-    ui: &MainWindow) -> Result<(), slint::PlatformError> {
+    main_window: &MainWindow,
+) -> Result<(), slint::PlatformError>
+{
 
-    let skills_vec = ui.get_skill__skill_data();
+    let skills_vec = main_window.get_skill__skill_data();
     let num_skills = skills_vec.row_count();
 
     match &mut *current_character {
@@ -39,16 +45,20 @@ pub fn handle_skill_lock_button(
                 return ui::launch_error_dialog(
                     &String::from(
                         "Skills in character do not match skills in the GUI"
-                    ));
+                ));
             }
             for skill_index in 0..num_skills {
                 curr_char.skills[skill_index].rank += skills_vec.row_data(skill_index).unwrap().temp_ranks;
                 skills_vec.row_data(skill_index).unwrap().temp_ranks = 0;
             }
         },
-        None =>  { return ui::launch_error_dialog(&String::from("Hit lock skills without an existing character!")); }
+        None =>  {
+            return ui::launch_error_dialog(
+                &String::from("Hit lock skills without an existing character!"
+            ));
+        },
     }
 
-    ui.set_skill__skill_data(skills_vec);
+    main_window.set_skill__skill_data(skills_vec);
     Ok(())
 }

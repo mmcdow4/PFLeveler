@@ -28,7 +28,7 @@ pub struct PFCharacter {
     pub favored_class_hp_bonus: u32,
     pub favored_class_skill_bonus: u32,
     pub remaining_bonus_languages: u32,
-    pub class_levels: HashMap<u32, u32>,
+    pub class_levels: HashMap<u32, usize>,
     pub feats: Vec<feat::Feat>,
     pub skills: Vec<skill::Skill>,
     pub ability_scores: HashMap<ability_scores::AbilityScore, i32>
@@ -100,7 +100,7 @@ impl PFCharacter {
     }
 
     pub fn get_ability_mod(&self, ability: &ability_scores::AbilityScore) -> i32 {
-        ability_scores::ability_score_to_mod(self.ability_scores[ability])
+        ability_scores::value_to_modifier(self.ability_scores[ability])
     }
 
     pub fn get_effective_skill_rank(&self, index: usize) -> Result<i32, error::PathFinderError> {
@@ -126,4 +126,53 @@ impl PFCharacter {
             Ok(value)
         }
     }
+
+    pub fn get_base_will_save(&self) -> u32 {
+        let mut save_value = 0;
+        for (class_id, level) in &self.class_levels {
+            save_value += match pf_table::get_pf_table().get_class_level_up(*class_id, *level) {
+                Ok(level_info) => level_info.base_will_save as u32,
+                Err(_) => panic!("Unable to retrieve class level info for class ID {} level {}", class_id, level),
+            }
+        }
+
+        save_value
+    }
+
+    pub fn get_base_fort_save(&self) -> u32 {
+        let mut save_value = 0;
+        for (class_id, level) in &self.class_levels {
+            save_value += match pf_table::get_pf_table().get_class_level_up(*class_id, *level) {
+                Ok(level_info) => level_info.base_fort_save as u32,
+                Err(_) => panic!("Unable to retrieve class level info for class ID {} level {}", class_id, level),
+            }
+        }
+
+        save_value
+    }
+
+    pub fn get_base_reflex_save(&self) -> u32 {
+        let mut save_value = 0;
+        for (class_id, level) in &self.class_levels {
+            save_value += match pf_table::get_pf_table().get_class_level_up(*class_id, *level) {
+                Ok(level_info) => level_info.base_reflex_save as u32,
+                Err(_) => panic!("Unable to retrieve class level info for class ID {} level {}", class_id, level),
+            }
+        }
+
+        save_value
+    }
+
+    pub fn get_base_attack_bonus(&self) -> u32 {
+        let mut bab_value = 0;
+        for (class_id, level) in &self.class_levels {
+            bab_value += match pf_table::get_pf_table().get_class_level_up(*class_id, *level) {
+                Ok(level_info) => level_info.base_attack_bonus as u32,
+                Err(_) => panic!("Unable to retrieve class level info for class ID {} level {}", class_id, level),
+            }
+        }
+
+        bab_value
+    }
+
 }

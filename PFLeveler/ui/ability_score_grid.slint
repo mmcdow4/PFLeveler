@@ -1,0 +1,213 @@
+import { Button, ComboBox, CheckBox, LineEdit } from "std-widgets.slint";
+
+export enum AbilityScoreMode { none, dropdown, purchase, dice_pool, input }
+
+export struct AbilityScoreInfo {
+    name: string,
+    base-value: int,
+    racial-bonus: int,
+    modifier: int,
+}
+
+global purchase {
+    out property<[int]> costs: [2, 1, 1, 1, 1, 1, 2, 2, 3, 3, 4];//[-4, -2, -1, 0, 1, 2, 3, 5, 7, 10, 13, 17];
+}
+
+component AbilityScoreRow inherits Rectangle {
+    in-out property<AbilityScoreInfo> ability-score-info;
+    in property<[string]> dropdown-values;
+    in-out property<[int]> dropdown-assignments;
+    in-out property<int> points-remaining;
+    in-out property<int> input-value;
+    in property<int> dice-remaining;
+    in property<int> id;
+    in property<[length]> pos-vec;
+    in property<[length]> width-vec;
+    in property<AbilityScoreMode> mode;
+    in property<bool> flex-racial-bonus;
+
+    property<bool> dropdown-active: (root.mode == AbilityScoreMode.dropdown);
+    
+    callback dropdown-selected(int, int);
+    callback roll-value(int);
+
+    function compute_mod(value: int) -> int {
+        return (value - 10)/2;
+    }
+
+    height: 25px;
+    padding: 5px;
+
+    // Name column
+    Text { 
+        x: root.pos-vec[0];
+        width: root.width-vec[0];
+        horizontal-alignment: center;
+        text: root.ability-score-info.name;
+    }
+
+    // Minus Button
+    Button {
+        x: root.pos-vec[1];
+        text: "-";
+        width: 40px;
+        visible: root.mode == AbilityScoreMode.purchase;
+        enabled: self.visible && (ability-score-info.base-value > 7);
+        clicked => {
+            root.ability-score-info.base-value -= 1;
+            root.ability-score-info.modifier = root.compute_mod(
+                root.ability-score-info.base-value + root.ability-score-info.racial-bonus
+            );
+            root.points-remaining += purchase.costs[ability-score-info.base-value - 7];
+        }
+    }
+
+    // Raw Value
+    Rectangle { 
+        x: root.pos-vec[2];
+        width: root.width-vec[2];
+        Text {
+            width: parent.width;
+            horizontal-alignment: center; 
+            visible: 
+                (root.mode == AbilityScoreMode.none) ||
+                (root.mode == AbilityScoreMode.purchase);
+            text: root.ability-score-info.base-value;
+        }
+        Button {
+            width: parent.width;
+            opacity: 100%;
+            text: "Roll";
+            visible: root.mode == AbilityScoreMode.dice-pool;
+            enabled: self.visible && (ability-score-info.base-value == 0);
+            clicked => { root.roll-value(root.id); }
+        }
+        
+        LineEdit {
+            width: parent.width;
+            opacity: 100%;
+            text: input-value;
+            input-type: decimal;
+            visible: root.mode == AbilityScoreMode.input;
+            enabled: self.visible;
+            edited(new_text) => { input-value = new_text.to_float(); }
+        }
+
+        dropdown-menu:= ComboBox {
+            width: parent.width;
+            opacity: 100%;
+            preferred-height: 20px;
+            model: root.dropdown-values;
+            visible: root.dropdown-active;
+            enabled: root.dropdown-active;
+            selected(value) => {
+                root.dropdown-selected(root.id, self.current-index);
+            }
+        }
+    }
+    
+    // Plus Button
+    Button {
+        x: root.pos-vec[3];
+        text: "+";
+        width: 40px;
+        visible: root.mode == AbilityScoreMode.purchase;
+        enabled: self.visible && (ability-score-info.base-value < 18) &&
+            (purchase.costs[ability-score-info.base-value - 7] >= points-remaining);
+        clicked => {
+            root.points-remaining -= purchase.costs[ability-score-info.base-value - 7];
+            root.ability-score-info.base-value += 1;
+            root.ability-score-info.modifier = root.compute_mod(
+                root.ability-score-info.base-value + root.ability-score-info.racial-bonus
+            );
+        }
+    }
+
+    // Racial Bonus Column
+    Rectangle{
+        x: root.pos-vec[4];
+        width: root.width-vec[4];
+        CheckBox {
+            text: "+" + root.ability-score-info.racial-bonus;
+            visible: root.flex-racial-bonus;
+            enabled: root.flex-racial-bonus;
+        }
+        Text {
+            horizontal-alignment: center;
+            text: root.ability-score-info.racial-bonus;
+        }
+    }
+
+    // Total Column    
+    Text { 
+        x: root.pos-vec[5];
+        width: root.width-vec[5];
+        horizontal-alignment: center;
+        text: ability-score-info.base-value + ability-score-info.racial-bonus;
+    } 
+
+    // Modifier Column    
+    Text {
+        x: root.pos-vec[6];
+        width: root.width-vec[6];
+        horizontal-alignment: center;
+        text: ability-score-info.modifier;
+    }
+}
+
+export component AbilityScoreGrid inherits VerticalLayout {
+    in property<[string]> dropdown-values;
+    in-out property<[int]> dropdown-assignments;
+    in property<int> dice-remaining;
+    in property<int> points-remaining;
+    in property<[AbilityScoreInfo]> ability-score-data;
+    in property<bool> locked;
+    in property<AbilityScoreMode> mode;
+    in property<bool> flex-racial-bonus;
+
+    in property<[length]> column-pos: [
+        name-label.x,
+        minus-label.x,
+        raw-label.x,
+        plus-label.x,
+        racial-label.x,
+        total-label.x,
+        mod-label.x
+    ];
+    in property<[length]> column-widths: [
+        name-label.width,
+        minus-label.width,
+        raw-label.width,
+        plus-label.width,
+        racial-label.width,
+        total-label.width,
+        mod-label.width
+    ];
+
+    callback dropdown-selected(int, int);
+    callback roll-value(int);
+
+    spacing: 5px;
+    // Label Row
+    HorizontalLayout {
+        name-label:= Text { horizontal-alignment: center; text: "Attribute Name"; }
+        minus-label:= Text { horizontal-alignment: center; text: " "; width: 20px; }
+        raw-label:= Text { horizontal-alignment: center; text: "Raw Value"; }
+        plus-label:= Text { horizontal-alignment: center; text: " "; width: 20px; }
+        racial-label:= Text { horizontal-alignment: center; text: "Racial Bonus"; }
+        total-label:= Text { horizontal-alignment: center; text: "Total"; }
+        mod-label:= Text { horizontal-alignment: center; text: "Modifier"; }
+    }
+
+    for item[i] in ability-score-data: row:= AbilityScoreRow {
+        ability-score-info: item;
+        id: i;
+        pos-vec: root.column-pos;
+        width-vec: root.column-widths;
+        dropdown-values: root.dropdown-values;
+        dropdown-assignments: root.dropdown-assignments;
+        mode: root.mode;
+        flex-racial-bonus: root.flex-racial-bonus;
+        dropdown-selected(as_id, id) => { root.dropdown-selected(as_id, id); }
+    }
+}

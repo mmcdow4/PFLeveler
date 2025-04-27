@@ -5,7 +5,7 @@ use std::{
     process,
     str,
     // io::{self, prelude::*, BufReader, BufRead, Seek, SeekFrom},
-    collections::{HashMap, HashSet},
+    collections::HashMap,
     error::Error,
 };
 use csv;

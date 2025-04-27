@@ -1,0 +1,136 @@
+
+export component CombatBonusGrid inherits GridLayout {
+    in property<int> base-attack-bonus;
+    in property<int> str-mod;
+    in property<int> dex-mod;
+    in property<int> size-combat-mod;
+    
+
+    padding: 40px;
+
+    // CMB Row
+    Text { horizontal-alignment: center; text: "Combat Maneuver Bonus"; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus + root.str-mod + root.size-combat-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.str-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.size-combat-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: "   "; }
+    Text { horizontal-alignment: center; text: "   "; }
+
+    // CMB Labels row
+    Text { row: 1; col: 1; horizontal-alignment: center; text: "Total"; }
+    Text { row: 1; col: 3; horizontal-alignment: center; text: "Base Attack Bonus"; }
+    Text { row: 1; col: 5; horizontal-alignment: center; text: "STR Mod."; }
+    Text { row: 1; col: 7; horizontal-alignment: center; text: "Size Mod."; }
+
+    //CMD Row
+    Text { row: 2; horizontal-alignment: center; text: "Combat Maneuver Defense"; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus + root.str-mod + root.dex-mod + root.size-combat-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " = "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.base-attack-bonus;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.str-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.dex-mod;
+        }
+    }
+
+    Text { horizontal-alignment: center; text: " + "; }
+    Rectangle {
+        background: white;
+        border-color: black;
+        border-width: 1px;
+        max-width: 20px;
+        Text {
+            horizontal-alignment: center;
+            text: root.size-combat-mod;
+        }
+    }
+
+    // CMD Labels row
+    Text { row: 3; col: 1; horizontal-alignment: center; text: "Total"; }
+    Text { row: 3; col: 3; horizontal-alignment: center; text: "Base Attack Bonus"; }
+    Text { row: 3; col: 5; horizontal-alignment: center; text: "STR Mod."; }
+    Text { row: 3; col: 7; horizontal-alignment: center; text: "DEX Mod."; }
+    Text { row: 3; col: 9; horizontal-alignment: center; text: "Size Mod."; }
+}

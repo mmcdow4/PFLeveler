@@ -1,7 +1,6 @@
 import { ComboBox, Button, StandardTableView, StandardListView, LineEdit } from "std-widgets.slint";
 
 
-
 export struct InputField {
     label: string,
     value: string,
@@ -45,9 +44,10 @@ export component SummaryPage inherits Rectangle {
     background: lightgray;
     HorizontalLayout {
         spacing: 5px;
+        padding: 5px;
         VerticalLayout {
-            spacing: 0px;
-            width: 25%;
+            // spacing: 5px;
+            width: 20%;
             for field in input-fields: HorizontalLayout {
                 alignment: start;
                 Text { 
@@ -71,7 +71,7 @@ export component SummaryPage inherits Rectangle {
                 Text { text: "Alignment: " + character-alignment-text; }
                 ComboBox {
                     preferred-height: 20px;
-                    width: 100px;
+                    width: 200px;
                     model: [
                         "Lawful Good",
                         "Lawful Neutral",
@@ -124,9 +124,11 @@ export component SummaryPage inherits Rectangle {
                 }
             }
         }
+
         VerticalLayout {
             spacing: 5px;
-            width: 25%;
+            padding: 5px;
+            width: 20%;
             Text { text: "Ability Scores:"; }
             Rectangle {
                 height: 45%;
@@ -148,9 +150,11 @@ export component SummaryPage inherits Rectangle {
                 }
             }
         }
+
         VerticalLayout {
             spacing: 5px;
-            width: 25%;
+            padding: 5px;
+            width: 20%;
             Text { text: "Feats:"; }
             Rectangle {
                 
@@ -173,9 +177,11 @@ export component SummaryPage inherits Rectangle {
                 }
             }
         }
+
         VerticalLayout {
             spacing: 5px;
-            width: 25%;
+            padding: 5px;
+            width: 40%;
             HorizontalLayout {
                 alignment: start;
                 height: 10%;
@@ -183,6 +189,7 @@ export component SummaryPage inherits Rectangle {
                 Text { text: "Class: "; }
                 ComboBox {
                     preferred-height: 20px;
+                    max-height: 40px;
                     width: 100px;
                     model: spells-class-list;
                     current-index: spells-class-idx;
@@ -198,6 +205,7 @@ export component SummaryPage inherits Rectangle {
                 border-color: black;
                 border-width: 1px;
                 StandardTableView {
+                    width: parent.width;
                     columns: [
                         { title: "Spells Known" },
                         { title: "Spell Save DC" },

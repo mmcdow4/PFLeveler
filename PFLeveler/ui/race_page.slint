@@ -218,12 +218,14 @@ export component RacePage inherits Rectangle {
             select-clicked(value) => { root.ability-score-select-clicked(value); }
             dropdown-selected(as_id, id) => { root.ability-score-dropdown-selected(as_id, id); }
             roll-value(value) => { root.ability-score-roll-value(value); }
+            lock-clicked() => { root.ability-score-lock-clicked(); }
         }
     }
     
     callback ability-score-select-clicked(int);
     callback ability-score-dropdown-selected(int, int);
     callback ability-score-roll-value(int);
+    callback ability-score-lock-clicked();
 
     in-out property<[string]> as__dropdown-values <=> ability-score-panel.dropdown-values;
     in-out property<[int]> as__dropdown-assignments <=> ability-score-panel.dropdown-assignments;

@@ -1,8 +1,9 @@
 use crate::ui::{
     self, launch_error_dialog, AbilityScoreMode, MainWindow
 };
-use slint::{ComponentHandle, Model, ModelRc, VecModel, SharedString};
-use PathFinder::ability_scores;
+use slint::{ComponentHandle, Model, ModelRc, VecModel, SharedString, StandardListViewItem};
+use std::cell::RefMut;
+use PathFinder::{ability_scores, pf_character};
 use rand::prelude::*;
 
 fn roll_nd6(n: usize) -> Vec<u32> {
@@ -281,4 +282,70 @@ fn roll_dice_and_save_value(
             You can also switch methods or start over by clicking the select \
             button again.", dice_remaining).into());
     }
+}
+
+pub fn handle_ability_score_lock_clicked(
+    mut current_character: RefMut<'_, Option<pf_character::PFCharacter>>,
+    main_window: &MainWindow
+) -> Result<(), slint::PlatformError>
+{
+
+    // Make sure all of the ability scores are set, and that the flexible bonus
+    // has been applied if it needs to be
+    let ability_score_data = main_window.get_race__as__ability_score_data();
+    let is_flex_bonus = main_window.get_race__as__flex_racial_bonus();
+    let mut bonus_found = false;
+    for as_index in 0..ability_scores::NUMBER_ABILITY_SCORES {
+        let data = ability_score_data.row_data(as_index).unwrap();
+        if data.base_value == 0 {
+            return ui::launch_error_dialog(&String::from("You must set a value for each ability score!"));
+        } else if data.racial_bonus != 0 {
+            bonus_found = true;
+        }
+    }
+
+    if is_flex_bonus && !bonus_found {
+        return ui::launch_error_dialog(&String::from("You must apply your flexibly racial ability score bonus!"));
+    }
+
+    // TODO: Raise warning if points or dice are remaining
+    // if main_window.get_race__as__mode() == AbilityScoreMode::DicePool && 
+    //     main_window.get_race__as__dice_remaining() > 0 {
+    //         // WARNING MESSAGE
+    // } else if main_window.get_race__as__mode() == AbilityScoreMode::Purchase && 
+    //     main_window.get_race__as__points_remaining() > 0 {
+    //         // WARNING MESSAGE
+    // }
+
+    // Save the ability score values and update the summary page
+    match &mut *current_character {
+        Some(curr_char) => {
+            let mut ability_score_text: Vec<StandardListViewItem> = Vec::new();
+            for as_index in 0..ability_scores::NUMBER_ABILITY_SCORES {
+                let ability = ability_scores::index_to_ability_score(Some(as_index)).unwrap();
+                let data = ability_score_data.row_data(as_index).unwrap();
+                let effective_value = data.base_value + data.racial_bonus;
+                curr_char.ability_scores.insert(
+                    ability,
+                    effective_value
+                );
+                ability_score_text.push(
+                    StandardListViewItem::from(
+                        SharedString::from(
+                            ability_scores::ability_score_to_string(Some(ability)) +
+                            " = " +
+                            &effective_value.to_string()
+                    ))
+                );
+            }
+            main_window.set_summary__ability_score_text(ModelRc::new(VecModel::from(ability_score_text)));
+
+        },
+        None =>  { return ui::launch_error_dialog(&String::from("Hit lock ability scores without an existing character!")); }
+    }
+
+    // Lock the ability score page
+    main_window.set_race__as__ability_score_locked(true);
+
+    Ok(())
 }

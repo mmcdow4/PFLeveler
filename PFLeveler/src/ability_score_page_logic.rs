@@ -284,12 +284,8 @@ fn roll_dice_and_save_value(
     }
 }
 
-pub fn handle_ability_score_lock_clicked(
-    mut current_character: RefMut<'_, Option<pf_character::PFCharacter>>,
-    main_window: &MainWindow
-) -> Result<(), slint::PlatformError>
+pub fn verify_lockable(main_window: &MainWindow) -> Result<Option<String>, slint::PlatformError>
 {
-
     // Make sure all of the ability scores are set, and that the flexible bonus
     // has been applied if it needs to be
     let ability_score_data = main_window.get_race__as__ability_score_data();
@@ -298,25 +294,35 @@ pub fn handle_ability_score_lock_clicked(
     for as_index in 0..ability_scores::NUMBER_ABILITY_SCORES {
         let data = ability_score_data.row_data(as_index).unwrap();
         if data.base_value == 0 {
-            return ui::launch_error_dialog(&String::from("You must set a value for each ability score!"));
+            ui::launch_error_dialog(&String::from("You must set a value for each ability score!"))?;
+            return Ok(None)
         } else if data.racial_bonus != 0 {
             bonus_found = true;
         }
     }
 
     if is_flex_bonus && !bonus_found {
-        return ui::launch_error_dialog(&String::from("You must apply your flexibly racial ability score bonus!"));
+        ui::launch_error_dialog(&String::from("You must apply your flexibly racial ability score bonus!"))?;
+        return Ok(None)
     }
 
-    // TODO: Raise warning if points or dice are remaining
-    // if main_window.get_race__as__mode() == AbilityScoreMode::DicePool && 
-    //     main_window.get_race__as__dice_remaining() > 0 {
-    //         // WARNING MESSAGE
-    // } else if main_window.get_race__as__mode() == AbilityScoreMode::Purchase && 
-    //     main_window.get_race__as__points_remaining() > 0 {
-    //         // WARNING MESSAGE
-    // }
+    if main_window.get_race__as__mode() == AbilityScoreMode::Purchase && 
+        main_window.get_race__as__points_remaining() > 0 {
+            return Ok(Some(format!(
+                         "You have {} points remaining, are you ssure you want to lock your ability scores?",
+                         main_window.get_race__as__points_remaining())))
+    }
+    
+    Ok(Some(String::new()))
+}
 
+pub fn lock_ability_scores(
+    mut current_character: RefMut<'_, Option<pf_character::PFCharacter>>,
+    main_window: &MainWindow
+) -> Result<(), slint::PlatformError>
+{
+
+    let ability_score_data = main_window.get_race__as__ability_score_data();
     // Save the ability score values and update the summary page
     match &mut *current_character {
         Some(curr_char) => {
@@ -339,9 +345,8 @@ pub fn handle_ability_score_lock_clicked(
                 );
             }
             main_window.set_summary__ability_score_text(ModelRc::new(VecModel::from(ability_score_text)));
-
         },
-        None =>  { return ui::launch_error_dialog(&String::from("Hit lock ability scores without an existing character!")); }
+        None => { return ui::launch_error_dialog(&String::from("Hit lock ability scores without an existing character!")); }
     }
 
     // Lock the ability score page

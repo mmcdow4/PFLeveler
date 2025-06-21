@@ -19,6 +19,7 @@ component AbilityScoreRow inherits Rectangle {
     in-out property<[int]> dropdown-assignments;
     in-out property<int> points-remaining;
     in-out property<int> input-value;
+    in property<bool> locked;
     in property<int> dice-remaining;
     in property<int> id;
     in property<[length]> pos-vec;
@@ -51,7 +52,7 @@ component AbilityScoreRow inherits Rectangle {
         x: root.pos-vec[1];
         text: "-";
         width: 40px;
-        visible: root.mode == AbilityScoreMode.purchase;
+        visible: (root.mode == AbilityScoreMode.purchase) && !root.locked;
         enabled: self.visible && (ability-score-info.base-value > 7);
         clicked => {
             root.ability-score-info.base-value -= 1;
@@ -78,7 +79,7 @@ component AbilityScoreRow inherits Rectangle {
             width: parent.width;
             opacity: 100%;
             text: "Roll";
-            visible: root.mode == AbilityScoreMode.dice-pool;
+            visible: (root.mode == AbilityScoreMode.dice-pool) && !root.locked;
             enabled: self.visible && (ability-score-info.base-value == 0);
             clicked => { root.roll-value(root.id); }
         }
@@ -88,7 +89,7 @@ component AbilityScoreRow inherits Rectangle {
             opacity: 100%;
             text: input-value;
             input-type: decimal;
-            visible: root.mode == AbilityScoreMode.input;
+            visible: (root.mode == AbilityScoreMode.input) && !root.locked;
             enabled: self.visible;
             edited(new_text) => { input-value = new_text.to_float(); }
         }
@@ -111,7 +112,7 @@ component AbilityScoreRow inherits Rectangle {
         x: root.pos-vec[3];
         text: "+";
         width: 40px;
-        visible: root.mode == AbilityScoreMode.purchase;
+        visible: (root.mode == AbilityScoreMode.purchase) && !root.locked;
         enabled: self.visible && (ability-score-info.base-value < 18) &&
             (purchase.costs[ability-score-info.base-value - 7] >= points-remaining);
         clicked => {
@@ -202,6 +203,7 @@ export component AbilityScoreGrid inherits VerticalLayout {
     for item[i] in ability-score-data: row:= AbilityScoreRow {
         ability-score-info: item;
         id: i;
+        locked: root.locked;
         pos-vec: root.column-pos;
         width-vec: root.column-widths;
         dropdown-values: root.dropdown-values;

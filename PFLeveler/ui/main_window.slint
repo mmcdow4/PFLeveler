@@ -26,6 +26,38 @@ export component ErrorDialog inherits Dialog {
     callback close-button;
 }
 
+export component WarningDialog inherits Dialog {
+    in property <string> warning_text: "Warning";
+    preferred-height: Styles.dialog-init-height;
+    preferred-width: Styles.dialog-init-width;
+    always-on-top: true;
+    title: "Warning";
+    VerticalBox {
+        alignment: start;
+        Text {
+            horizontal-alignment: center;
+            text: warning_text;
+        }
+        Rectangle {
+            StandardButton { 
+                x: 20px;
+                width: 50px;
+                kind: ok;
+                clicked => { root.close-button(0); }
+            }
+            StandardButton {
+                x: Styles.dialog-init-width - 70px;
+                width: 50px;
+                kind: cancel;
+                clicked => { root.close-button(1); }
+            }
+        }
+    }
+
+ 
+    callback close-button(int);
+}
+
 export component InputDialog inherits Dialog {
     in property <string> prompt-text: "Requesting user input";
     property <string> user-input: "";
